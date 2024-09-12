@@ -11,51 +11,15 @@ public class SampleController {
     private WebView webView;
 
     @FXML
-    private CheckBox a1CheckBox;
+    private CheckBox a1CheckBox,b1CheckBox,c1CheckBox,d1CheckBox;
     @FXML
-    private CheckBox b1CheckBox;
+    private CheckBox a2CheckBox,b2CheckBox,c2CheckBox,d2CheckBox;
     @FXML
-    private CheckBox c1CheckBox;
+    private CheckBox a3CheckBox,b3CheckBox,c3CheckBox,d3CheckBox;
     @FXML
-    private CheckBox d1CheckBox;
-    
+    private CheckBox a4CheckBox,b4CheckBox,c4CheckBox,d4CheckBox;
     @FXML
-    private CheckBox a2CheckBox;
-    @FXML
-    private CheckBox b2CheckBox;
-    @FXML
-    private CheckBox c2CheckBox;
-    @FXML
-    private CheckBox d2CheckBox;
-    
-    @FXML
-    private CheckBox a3CheckBox;
-    @FXML
-    private CheckBox b3CheckBox;
-    @FXML
-    private CheckBox c3CheckBox;
-    @FXML
-    private CheckBox d3CheckBox;
-    
-    @FXML
-    private CheckBox a4CheckBox;
-    @FXML
-    private CheckBox b4CheckBox;
-    @FXML
-    private CheckBox c4CheckBox;
-    @FXML
-    private CheckBox d4CheckBox;
-    
-    @FXML
-    private CheckBox a5CheckBox;
-    @FXML
-    private CheckBox b5CheckBox;
-    @FXML
-    private CheckBox c5CheckBox;
-    @FXML
-    private CheckBox d5CheckBox;
-    
-    
+    private CheckBox a5CheckBox,b5CheckBox,c5CheckBox,d5CheckBox;
     @FXML
     private Button guardarButton;
 
