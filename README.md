@@ -1,1 +1,1 @@
-<h1><b>Hecho por: Diego V. y Franklin C.</b></h1>
+<h1><b>Hecho por: Diego V. Franklin C. y Carlos V.</b></h1>
