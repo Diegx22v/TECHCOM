@@ -50,7 +50,7 @@ public class SampleController {
     		dos="Opcion correcta";
     		acierto=acierto+20;
     	}else {
-    		dos= "No se puede dejar vacia la pregunta dos";
+    		dos= "No se puede dejar vacia esta pregunta";
     	}        
     	
     	if (b3CheckBox.isSelected() || c3CheckBox.isSelected() || d3CheckBox.isSelected()){
