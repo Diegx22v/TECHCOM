@@ -41,7 +41,7 @@ public class SampleController {
     		uno="Opcion correcta";
     		acierto=acierto+20;
     	}else {
-    		uno= "No se puede dejar vacia la pregunta uno";
+    		uno= "No se puede dejar vacia esta pregunta";
     	}        
     	
     	if (b2CheckBox.isSelected() || c2CheckBox.isSelected() || d2CheckBox.isSelected()){
