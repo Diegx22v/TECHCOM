@@ -11,7 +11,7 @@ public class Main extends Application {
     @Override
     public void start(@SuppressWarnings("exports") Stage primaryStage) throws Exception {
     	
-        Image icono = new Image(getClass().getResourceAsStream("6.png"));
+        Image icono = new Image(getClass().getResourceAsStream("TECHCOM.png"));
         primaryStage.getIcons().add(icono);
         Parent root = FXMLLoader.load(getClass().getResource("Sample.fxml"));
         Scene scene = new Scene(root, 800, 600);
