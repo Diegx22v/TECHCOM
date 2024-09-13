@@ -18,5 +18,5 @@
            <li>e(fx)eclipse (libreria)</li>
            <li>egit (libreria)</li></b>
  </ol>
-<img src="https://upload.wikimedia.org/wikipedia/en/c/cc/JavaFX_Logo.png" alt="Java FX" width="350" height="250">
-<img  src="https://miro.medium.com/v2/resize:fit:540/1*nNTk-j2uaKhxyj3GXsYNdg.png" alt="Eclipse IDE" width="250" height="250">
+<img src="https://upload.wikimedia.org/wikipedia/en/c/cc/JavaFX_Logo.png" alt="Java FX">
+<img  src="https://miro.medium.com/v2/resize:fit:540/1*nNTk-j2uaKhxyj3GXsYNdg.png" alt="Eclipse IDE" >
