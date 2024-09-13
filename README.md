@@ -7,7 +7,7 @@
   <li>Carlos V.</li>
   <li>Franklin C.</li></b>
  </ul>
- <h2><b>Software Librerias o herramientas con las que se trabaja 💻</b> <img src="https://upload.wikimedia.org/wikipedia/en/c/cc/JavaFX_Logo.png" alt="Java FX" width="50" height="50">
+ <h2><b>Software Librerias o herramientas con las que se trabaja 💻</b> <img src="https://upload.wikimedia.org/wikipedia/en/c/cc/JavaFX_Logo.png" alt="Java FX" width="250" height="50">
 </h2>
  <ol> 
            <b>
@@ -19,6 +19,6 @@
            <li>e(fx)eclipse (libreria)</li>
            <li>egit (libreria)</li></b>
  </ol>
-<b><h2>Requerimientos (nota importante) ❗⌨️ <img src="https://miro.medium.com/v2/resize:fit:540/1*nNTk-j2uaKhxyj3GXsYNdg.png" alt="Java FX" width="50" height="50"></h2>
+<b><h2>Requerimientos (nota importante) ❗⌨️ <img src="https://miro.medium.com/v2/resize:fit:540/1*nNTk-j2uaKhxyj3GXsYNdg.png" alt="Java FX" width="100" height="100"></h2>
 <li>Para poder ejecutar/ o hacer alguna modificacion de forma local (de preferencia con Eclipse IDE) necesitamos del JDK en su version 22 y el SDK de Java FX 22 descargado y agregado como libreria de usuario en nuesto IDE</li>
 </b>
