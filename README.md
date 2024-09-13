@@ -11,14 +11,14 @@
 </h2>
  <ol> 
            <b>
-           <li>Java</li>
-           <li>Eclipse IDE</li>
-           <li>Java FX</li>
-           <li>Git</li>
-           <li>GitHub</li>
-           <li>SDK de Java FX</li>
-           <li>e(fx)eclipse (libreria)</li>
-           <li>egit (libreria)</li></b>
+           <li> Java</li>
+           <li> Eclipse IDE</li>
+           <li> Java FX</li>
+           <li> Git</li>
+           <li> GitHub</li>
+           <li> SDK de Java FX</li>
+           <li> e(fx)eclipse (libreria)</li>
+           <li> egit (libreria)</li></b>
  </ol>
 <b><h2>Requerimientos (nota importante) ❗⌨️ <img src="https://user-images.githubusercontent.com/11943860/46922575-7017cf80-cfe1-11e8-845a-0cd198fb546c.png" alt="Java FX" width="50" height="50"></h2>
 <li>Para poder ejecutar/ o hacer alguna modificacion de forma local (de preferencia con Eclipse IDE) necesitamos del JDK en su version 22 y el SDK de Java FX 22 descargado y agregado como libreria de usuario en nuesto IDE</li>
