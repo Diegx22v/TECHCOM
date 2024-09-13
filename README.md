@@ -8,12 +8,13 @@
  </ul>
  <h2><b>Software Librerias o herramientas con las que se trabaja</b></h2>
  <ol> 
+           <b>
            <li>Eclipse IDE</li>
            <li>Java FX</li>
            <li>Git</li>
            <li>GitHub</li>
            <li>SDK de Java FX</li>
            <li>e(fx)eclipse (libreria)</li>
-           <li>egit (libreria)</li>
+           <li>egit (libreria)</li></b>
  </ol>
 <img src="https://upload.wikimedia.org/wikipedia/en/c/cc/JavaFX_Logo.png" alt="TECHCOM" width="350" height="250">
