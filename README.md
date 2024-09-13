@@ -3,6 +3,8 @@
  <h2><b>Integrantes 🧑‍💻:</b></h2>
  <ul>
   <b>
+  <li>Dayana T.</li>
+  <li> Mía N.</li>
   <li>Diego V.</li>
   <li>Carlos V.</li>
   <li>Franklin C.</li></b>
