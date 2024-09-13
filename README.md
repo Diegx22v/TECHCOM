@@ -11,6 +11,7 @@
 </h2>
  <ol> 
            <b>
+           <li>Java</li>
            <li>Eclipse IDE</li>
            <li>Java FX</li>
            <li>Git</li>
