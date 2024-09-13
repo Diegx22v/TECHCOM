@@ -1,5 +1,5 @@
 <h1><b>Bienvenidos a la TECHCOM 🧑‍💻</b></h1>
-           <center><img class="center" src="https://github.com/user-attachments/assets/0f46b5a5-010d-40fb-8b48-7ac536d0850d" alt="TECHCOM" width="250" height="250"></center>
+<img src="https://github.com/user-attachments/assets/0f46b5a5-010d-40fb-8b48-7ac536d0850d" alt="TECHCOM" width="250" height="250">
  <h2><b>Integrantes 🧑‍💻:</b></h2>
  <ul>
   <b>
@@ -18,4 +18,5 @@
            <li>e(fx)eclipse (libreria)</li>
            <li>egit (libreria)</li></b>
  </ol>
-<img src="https://upload.wikimedia.org/wikipedia/en/c/cc/JavaFX_Logo.png" alt="TECHCOM" width="350" height="250">
+<img src="https://upload.wikimedia.org/wikipedia/en/c/cc/JavaFX_Logo.png" alt="Java FX" width="350" height="250">
+<img  src="https://miro.medium.com/v2/resize:fit:540/1*nNTk-j2uaKhxyj3GXsYNdg.png" alt="Eclipse IDE" width="250" height="250">
