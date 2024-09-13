@@ -2,9 +2,10 @@
            <center><img class="center" src="https://github.com/user-attachments/assets/0f46b5a5-010d-40fb-8b48-7ac536d0850d" alt="TECHCOM" width="250" height="250"></center>
  <h2><b>Integrantes 🧑‍💻:</b></h2>
  <ul>
+  <b>
   <li>Diego V.</li>
   <li>Carlos V.</li>
-  <li>Franklin C.</li>
+  <li>Franklin C.</li></b>
  </ul>
  <h2><b>Software Librerias o herramientas con las que se trabaja</b></h2>
  <ol> 
