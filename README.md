@@ -7,7 +7,7 @@
   <li>Carlos V.</li>
   <li>Franklin C.</li></b>
  </ul>
- <h2><b>Software Librerias o herramientas con las que se trabaja 💻</b> <img src="https://upload.wikimedia.org/wikipedia/en/c/cc/JavaFX_Logo.png" alt="Java FX" width="250" height="50">
+ <h2><b>Software Librerias o herramientas con las que se trabaja 💻</b> <img src="https://upload.wikimedia.org/wikipedia/en/c/cc/JavaFX_Logo.png" alt="Java FX" width="150" height="50">
 </h2>
  <ol> 
            <b>
