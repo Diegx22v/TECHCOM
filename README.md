@@ -19,3 +19,7 @@
            <li>egit (libreria)</li></b>
  </ol>
 <img src="https://upload.wikimedia.org/wikipedia/en/c/cc/JavaFX_Logo.png" alt="Java FX">
+<b><h2>Requerimientos (nota importante)</h2>
+<li>Para poder ejecutar/ o hacer alguna modificacion de forma local (de preferencia con Eclipse IDE) necesitamos del JDK en su version 22 y el SDK de Java FX 22 descargado y agregado como libreria de usuario en nuesto IDE</li>
+</b>
+<img src="https://miro.medium.com/v2/resize:fit:540/1*nNTk-j2uaKhxyj3GXsYNdg.png" alt="Java FX">
