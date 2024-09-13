@@ -11,9 +11,8 @@
 </h2>
  <ol> 
            <b>
-           <li> Java</li>
+           <li> Java (JDK)</li>
            <li> Eclipse IDE</li>
-           <li> Java FX</li>
            <li> Git</li>
            <li> GitHub</li>
            <li> SDK de Java FX</li>
