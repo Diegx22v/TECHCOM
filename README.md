@@ -8,10 +8,9 @@
  </ul>
 <img src="https://upload.wikimedia.org/wikipedia/en/c/cc/JavaFX_Logo.png" alt="TECHCOM" width="350" height="250">
 <style>
-           .center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
+            img {
+      display: block;
+      margin: 0 auto;
+      width: 40%;
+    }
 </style>
