@@ -4,6 +4,7 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.effect.ColorAdjust?>
 <?import javafx.scene.effect.DropShadow?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -53,7 +54,7 @@
                </DropShadow>
             </effect></Text>
             
-            <Text text="Hola!, esta es nuestra aplicacion de JavaFX para nuestro proyecto, aqui puedes revsisar informacion acerca de la Inteligencia Artificial y responder algunas preguntas con nuestra trivia, atento." wrappingWidth="360" GridPane.columnIndex="0" GridPane.rowIndex="1">
+            <Text text="* Dayana Torres       * Mia Nuñez              * Franklin Chunga     * Carlos Velez            * Diego Villota  " wrappingWidth="166.39993286132812" GridPane.columnIndex="0" GridPane.rowIndex="1">
             <font>
                <Font name="Berlin Sans FB" size="19.0" />
             </font>
@@ -95,7 +96,7 @@
                <Insets bottom="90.0" right="30.0" />
             </GridPane.margin>
          </ImageView>
-         <Text layoutX="30.0" layoutY="497.0" text="Introduccion " textAlignment="CENTER" wrappingWidth="453.0" GridPane.rowIndex="1" GridPane.valignment="TOP">
+         <Text layoutX="30.0" layoutY="497.0" text="Integrantes" textAlignment="CENTER" wrappingWidth="453.0" GridPane.rowIndex="1" GridPane.valignment="TOP">
             <font>
                <Font name="Goudy Stout" size="27.0" />
             </font>
@@ -353,6 +354,11 @@
                <Insets top="45.0" />
             </GridPane.margin>
          </CheckBox>
+         <Button fx:id="juegoButton" alignment="CENTER" contentDisplay="TOP" layoutX="10.0" layoutY="1775.0" mnemonicParsing="false" onAction="#iniciarJuego" opacity="0.04" text="JUGAR" GridPane.halignment="RIGHT" GridPane.rowIndex="2" GridPane.valignment="TOP">
+            <effect>
+               <ColorAdjust />
+            </effect>
+         </Button>
              <rowConstraints>
             <RowConstraints valignment="CENTER" vgrow="SOMETIMES" />
             <RowConstraints />
