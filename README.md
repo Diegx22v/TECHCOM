@@ -9,7 +9,7 @@
   <li><a href="https://github.com/CarlosV-28">Carlos V.</a></li>
   <li><a href="https://github.com/franklinrea">Franklin C.</a></li></b>
  </ul>
- <h2><b>Software Librerias o herramientas con las que se trabaja 💻</b> <img src="https://upload.wikimedia.org/wikipedia/en/c/cc/JavaFX_Logo.png" alt="Java FX" width="150" height="75">
+ <h2><b>Software Librerias o herramientas con las que se trabaja 💻</b>
 </h2>
  <ol> 
            <b>
