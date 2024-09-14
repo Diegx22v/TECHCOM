@@ -59,7 +59,7 @@ public class SampleController {
     	
     	if (b5CheckBox.isSelected() || c5CheckBox.isSelected() || d5CheckBox.isSelected()){  cinco="Opcion incorrecta";  }
     	else if(a5CheckBox.isSelected()){  cinco="Opcion correcta";  acierto=acierto+20;  }
-    	else {  cinco= "No se puede dejar vacia la pregunta cinco";  }        
+    	else {  cinco= "No se puede dejar vacia esta pregunta";  }        
     	
     	JOptionPane.showMessageDialog(null,"Pregunta uno:  "+uno+"\nPregunta dos:  "+dos+"\nPregunta tres:  "+tres+"\nPregunta cuatro:  "+cuatro+"\nPregunta cinco:  "+cinco+"\nResultado Total:  "+acierto+"%");
     }
