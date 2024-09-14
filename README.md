@@ -13,17 +13,13 @@
 </h2>
  <ol> 
            <b>
-           <li> Java (JDK)</li>
-           <li> Eclipse IDE</li>
-           <li> Git</li>
-           <li> GitHub</li>
-           <li> SDK de Java FX</li>
-           <li> e(fx)eclipse (Extensión del IDE)</li>
-           <li> egit (Extensión del IDE)</li></b>
+           <li><a href="https://gluonhq.com/products/scene-builder/">Scene Builder</a></li>
+           <li> <a href="https://www.eclipse.org/downloads/packages/installer">Eclipse IDE</a></li>
+           <li> <a href="https://git-scm.com/">Git</a></li>
+           <li> <a href="https://github.com/">GitHub</a></li>
+           <li> <a href="https://www.oracle.com/java/technologies/javase/jdk22-archive-downloads.html">Java (JDK)</a></li>
+           <li> <a href="https://gluonhq.com/products/javafx/">SDK de Java FX</a></li>
+           <li> <a href="https://marketplace.eclipse.org/content/efxclipse">e(fx)eclipse (Extensión del IDE)</a></li>
+           <li> <a href="https://marketplace.eclipse.org/content/egit-git-integration-eclipse">egit (Extensión del IDE)</a></li>
+           </b>
  </ol>
-<b><h2>Requerimientos (nota importante) ❗⌨️ <img src="https://user-images.githubusercontent.com/11943860/46922575-7017cf80-cfe1-11e8-845a-0cd198fb546c.png" alt="Java FX" width="50" height="50"></h2>
-<p>Para poder ejecutar/ o hacer alguna modificacion de forma local (de preferencia con Eclipse IDE) necesitamos del JDK en su version 22 y el SDK de Java FX 22 descargado y agregado como libreria de usuario en nuesto IDE</p>
- <li>Eclipse: https://www.eclipse.org/downloads/packages/installer</li>
- <li>Java JDK 22: https://www.oracle.com/java/technologies/javase/jdk22-archive-downloads.html</li>
- <li>SDK JavaFX 22: https://gluonhq.com/products/javafx/ </li>
-</b>
