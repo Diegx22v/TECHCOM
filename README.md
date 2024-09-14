@@ -5,7 +5,7 @@
   <b>
   <li>Dayana T.</li>
   <li> Mía N.</li>
-  <li>Diego V. (User: https://github.com/Diegx22v)</li>
+  <li><a href="https://github.com/Diegx22v">Diego V.</a></li>
   <li>Carlos V. (User: https://github.com/CarlosV-28)</li>
   <li>Franklin C. (User: https://github.com/franklinrea)</li></b>
  </ul>
