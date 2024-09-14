@@ -26,7 +26,7 @@
                 <ColumnConstraints maxWidth="-Infinity" minWidth="-Infinity" percentWidth="60.0" />
             </columnConstraints>
             
-            <Text text="Bienvenidos a nuestra Aplicación :)" wrappingWidth="555.2000122070312" GridPane.columnIndex="0" GridPane.rowIndex="0">
+            <Text text="Preguntas" wrappingWidth="555.2000122070312" GridPane.columnIndex="0" GridPane.rowIndex="0">
             <font>
                <Font name="Goudy Stout" size="40.0" />
             </font>
@@ -54,7 +54,7 @@
                </DropShadow>
             </effect></Text>
             
-            <Text text="* Dayana Torres       * Mia Nuñez              * Franklin Chunga     * Carlos Velez            * Diego Villota  " wrappingWidth="166.39993286132812" GridPane.columnIndex="0" GridPane.rowIndex="1">
+            <Text text="* Franklin Chunga" wrappingWidth="166.39993286132812" GridPane.columnIndex="0" GridPane.rowIndex="1">
             <font>
                <Font name="Berlin Sans FB" size="19.0" />
             </font>
@@ -96,7 +96,7 @@
                <Insets bottom="90.0" right="30.0" />
             </GridPane.margin>
          </ImageView>
-         <Text layoutX="30.0" layoutY="497.0" text="Integrantes" textAlignment="CENTER" wrappingWidth="453.0" GridPane.rowIndex="1" GridPane.valignment="TOP">
+         <Text layoutX="30.0" layoutY="497.0" text="Hecho por: " textAlignment="CENTER" wrappingWidth="453.0" GridPane.rowIndex="1" GridPane.valignment="TOP">
             <font>
                <Font name="Goudy Stout" size="27.0" />
             </font>
