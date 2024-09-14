@@ -53,9 +53,9 @@
                </DropShadow>
             </effect></Text>
             
-            <Text text="* Dayana Torres       * Mia Nuñez              * Franklin Chunga     * Carlos Velez            * Diego Villota  " wrappingWidth="165.59991455078125" GridPane.columnIndex="0" GridPane.rowIndex="1">
+            <Text text="* Dayana Torres       * Mia Nuñez              * Franklin Chunga     * Carlos Velez            * Diego Villota  " wrappingWidth="207.99993896484375" GridPane.columnIndex="0" GridPane.rowIndex="1">
             <font>
-               <Font name="Berlin Sans FB" size="19.0" />
+               <Font name="Berlin Sans FB" size="24.0" />
             </font>
             <fill>
                <RadialGradient centerX="1.0" centerY="1.0" cycleMethod="REPEAT" focusAngle="169.38" focusDistance="0.22988505747126453" radius="0.706896551724138">
@@ -97,7 +97,7 @@
          </ImageView>
          <Text layoutX="30.0" layoutY="497.0" text="Integrantes" textAlignment="CENTER" wrappingWidth="453.0" GridPane.rowIndex="1" GridPane.valignment="TOP">
             <font>
-               <Font name="Goudy Stout" size="27.0" />
+               <Font name="Goudy Stout" size="33.0" />
             </font>
             <fill>
                <RadialGradient centerX="0.6602209944751382" centerY="0.6421800947867299" cycleMethod="REPEAT" focusDistance="-0.5057471264367817" radius="0.4540229885057471">
@@ -115,11 +115,40 @@
                   </stops>
                </RadialGradient>
             </fill>
+            <GridPane.margin>
+               <Insets top="-5.0" />
+            </GridPane.margin>
          </Text>
-         <Text fill="#ff00e1" layoutX="30.0" layoutY="390.0" text="&lt;&lt;&lt; VIDEO DE PRUEBA &gt;&gt;&gt; // No disponible pq aun no eligo un video como tal" wrappingWidth="211.19992065429688" GridPane.rowIndex="2">
+         <Text layoutX="30.0" layoutY="390.0" text="Un deepfake es un video, audio o imagen la cualimita el sonido o la apariencia de una persona,este suele ser tan convincente que puedeterminar engañando al espectador. Son ejecutados por medio de la inteligencia artificial." wrappingWidth="257.59991455078125" GridPane.rowIndex="2">
             <font>
-               <Font name="Berlin Sans FB" size="19.0" />
+               <Font name="Arial Bold" size="21.0" />
             </font>
+            <fill>
+               <RadialGradient centerX="0.2654867172241211" centerY="0.5" cycleMethod="REFLECT" focusAngle="-3.69" focusDistance="0.5688071819620399" radius="1.0">
+                  <stops>
+                     <Stop>
+                        <color>
+                           <Color red="0.20483431220054626" green="0.3223833739757538" blue="0.7473683953285217" />
+                        </color>
+                     </Stop>
+                     <Stop offset="0.006729475100942127">
+                        <color>
+                           <Color red="0.20483431220054626" green="0.3223833739757538" blue="0.7473683953285217" />
+                        </color>
+                     </Stop>
+                     <Stop offset="0.49756097560975604">
+                        <color>
+                           <Color green="0.7699999809265137" blue="0.23100000619888306" opacity="0.949999988079071" />
+                        </color>
+                     </Stop>
+                     <Stop offset="1.0">
+                        <color>
+                           <Color red="1.0" green="1.0" blue="1.0" />
+                        </color>
+                     </Stop>
+                  </stops>
+               </RadialGradient>
+            </fill>
          </Text>
          <Text fill="#ff00e1" layoutX="30.0" layoutY="777.0" text="&lt;&lt;&lt; ESPERANDO INFO &gt;&gt;&gt;" wrappingWidth="358.3999938964844" GridPane.rowIndex="3">
             <font>
@@ -193,6 +222,27 @@
                <ColorAdjust />
             </effect>
          </Button>
+         <Text layoutX="10.0" layoutY="222.0" text="DeepFake" textAlignment="CENTER" wrappingWidth="453.0" GridPane.rowIndex="2" GridPane.valignment="TOP">
+            <font>
+               <Font name="Goudy Stout" size="29.0" />
+            </font>
+            <fill>
+               <RadialGradient centerX="0.6602209944751382" centerY="0.6421800947867299" cycleMethod="REPEAT" focusDistance="-0.5057471264367817" radius="0.4540229885057471">
+                  <stops>
+                     <Stop>
+                        <color>
+                           <Color red="0.1723976582288742" green="0.6947368383407593" blue="0.6947368383407593" />
+                        </color>
+                     </Stop>
+                     <Stop offset="1.0">
+                        <color>
+                           <Color red="0.17249999940395355" green="0.3274872899055481" blue="0.6899999976158142" />
+                        </color>
+                     </Stop>
+                  </stops>
+               </RadialGradient>
+            </fill>
+         </Text>
              <rowConstraints>
             <RowConstraints valignment="CENTER" vgrow="SOMETIMES" />
             <RowConstraints />
