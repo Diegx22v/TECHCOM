@@ -354,7 +354,7 @@
                <Insets top="45.0" />
             </GridPane.margin>
          </CheckBox>
-         <Button fx:id="juegoButton" alignment="CENTER" contentDisplay="TOP" layoutX="10.0" layoutY="1775.0" mnemonicParsing="false" onAction="#iniciarJuego" opacity="0.04" text="JUGAR" GridPane.halignment="RIGHT" GridPane.rowIndex="2" GridPane.valignment="TOP">
+         <Button fx:id="juegoButton" alignment="CENTER" contentDisplay="TOP" layoutX="10.0" layoutY="1775.0" mnemonicParsing="false" onAction="#nueva_ventana" opacity="0.04" text="JUGAR" GridPane.halignment="RIGHT" GridPane.rowIndex="2" GridPane.valignment="TOP">
             <effect>
                <ColorAdjust />
             </effect>
