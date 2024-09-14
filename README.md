@@ -6,8 +6,8 @@
   <li>Dayana T.</li>
   <li> Mía N.</li>
   <li><a href="https://github.com/Diegx22v">Diego V.</a></li>
-  <li>Carlos V. (User: https://github.com/CarlosV-28)</li>
-  <li>Franklin C. (User: https://github.com/franklinrea)</li></b>
+  <li><a href="https://github.com/CarlosV-28">Carlos V.</a></li>
+  <li><a href="https://github.com/franklinrea">Franklin C.</a></li></b>
  </ul>
  <h2><b>Software Librerias o herramientas con las que se trabaja 💻</b> <img src="https://upload.wikimedia.org/wikipedia/en/c/cc/JavaFX_Logo.png" alt="Java FX" width="150" height="75">
 </h2>
