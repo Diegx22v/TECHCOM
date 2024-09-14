@@ -55,7 +55,7 @@ public class SampleController {
     	
     	if (b4CheckBox.isSelected() || c4CheckBox.isSelected() || d4CheckBox.isSelected()){  cuatro="Opcion incorrecta";  }
     	else if(a4CheckBox.isSelected()){  cuatro="Opcion correcta";  acierto=acierto+20;  }
-    	else {  cuatro= "No se puede dejar vacia la pregunta cuatro";  }        
+    	else {  cuatro= "No se puede dejar vacia esta pregunta";  }        
     	
     	if (b5CheckBox.isSelected() || c5CheckBox.isSelected() || d5CheckBox.isSelected()){  cinco="Opcion incorrecta";  }
     	else if(a5CheckBox.isSelected()){  cinco="Opcion correcta";  acierto=acierto+20;  }
