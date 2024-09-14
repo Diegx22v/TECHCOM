@@ -223,7 +223,7 @@ private void nueva_ventana() {
     	try {
     		Parent root = FXMLLoader.load(getClass().getResource("preguntas.fxml"));
     		Stage preguntas = new Stage();
-    		preguntas.setTitle("Preguntas");
+    		preguntas.setTitle("Juegos locos franklin");
     		preguntas.setScene(new Scene(root,800,600));
     		preguntas.show();
     	}
