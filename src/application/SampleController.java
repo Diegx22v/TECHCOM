@@ -1,9 +1,14 @@
 package application;
 
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
 import javafx.scene.web.WebView;
+import javafx.stage.Stage;
+
 import javax.swing.JOptionPane;
 import java.util.Random;
 
@@ -24,6 +29,7 @@ public class SampleController {
     private Button guardarButton, juegoButton;
     private boolean seleccionGuardada;
     private boolean juego_iniciado;
+    private boolean inicia_ventana;
     
     @FXML
     public void initialize() {
@@ -64,6 +70,7 @@ public class SampleController {
     
     @FXML
     private void iniciarJuego() {
+
         juego_iniciado=true;
         if(juego_iniciado) {
         	int a, b, c, d, e, ini;
@@ -211,10 +218,24 @@ public class SampleController {
             }
         }
     }
-    
+@FXML    
+private void nueva_ventana() {
+    	try {
+    		Parent root = FXMLLoader.load(getClass().getResource("preguntas.fxml"));
+    		Stage preguntas = new Stage();
+    		preguntas.setTitle("Preguntas");
+    		preguntas.setScene(new Scene(root,800,600));
+    		preguntas.show();
+    	}
+    		catch(Exception e){
+    			
+    		}
+    }
     public boolean getjuegoiniciado() {
     	return juego_iniciado;
     }
-    
+    public boolean getinicia_ventana() {
+    	return inicia_ventana;
+    }
     
 }
