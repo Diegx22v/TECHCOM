@@ -2,7 +2,6 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.effect.ColorAdjust?>
 <?import javafx.scene.effect.DropShadow?>
@@ -85,7 +84,7 @@
                     <Image url="@TECHCOM.png" />
                 </image>
             <GridPane.margin>
-               <Insets bottom="20.0" right="30.0" top="10.0" />
+               <Insets bottom="20.0" right="30.0" top="11.0" />
             </GridPane.margin>
             </ImageView>
          <ImageView fitHeight="48.0" fitWidth="213.0" layoutX="550.0" layoutY="260.0" GridPane.columnIndex="1" GridPane.halignment="RIGHT">
@@ -152,15 +151,7 @@
                <Font name="Berlin Sans FB" size="19.0" />
             </font>
          </Text>
-         <CheckBox fx:id="a1CheckBox" mnemonicParsing="false" prefHeight="41.0" prefWidth="128.0" text="Opcion 1" textFill="#00ffa6" GridPane.rowIndex="7">
-            <font>
-               <Font name="Bodoni MT Black" size="20.0" />
-            </font>
-            <GridPane.margin>
-               <Insets bottom="20.0" />
-            </GridPane.margin>
-         </CheckBox>
-         <Text fill="#ff00e1" layoutX="10.0" layoutY="1035.0" text="&lt;&lt;&lt; Pregunta uno &gt;&gt;&gt;" wrappingWidth="358.3999938964844" GridPane.rowIndex="6">
+         <Text fill="#ff00e1" layoutX="10.0" layoutY="1035.0" text="&lt;&lt;&lt; Esperando INFO &gt;&gt;&gt;" wrappingWidth="358.3999938964844" GridPane.rowIndex="6">
             <font>
                <Font name="Berlin Sans FB" size="19.0" />
             </font>
@@ -168,73 +159,12 @@
                <Insets bottom="10.0" top="10.0" />
             </GridPane.margin>
          </Text>
-         <CheckBox fx:id="b1CheckBox" layoutX="10.0" layoutY="1101.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="160.0" text="Opcion 2" textFill="#00ffa9" GridPane.rowIndex="8">
-            <font>
-               <Font name="Bodoni MT Black" size="20.0" />
-            </font>
-            <GridPane.margin>
-               <Insets bottom="10.0" top="10.0" />
-            </GridPane.margin>
-         </CheckBox>
-         <CheckBox fx:id="d1CheckBox" layoutX="10.0" layoutY="1101.0" mnemonicParsing="false" prefHeight="63.0" prefWidth="248.0" text="Opcion 4 (valor null)" textFill="#00ffa9" GridPane.rowIndex="10">
-            <font>
-               <Font name="Bodoni MT Black" size="20.0" />
-            </font>
-            <GridPane.margin>
-               <Insets top="35.0" />
-            </GridPane.margin>
-         </CheckBox>
-         <CheckBox fx:id="c1CheckBox" layoutX="10.0" layoutY="1324.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="135.0" text="Opcion 3" textFill="#00ffa9" GridPane.rowIndex="9">
-            <font>
-               <Font name="Bodoni MT Black" size="20.0" />
-            </font>
-            <GridPane.margin>
-               <Insets top="20.0" />
-            </GridPane.margin>
-         </CheckBox>
-         <CheckBox fx:id="a2CheckBox" layoutX="10.0" layoutY="1204.0" mnemonicParsing="false" text="Opcion 1" textFill="#00ffa9" GridPane.columnIndex="1" GridPane.rowIndex="7">
-            <font>
-               <Font name="Bodoni MT Black" size="20.0" />
-            </font>
-            <GridPane.margin>
-               <Insets bottom="25.0" />
-            </GridPane.margin>
-         </CheckBox>
-         <CheckBox fx:id="b2CheckBox" layoutX="10.0" layoutY="1242.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="142.0" text="Opcion 2" textFill="#00ffa9" GridPane.columnIndex="1" GridPane.rowIndex="8">
-            <font>
-               <Font name="Bodoni MT Black" size="20.0" />
-            </font>
-            <GridPane.margin>
-               <Insets bottom="10.0" />
-            </GridPane.margin>
-         </CheckBox>
-         <CheckBox fx:id="c2CheckBox" layoutX="10.0" layoutY="1282.0" mnemonicParsing="false" text="Opcion 3" textFill="#00ffa9" GridPane.columnIndex="1" GridPane.rowIndex="9">
-            <font>
-               <Font name="Bodoni MT Black" size="20.0" />
-            </font>
-            <GridPane.margin>
-               <Insets top="15.0" />
-            </GridPane.margin>
-         </CheckBox>
-         <CheckBox fx:id="d2CheckBox" layoutX="10.0" layoutY="1324.0" mnemonicParsing="false" text="Opcion 4 (valor null)" textFill="#00ffa9" GridPane.columnIndex="1" GridPane.rowIndex="10">
-            <font>
-               <Font name="Bodoni MT Black" size="20.0" />
-            </font>
-            <GridPane.margin>
-               <Insets top="25.0" />
-            </GridPane.margin>
-         </CheckBox>
-         <Text fill="#ff00e1" layoutX="10.0" layoutY="1179.0" text="&lt;&lt;&lt; Pregunta dos &gt;&gt;&gt;" wrappingWidth="358.3999938964844" GridPane.columnIndex="1" GridPane.rowIndex="6">
+         <Text fill="#ff00e1" layoutX="10.0" layoutY="1179.0" text="&lt;&lt;&lt; Esperando INFO &gt;&gt;&gt;" wrappingWidth="358.3999938964844" GridPane.columnIndex="1" GridPane.rowIndex="6">
             <font>
                <Font name="Berlin Sans FB" size="19.0" />
             </font>
          </Text>
-         <Button fx:id="guardarButton" mnemonicParsing="false" onAction="#guardarSeleccion" text="Responder" GridPane.rowIndex="21">
-            <GridPane.margin>
-               <Insets top="25.0" />
-            </GridPane.margin>
-         </Button>
-         <Text fill="#ff00e1" layoutX="10.0" layoutY="1257.0" text="&lt;&lt;&lt; Pregunta tres &gt;&gt;&gt;" wrappingWidth="358.3999938964844" GridPane.rowIndex="11">
+         <Text fill="#ff00e1" layoutX="10.0" layoutY="1257.0" text="&lt;&lt;&lt; Esperando INFO &gt;&gt;&gt;" wrappingWidth="358.3999938964844" GridPane.rowIndex="11">
             <font>
                <Font name="Berlin Sans FB" size="19.0" />
             </font>
@@ -242,39 +172,7 @@
                <Insets top="25.0" />
             </GridPane.margin>
          </Text>
-         <CheckBox fx:id="a3CheckBox" layoutX="10.0" layoutY="1277.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="128.0" text="Opcion 1" textFill="#00ffa6" GridPane.rowIndex="12">
-            <font>
-               <Font name="Bodoni MT Black" size="20.0" />
-            </font>
-            <GridPane.margin>
-               <Insets bottom="5.0" top="20.0" />
-            </GridPane.margin>
-         </CheckBox>
-         <CheckBox fx:id="b3CheckBox" layoutX="10.0" layoutY="1308.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="160.0" text="Opcion 2" textFill="#00ffa9" GridPane.rowIndex="13">
-            <font>
-               <Font name="Bodoni MT Black" size="20.0" />
-            </font>
-            <GridPane.margin>
-               <Insets bottom="5.0" top="35.0" />
-            </GridPane.margin>
-         </CheckBox>
-         <CheckBox fx:id="c3CheckBox" layoutX="10.0" layoutY="1358.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="135.0" text="Opcion 3" textFill="#00ffa9" GridPane.rowIndex="14">
-            <font>
-               <Font name="Bodoni MT Black" size="20.0" />
-            </font>
-            <GridPane.margin>
-               <Insets top="40.0" />
-            </GridPane.margin>
-         </CheckBox>
-         <CheckBox fx:id="d3CheckBox" layoutX="10.0" layoutY="1317.0" mnemonicParsing="false" prefHeight="63.0" prefWidth="248.0" text="Opcion 4 (valor null)" textFill="#00ffa9" GridPane.rowIndex="15">
-            <font>
-               <Font name="Bodoni MT Black" size="20.0" />
-            </font>
-            <GridPane.margin>
-               <Insets top="45.0" />
-            </GridPane.margin>
-         </CheckBox>
-         <Text fill="#ff00e1" layoutX="10.0" layoutY="1269.0" text="&lt;&lt;&lt; Pregunta cinco &gt;&gt;&gt;" wrappingWidth="358.3999938964844" GridPane.rowIndex="16">
+         <Text fill="#ff00e1" layoutX="10.0" layoutY="1269.0" text="&lt;&lt;&lt; Esperando INFO &gt;&gt;&gt;" wrappingWidth="358.3999938964844" GridPane.rowIndex="16">
             <font>
                <Font name="Berlin Sans FB" size="19.0" />
             </font>
@@ -282,38 +180,6 @@
                <Insets top="35.0" />
             </GridPane.margin>
          </Text>
-         <CheckBox fx:id="a5CheckBox" layoutX="10.0" layoutY="1370.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="128.0" text="Opcion 1" textFill="#00ffa6" GridPane.rowIndex="17">
-            <font>
-               <Font name="Bodoni MT Black" size="20.0" />
-            </font>
-            <GridPane.margin>
-               <Insets top="20.0" />
-            </GridPane.margin>
-         </CheckBox>
-         <CheckBox fx:id="b5CheckBox" layoutX="10.0" layoutY="1412.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="160.0" text="Opcion 2" textFill="#00ffa9" GridPane.rowIndex="18">
-            <font>
-               <Font name="Bodoni MT Black" size="20.0" />
-            </font>
-            <GridPane.margin>
-               <Insets top="20.0" />
-            </GridPane.margin>
-         </CheckBox>
-         <CheckBox fx:id="c5CheckBox" layoutX="10.0" layoutY="1455.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="135.0" text="Opcion 3" textFill="#00ffa9" GridPane.rowIndex="19">
-            <font>
-               <Font name="Bodoni MT Black" size="20.0" />
-            </font>
-            <GridPane.margin>
-               <Insets top="20.0" />
-            </GridPane.margin>
-         </CheckBox>
-         <CheckBox fx:id="d5CheckBox" layoutX="10.0" layoutY="1499.0" mnemonicParsing="false" prefHeight="63.0" prefWidth="248.0" text="Opcion 4 (valor null)" textFill="#00ffa9" GridPane.rowIndex="20">
-            <font>
-               <Font name="Bodoni MT Black" size="20.0" />
-            </font>
-            <GridPane.margin>
-               <Insets top="20.0" />
-            </GridPane.margin>
-         </CheckBox>
          <Text fill="#ff00e1" layoutX="10.0" layoutY="1348.0" text="&lt;&lt;&lt; Pregunta cuatro &gt;&gt;&gt;" wrappingWidth="358.3999938964844" GridPane.columnIndex="1" GridPane.rowIndex="11">
             <font>
                <Font name="Berlin Sans FB" size="19.0" />
@@ -322,38 +188,6 @@
                <Insets top="25.0" />
             </GridPane.margin>
          </Text>
-         <CheckBox fx:id="a4CheckBox" layoutX="10.0" layoutY="1369.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="128.0" text="Opcion 1" textFill="#00ffa6" GridPane.columnIndex="1" GridPane.rowIndex="12">
-            <font>
-               <Font name="Bodoni MT Black" size="20.0" />
-            </font>
-            <GridPane.margin>
-               <Insets bottom="5.0" top="20.0" />
-            </GridPane.margin>
-         </CheckBox>
-         <CheckBox fx:id="b4CheckBox" layoutX="10.0" layoutY="1411.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="160.0" text="Opcion 2" textFill="#00ffa9" GridPane.columnIndex="1" GridPane.rowIndex="13">
-            <font>
-               <Font name="Bodoni MT Black" size="20.0" />
-            </font>
-            <GridPane.margin>
-               <Insets bottom="5.0" top="35.0" />
-            </GridPane.margin>
-         </CheckBox>
-         <CheckBox fx:id="c4CheckBox" layoutX="10.0" layoutY="1454.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="135.0" text="Opcion 3" textFill="#00ffa9" GridPane.columnIndex="1" GridPane.rowIndex="14">
-            <font>
-               <Font name="Bodoni MT Black" size="20.0" />
-            </font>
-            <GridPane.margin>
-               <Insets top="40.0" />
-            </GridPane.margin>
-         </CheckBox>
-         <CheckBox fx:id="d4CheckBox" layoutX="10.0" layoutY="1498.0" mnemonicParsing="false" prefHeight="63.0" prefWidth="248.0" text="Opcion 4 (valor null)" textFill="#00ffa9" GridPane.columnIndex="1" GridPane.rowIndex="15">
-            <font>
-               <Font name="Bodoni MT Black" size="20.0" />
-            </font>
-            <GridPane.margin>
-               <Insets top="45.0" />
-            </GridPane.margin>
-         </CheckBox>
          <Button fx:id="juegoButton" alignment="CENTER" contentDisplay="TOP" layoutX="10.0" layoutY="1775.0" mnemonicParsing="false" onAction="#nueva_ventana" opacity="0.04" text="JUGAR" GridPane.halignment="RIGHT" GridPane.rowIndex="2" GridPane.valignment="TOP">
             <effect>
                <ColorAdjust />
