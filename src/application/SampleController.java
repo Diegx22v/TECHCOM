@@ -27,8 +27,6 @@ public class SampleController {
 
     private boolean juego_iniciado;
     private boolean inicia_ventana;
-
-    
     @FXML
     void proyecto_web(ActionEvent event) throws URISyntaxException,IOException{
     	Desktop.getDesktop().browse(new URI("https://colab.research.google.com/drive/1dygH6NjFvrz2Slhufk2ilNR_kD5C48as"));
@@ -187,8 +185,7 @@ public class SampleController {
                 }
             }
         }
-    }
-
+    }   
     public boolean getjuegoiniciado() {
     	return juego_iniciado;
     }
@@ -212,5 +209,5 @@ public class SampleController {
         			JOptionPane.showMessageDialog(null,e);
         		}
         }
-    // TODO: Desde aqui puedes hacer cualquier cosa Franklin para tus juegos.. 
+    // Franklin's games/methods for the project
 }
