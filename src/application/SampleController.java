@@ -179,24 +179,25 @@ public class SampleController {
             }
         }
     }
-@FXML    
-private void nueva_ventana() {
-    	try {
-    		Parent root = FXMLLoader.load(getClass().getResource("preguntas.fxml"));
-    		Stage preguntas = new Stage();
-    		preguntas.setTitle("Juegos locos franklin");
-    		preguntas.setScene(new Scene(root,800,600));
-    		preguntas.show();
-    	}
-    		catch(Exception e){
-    			JOptionPane.showMessageDialog(null,e);
-    		}
-    }
+
     public boolean getjuegoiniciado() {
     	return juego_iniciado;
     }
     public boolean getinicia_ventana() {
     	return inicia_ventana;
     }
-    
+    @FXML    
+    private void nueva_ventana() {
+        	try {
+        		Parent root = FXMLLoader.load(getClass().getResource("preguntas.fxml"));
+        		Stage preguntas = new Stage();
+        		preguntas.setTitle("Juegos locos franklin");
+        		preguntas.setScene(new Scene(root,800,600));
+        		preguntas.show();
+        	}
+        		catch(Exception e){
+        			JOptionPane.showMessageDialog(null,e);
+        		}
+        }
+    // TODO: Desde aqui puedes hacer cualquier cosa Franklin para tus juegos.. 
 }
