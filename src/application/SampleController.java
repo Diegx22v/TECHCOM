@@ -24,7 +24,6 @@ public class SampleController {
     private Button juegoButton;
     @FXML
     private Hyperlink proyecto;
-
     private boolean juego_iniciado;
     private boolean inicia_ventana;
     @FXML
