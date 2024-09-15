@@ -21,6 +21,5 @@
            <li> <a href="https://gluonhq.com/products/javafx/">SDK de Java FX</a></li>
            <li> <a href="https://marketplace.eclipse.org/content/efxclipse">e(fx)eclipse (Extensión del IDE)</a></li>
            <li> <a href="https://marketplace.eclipse.org/content/egit-git-integration-eclipse">egit (Extensión del IDE)</a></li>
-            <li></li>
-           </b>
+      </b>
  </ol>
