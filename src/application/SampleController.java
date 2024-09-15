@@ -192,7 +192,9 @@ public class SampleController {
         		Parent root = FXMLLoader.load(getClass().getResource("preguntas.fxml"));
         		Stage preguntas = new Stage();
         		preguntas.setTitle("Juegos locos franklin");
-        		preguntas.setScene(new Scene(root,800,600));
+        		Scene juegos_locos_franklin = new Scene(root,800,600);
+        		preguntas.setScene(juegos_locos_franklin);
+                juegos_locos_franklin.getStylesheets().add(getClass().getResource("styles.css").toExternalForm());
         		preguntas.show();
         	}
         		catch(Exception e){
