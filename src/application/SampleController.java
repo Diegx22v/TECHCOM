@@ -23,9 +23,14 @@ public class SampleController {
     @FXML
     private Button juegoButton;
     @FXML
-    private Hyperlink proyecto;
+    private Hyperlink proyecto,proyectodos;
     private boolean juego_iniciado;
     private boolean inicia_ventana;
+    @FXML
+    void proyecto_web_2(ActionEvent event)throws URISyntaxException,IOException {
+    	Desktop.getDesktop().browse(new URI("https://elevenlabs.io/"));
+    }
+    
     @FXML
     void proyecto_web(ActionEvent event) throws URISyntaxException,IOException{
     	Desktop.getDesktop().browse(new URI("https://colab.research.google.com/drive/1dygH6NjFvrz2Slhufk2ilNR_kD5C48as"));

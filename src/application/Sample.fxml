@@ -17,12 +17,12 @@
 <?import javafx.scene.text.Text?>
 <?import javafx.scene.web.WebView?>
 
-<ScrollPane fitToHeight="true" fitToWidth="true" prefHeight="1904.0" prefWidth="1846.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+<ScrollPane fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" pannable="true" prefHeight="1284.0" prefWidth="1530.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
     <content>
-        <GridPane hgap="20" prefHeight="1640.0" prefWidth="1683.0" styleClass="main-container" vgap="20">
+        <GridPane hgap="20.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1747.0" prefWidth="1516.0" styleClass="main-container" vgap="20.0">
             <columnConstraints>
-                <ColumnConstraints percentWidth="45.0" />
-                <ColumnConstraints maxWidth="-Infinity" minWidth="-Infinity" percentWidth="60.0" />
+                <ColumnConstraints fillWidth="false" percentWidth="82.0" />
+                <ColumnConstraints fillWidth="false" percentWidth="17.0" />
             </columnConstraints>
             
             <Text text="Bienvenidos a nuestra Aplicación :)" wrappingWidth="555.2000122070312" GridPane.columnIndex="0" GridPane.rowIndex="0">
@@ -53,7 +53,7 @@
                </DropShadow>
             </effect>
             <GridPane.margin>
-               <Insets left="5.0" />
+               <Insets />
             </GridPane.margin></Text>
             
             <Text text="* Dayana Torres       * Mia Nuñez              * Franklin Chunga     * Carlos Velez            * Diego Villota  " wrappingWidth="207.99993896484375" GridPane.columnIndex="0" GridPane.rowIndex="1">
@@ -77,29 +77,23 @@
                </RadialGradient>
             </fill>
             <GridPane.margin>
-               <Insets left="5.0" />
+               <Insets left="5.0" top="40.0" />
             </GridPane.margin></Text>
             
-            <WebView fx:id="webView" maxHeight="458.0" maxWidth="780.0" minHeight="452.0" minWidth="537.0" prefHeight="458.0" prefWidth="780.0" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="2" GridPane.vgrow="ALWAYS">
+            <WebView fx:id="webView" maxHeight="458.0" maxWidth="889.0" minHeight="404.0" minWidth="537.0" prefHeight="418.0" prefWidth="851.0" GridPane.columnSpan="2" GridPane.rowIndex="2" GridPane.vgrow="ALWAYS">
             <GridPane.margin>
-               <Insets bottom="20.0" left="30.0" right="35.0" top="-1.0" />
+               <Insets left="500.0" />
             </GridPane.margin></WebView>
             
-            <ImageView fitHeight="198.0" fitWidth="259.0" onMouseClicked="#nueva_ventana" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1">
+            <ImageView fitHeight="201.0" fitWidth="231.0" onMouseClicked="#nueva_ventana" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1">
                 <image>
                     <Image url="@TECHCOM.png" />
                 </image>
-            <GridPane.margin>
-               <Insets bottom="20.0" right="30.0" top="11.0" />
-            </GridPane.margin>
             </ImageView>
-         <ImageView fitHeight="48.0" fitWidth="213.0" layoutX="550.0" layoutY="260.0" GridPane.columnIndex="1" GridPane.halignment="RIGHT">
+         <ImageView fitHeight="48.0" fitWidth="231.0" layoutX="550.0" layoutY="260.0" GridPane.columnIndex="1" GridPane.halignment="CENTER">
             <image>
                <Image url="@delfos.png" />
             </image>
-            <GridPane.margin>
-               <Insets bottom="90.0" right="30.0" />
-            </GridPane.margin>
          </ImageView>
          <Text layoutX="30.0" layoutY="497.0" text="Integrantes" textAlignment="CENTER" wrappingWidth="453.0" GridPane.rowIndex="1" GridPane.valignment="TOP">
             <font>
@@ -159,10 +153,44 @@
                <Insets left="5.0" />
             </GridPane.margin>
          </Text>
-         <Text fill="#ff00e1" layoutX="30.0" layoutY="1014.0" text="&lt;&lt;&lt; ESPERANDO INFO &gt;&gt;&gt;" wrappingWidth="358.3999938964844" GridPane.rowIndex="4">
+         <Text layoutX="30.0" layoutY="1014.0" text="¿Que es la clonación de voces?" wrappingWidth="216.79998779296875" GridPane.halignment="LEFT" GridPane.rowIndex="4" GridPane.valignment="CENTER">
             <font>
-               <Font name="Berlin Sans FB" size="19.0" />
+               <Font name="Berlin Sans FB" size="21.0" />
             </font>
+            <GridPane.margin>
+               <Insets bottom="50.0" />
+            </GridPane.margin>
+            <fill>
+               <RadialGradient centerX="0.1703539696414914" centerY="0.5" cycleMethod="REFLECT" focusAngle="-3.69" focusDistance="0.5688071819620399" radius="1.0">
+                  <stops>
+                     <Stop>
+                        <color>
+                           <Color red="0.20483431220054626" green="0.3223833739757538" blue="0.7473683953285217" />
+                        </color>
+                     </Stop>
+                     <Stop offset="0.006729475100942127">
+                        <color>
+                           <Color green="0.23333333432674408" blue="1.0" />
+                        </color>
+                     </Stop>
+                     <Stop offset="0.497560975609756">
+                        <color>
+                           <Color red="0.699999988079071" green="1.1102230246251565E-16" blue="1.0" opacity="0.949999988079071" />
+                        </color>
+                     </Stop>
+                     <Stop offset="0.9804878048780488">
+                        <color>
+                           <Color red="1.0" green="1.0" blue="1.0" opacity="0.949999988079071" />
+                        </color>
+                     </Stop>
+                     <Stop offset="1.0">
+                        <color>
+                           <Color red="1.0" />
+                        </color>
+                     </Stop>
+                  </stops>
+               </RadialGradient>
+            </fill>
          </Text>
          <Text fill="#ff00e1" layoutX="30.0" layoutY="1008.0" text="&lt;&lt;&lt; ESPERANDO INFO &gt;&gt;&gt;" wrappingWidth="358.3999938964844" GridPane.columnIndex="1" GridPane.rowIndex="3">
             <font>
@@ -173,53 +201,6 @@
             <font>
                <Font name="Berlin Sans FB" size="19.0" />
             </font>
-         </Text>
-         <Text fill="#ff00e1" layoutX="30.0" layoutY="1049.0" text="&lt;&lt;&lt; ESPERANDO INFO &gt;&gt;&gt;" wrappingWidth="358.3999938964844" GridPane.columnIndex="1" GridPane.rowIndex="5">
-            <font>
-               <Font name="Berlin Sans FB" size="19.0" />
-            </font>
-         </Text>
-         <Text fill="#ff00e1" layoutX="596.0" layoutY="1049.0" text="&lt;&lt;&lt; ESPERANDO INFO &gt;&gt;&gt;" wrappingWidth="358.3999938964844" GridPane.rowIndex="5">
-            <font>
-               <Font name="Berlin Sans FB" size="19.0" />
-            </font>
-         </Text>
-         <Text fill="#ff00e1" layoutX="10.0" layoutY="1035.0" text="&lt;&lt;&lt; Esperando INFO &gt;&gt;&gt;" wrappingWidth="358.3999938964844" GridPane.rowIndex="6">
-            <font>
-               <Font name="Berlin Sans FB" size="19.0" />
-            </font>
-            <GridPane.margin>
-               <Insets bottom="10.0" top="10.0" />
-            </GridPane.margin>
-         </Text>
-         <Text fill="#ff00e1" layoutX="10.0" layoutY="1179.0" text="&lt;&lt;&lt; Esperando INFO &gt;&gt;&gt;" wrappingWidth="358.3999938964844" GridPane.columnIndex="1" GridPane.rowIndex="6">
-            <font>
-               <Font name="Berlin Sans FB" size="19.0" />
-            </font>
-         </Text>
-         <Text fill="#ff00e1" layoutX="10.0" layoutY="1257.0" text="&lt;&lt;&lt; Esperando INFO &gt;&gt;&gt;" wrappingWidth="358.3999938964844" GridPane.rowIndex="11">
-            <font>
-               <Font name="Berlin Sans FB" size="19.0" />
-            </font>
-            <GridPane.margin>
-               <Insets top="25.0" />
-            </GridPane.margin>
-         </Text>
-         <Text fill="#ff00e1" layoutX="10.0" layoutY="1269.0" text="&lt;&lt;&lt; Esperando INFO &gt;&gt;&gt;" wrappingWidth="358.3999938964844" GridPane.rowIndex="16">
-            <font>
-               <Font name="Berlin Sans FB" size="19.0" />
-            </font>
-            <GridPane.margin>
-               <Insets top="35.0" />
-            </GridPane.margin>
-         </Text>
-         <Text fill="#ff00e1" layoutX="10.0" layoutY="1348.0" text="&lt;&lt;&lt; Pregunta cuatro &gt;&gt;&gt;" wrappingWidth="358.3999938964844" GridPane.columnIndex="1" GridPane.rowIndex="11">
-            <font>
-               <Font name="Berlin Sans FB" size="19.0" />
-            </font>
-            <GridPane.margin>
-               <Insets top="25.0" />
-            </GridPane.margin>
          </Text>
          <Text layoutX="10.0" layoutY="222.0" text="DeepFake" textAlignment="CENTER" wrappingWidth="453.0" GridPane.rowIndex="2" GridPane.valignment="TOP">
             <font>
@@ -263,35 +244,89 @@
                </LinearGradient>
             </textFill>
          </Hyperlink>
+         <Text layoutX="10.0" layoutY="474.0" text="Clonacion de voces" textAlignment="CENTER" wrappingWidth="541.0001220703125" GridPane.halignment="LEFT" GridPane.rowIndex="4" GridPane.valignment="TOP">
+            <font>
+               <Font name="Goudy Stout" size="29.0" />
+            </font>
+            <fill>
+               <RadialGradient centerX="0.6602209944751382" centerY="0.6421800947867299" cycleMethod="REPEAT" focusDistance="-0.5057471264367817" radius="0.4540229885057471">
+                  <stops>
+                     <Stop>
+                        <color>
+                           <Color red="0.1723976582288742" green="0.6947368383407593" blue="0.6947368383407593" />
+                        </color>
+                     </Stop>
+                     <Stop offset="1.0">
+                        <color>
+                           <Color red="0.17249999940395355" green="0.3274872899055481" blue="0.6899999976158142" />
+                        </color>
+                     </Stop>
+                  </stops>
+               </RadialGradient>
+            </fill>
+         </Text>
+         <Text layoutX="10.0" layoutY="1151.0" text="Es una tecnología que usa la Inteligencia Artificial (IA) y de algoritmos de aprendizaje automático para replicar la voz de una persona, es posible generar voces sintéticas que suenen igual que una voz humana." wrappingWidth="358.3999938964844" GridPane.halignment="LEFT" GridPane.rowIndex="4" GridPane.valignment="BOTTOM" GridPane.vgrow="ALWAYS">
+            <font>
+               <Font name="Berlin Sans FB" size="19.0" />
+            </font>
+            <fill>
+               <LinearGradient cycleMethod="REFLECT" endX="0.9848484992980957" endY="1.0" startX="0.9147727272727273">
+                  <stops>
+                     <Stop>
+                        <color>
+                           <Color red="0.20483431220054626" green="0.3223833739757538" blue="0.7473683953285217" />
+                        </color>
+                     </Stop>
+                     <Stop offset="0.006729475100942127">
+                        <color>
+                           <Color red="0.20483431220054626" green="0.3223833739757538" blue="0.7473683953285217" />
+                        </color>
+                     </Stop>
+                     <Stop offset="0.49756097560975604">
+                        <color>
+                           <Color green="0.7699999809265137" blue="0.23100000619888306" opacity="0.949999988079071" />
+                        </color>
+                     </Stop>
+                     <Stop offset="1.0">
+                        <color>
+                           <Color red="1.0" green="1.0" blue="1.0" />
+                        </color>
+                     </Stop>
+                  </stops>
+               </LinearGradient>
+            </fill>
+            <GridPane.margin>
+               <Insets top="10.0" />
+            </GridPane.margin>
+         </Text>
+         <Hyperlink fx:id="proyectodos" layoutX="10.0" layoutY="813.0" onAction="#proyecto_web_2" text="LINK AL PROYECTO" GridPane.rowIndex="5">
+            <font>
+               <Font name="Goudy Stout" size="24.0" />
+            </font>
+            <textFill>
+               <LinearGradient cycleMethod="REPEAT" endX="0.8503787878787877" endY="0.4147727272727273" startX="0.4621212274739237">
+                  <stops>
+                     <Stop>
+                        <color>
+                           <Color red="0.1723976582288742" green="0.6947368383407593" blue="0.6947368383407593" />
+                        </color>
+                     </Stop>
+                     <Stop offset="1.0">
+                        <color>
+                           <Color red="0.17249999940395355" green="0.3274872899055481" blue="0.6899999976158142" />
+                        </color>
+                     </Stop>
+                  </stops>
+               </LinearGradient>
+            </textFill>
+         </Hyperlink>
              <rowConstraints>
-            <RowConstraints valignment="CENTER" vgrow="SOMETIMES" />
-            <RowConstraints />
-            <RowConstraints />
-            <RowConstraints />
-             <RowConstraints />
-             <RowConstraints />
-             <RowConstraints />
-             <RowConstraints maxHeight="38.0" minHeight="6.0" prefHeight="19.0" />
-              <RowConstraints maxHeight="48.799999999999955" minHeight="0.0" prefHeight="19.0" />
-            <RowConstraints maxHeight="27.999951171874955" minHeight="0.0" prefHeight="19.999926757812545" />
-            <RowConstraints maxHeight="24.0" minHeight="10.0" prefHeight="30.0" />
-            <RowConstraints maxHeight="24.0" minHeight="5.6000488281249545" prefHeight="21.599926757812455" />
-            <RowConstraints maxHeight="24.0" minHeight="5.6000488281249545" prefHeight="21.599926757812455" />
-            <RowConstraints maxHeight="24.0" minHeight="5.6000488281249545" prefHeight="21.599926757812455" />
-            <RowConstraints maxHeight="24.0" minHeight="10.0" prefHeight="30.0" />
-            <RowConstraints maxHeight="24.0" minHeight="10.0" prefHeight="30.0" />
-            <RowConstraints maxHeight="24.0" minHeight="10.0" prefHeight="30.0" />
-            <RowConstraints maxHeight="24.0" minHeight="10.0" prefHeight="30.0" />
-            <RowConstraints maxHeight="24.0" minHeight="10.0" prefHeight="30.0" />
-            <RowConstraints maxHeight="24.0" minHeight="10.0" prefHeight="30.0" />
-            <RowConstraints maxHeight="24.0" minHeight="10.0" prefHeight="30.0" />
-            <RowConstraints maxHeight="24.0" minHeight="10.0" prefHeight="30.0" />
-            <RowConstraints maxHeight="24.0" minHeight="0.0" prefHeight="2.4000244140625" />
-            <RowConstraints maxHeight="15.200000000000045" minHeight="0.0" prefHeight="1.5999755859375" />
-            <RowConstraints maxHeight="0.0" minHeight="0.0" prefHeight="0.0" />
-            <RowConstraints maxHeight="0.0" minHeight="0.0" prefHeight="0.0" />
-            <RowConstraints maxHeight="0.0" minHeight="0.0" prefHeight="0.0" />
-            <RowConstraints />
+            <RowConstraints percentHeight="10.0" valignment="CENTER" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="254.13332519531247" minHeight="175.5999755859375" percentHeight="10.0" prefHeight="191.5999755859375" />
+            <RowConstraints maxHeight="490.39998168945306" minHeight="381.79998779296875" percentHeight="25.0" prefHeight="391.4000244140625" />
+            <RowConstraints maxHeight="89.06672363281245" minHeight="0.0" percentHeight="3.0" prefHeight="63.99990234374991" />
+             <RowConstraints maxHeight="327.0" minHeight="67.99992675781243" percentHeight="15.0" prefHeight="327.0" />
+            <RowConstraints maxHeight="273.60009765625" minHeight="67.99992675781243" percentHeight="4.0" prefHeight="84.0" />
          </rowConstraints>
         </GridPane>
     </content>
