@@ -1,16 +1,20 @@
 package application;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.control.CheckBox;
+import javafx.scene.control.Hyperlink;
 import javafx.scene.image.Image;
 import javafx.scene.web.WebView;
 import javafx.stage.Stage;
-
 import javax.swing.JOptionPane;
+import java.awt.Desktop;
+import java.io.IOException;
+import java.net.URI;
+import java.net.URISyntaxException;
 import java.util.Random;
 
 public class SampleController {
@@ -18,18 +22,22 @@ public class SampleController {
     private WebView webView;
     @FXML
     private Button juegoButton;
+    @FXML
+    private Hyperlink proyecto;
 
     private boolean juego_iniciado;
     private boolean inicia_ventana;
+
     
+    @FXML
+    void proyecto_web(ActionEvent event) throws URISyntaxException,IOException{
+    	Desktop.getDesktop().browse(new URI("https://colab.research.google.com/drive/1dygH6NjFvrz2Slhufk2ilNR_kD5C48as"));
+    }
     @FXML
     public void initialize() {
         String youtubeEmbedUrl = "https://www.youtube.com/embed/kAbrnfx7axc";
         webView.getEngine().load(youtubeEmbedUrl);
     }
-    
-   
-    
     @FXML
     private void iniciarJuego() {
 
