@@ -51,7 +51,10 @@
                      <Color red="0.13177387416362762" green="0.6842105388641357" blue="0.33433398604393005" />
                   </color>
                </DropShadow>
-            </effect></Text>
+            </effect>
+            <GridPane.margin>
+               <Insets left="5.0" />
+            </GridPane.margin></Text>
             
             <Text text="* Dayana Torres       * Mia Nuñez              * Franklin Chunga     * Carlos Velez            * Diego Villota  " wrappingWidth="207.99993896484375" GridPane.columnIndex="0" GridPane.rowIndex="1">
             <font>
@@ -72,7 +75,10 @@
                      </Stop>
                   </stops>
                </RadialGradient>
-            </fill></Text>
+            </fill>
+            <GridPane.margin>
+               <Insets left="5.0" />
+            </GridPane.margin></Text>
             
             <WebView fx:id="webView" maxHeight="458.0" maxWidth="780.0" minHeight="452.0" minWidth="537.0" prefHeight="458.0" prefWidth="780.0" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="2" GridPane.vgrow="ALWAYS">
             <GridPane.margin>
@@ -116,7 +122,7 @@
                </RadialGradient>
             </fill>
             <GridPane.margin>
-               <Insets top="-5.0" />
+               <Insets left="2.0" top="-5.0" />
             </GridPane.margin>
          </Text>
          <Text layoutX="30.0" layoutY="390.0" text="Un deepfake es un video, audio o imagen la cualimita el sonido o la apariencia de una persona,este suele ser tan convincente que puedeterminar engañando al espectador. Son ejecutados por medio de la inteligencia artificial." wrappingWidth="257.59991455078125" GridPane.rowIndex="2">
@@ -149,6 +155,9 @@
                   </stops>
                </RadialGradient>
             </fill>
+            <GridPane.margin>
+               <Insets left="5.0" />
+            </GridPane.margin>
          </Text>
          <Text fill="#ff00e1" layoutX="30.0" layoutY="1014.0" text="&lt;&lt;&lt; ESPERANDO INFO &gt;&gt;&gt;" wrappingWidth="358.3999938964844" GridPane.rowIndex="4">
             <font>
