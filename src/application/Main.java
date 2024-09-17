@@ -15,7 +15,7 @@ public class Main extends Application {
         Image icono = new Image(getClass().getResourceAsStream("TECHCOM.png"));
         primaryStage.getIcons().add(icono);
         Parent root = FXMLLoader.load(getClass().getResource("Sample.fxml"));
-        Scene scene = new Scene(root, 1900,1060);
+        Scene scene = new Scene(root, 800,600);
         scene.getStylesheets().add(getClass().getResource("styles.css").toExternalForm());
         
         primaryStage.setTitle("Proyecto");
@@ -24,6 +24,7 @@ public class Main extends Application {
     }
 
     public static void main(String[] args) {
-        launch(args);
+    	System.out.println(Utils.suma(2, 5));
+    	launch(args);
     }
 }
