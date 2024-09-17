@@ -21,7 +21,9 @@ public class SampleController {
     @FXML
     private WebView webView;
     @FXML
-    private Button juegoButton;
+    private Button juegoButton,video_dos;
+    @FXML 
+    private Button video_uno;
     @FXML
     private Hyperlink proyecto,proyectodos;
     private boolean juego_iniciado;
@@ -31,14 +33,29 @@ public class SampleController {
     	Desktop.getDesktop().browse(new URI("https://elevenlabs.io/"));
     }
     
+    public static void main(String[] args) {
+    	String url;
+    }
+    @FXML
+    void set_video1() {
+    	initialize("https://www.youtube.com/embed/kAbrnfx7axc");
+    }
+    
+    
+    @FXML
+    void set_video2() {
+    	initialize("https://www.youtube.com/embed/7kcF9v4oo7M");
+    }
+    
+    
     @FXML
     void proyecto_web(ActionEvent event) throws URISyntaxException,IOException{
     	Desktop.getDesktop().browse(new URI("https://colab.research.google.com/drive/1dygH6NjFvrz2Slhufk2ilNR_kD5C48as"));
     }
     @FXML
-    public void initialize() {
+    public void initialize(String url) {
         String youtubeEmbedUrl = "https://www.youtube.com/embed/kAbrnfx7axc";
-        webView.getEngine().load(youtubeEmbedUrl);
+        webView.getEngine().load(url);
     }
     @FXML
     private void iniciarJuego() {
