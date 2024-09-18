@@ -4,27 +4,36 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
+import javafx.scene.control.Alert.AlertType;
 import javafx.scene.image.Image;
-import utils.Utils;
 import javafx.stage.Stage;
 
 public class Main extends Application {
     @Override
     public void start(@SuppressWarnings("exports") Stage primaryStage) throws Exception {
-    	
-        Image icono = new Image(getClass().getResourceAsStream("TECHCOM.png"));
+    	try {
+        Image icono = new Image(getClass().getResourceAsStream("resources/TECHCOM.png"));
         primaryStage.getIcons().add(icono);
         Parent root = FXMLLoader.load(getClass().getResource("Sample.fxml"));
         Scene scene = new Scene(root, 800,600);
-        scene.getStylesheets().add(getClass().getResource("styles.css").toExternalForm());
+        scene.getStylesheets().add(getClass().getResource("resources/styles.css").toExternalForm());
         
-        primaryStage.setTitle("Proyecto");
+        primaryStage.setTitle("TECHCOM");
         primaryStage.setScene(scene);
         primaryStage.show();
+    }catch(Exception e){
+	    Alert errorAlert = new Alert(AlertType.ERROR);
+	    errorAlert.setTitle("Error en la Aplicación");
+	    errorAlert.setHeaderText("Error en la ejecución");
+	    errorAlert.setContentText("error: "+e); 
+	    Stage errores = (Stage) errorAlert.getDialogPane().getScene().getWindow();
+	    errores.getIcons().add(new Image(getClass().getResourceAsStream("resources/error_icon.png")));
+	    errorAlert.showAndWait(); 
+	}
     }
 
     public static void main(String[] args) {
-    	System.out.println(Utils.suma(2, 5));
     	launch(args);
     }
 }
