@@ -1,4 +1,4 @@
-module Ejemplo {
+module ejem {
 	requires javafx.controls;
 	requires javafx.fxml;
 	requires javafx.web;
