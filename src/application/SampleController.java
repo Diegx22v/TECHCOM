@@ -58,11 +58,13 @@ public class SampleController {
     
     public void cargar_video(String url) {
     	webEngine.load(url);
+    	
     }
     
     @FXML
     public void initialize() {
     	 webEngine = webView.getEngine();
+    	 cargar_video("https://www.youtube.com/embed/kAbrnfx7axc");
     }
     @FXML
     private void iniciarJuego() {
