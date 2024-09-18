@@ -18,7 +18,7 @@
 <?import javafx.scene.text.Text?>
 <?import javafx.scene.web.WebView?>
 
-<ScrollPane fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" pannable="true" prefHeight="1284.0" prefWidth="1906.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+<ScrollPane fitToHeight="true" fitToWidth="true" prefHeight="1284.0" prefWidth="1906.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
     <content>
         <GridPane hgap="20.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1747.0" prefWidth="1905.0" styleClass="main-container" vgap="20.0">
             <columnConstraints>
@@ -88,7 +88,7 @@
             
             <ImageView accessibleRole="BUTTON" fitHeight="201.0" fitWidth="231.0" onMouseClicked="#nueva_ventana" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.hgrow="ALWAYS" GridPane.rowSpan="2" GridPane.valignment="CENTER">
                 <image>
-                    <Image url="@TECHCOM.png" />
+                    <Image url="@resources/TECHCOM.png" />
                 </image>
             <effect>
                <DropShadow>
@@ -103,7 +103,7 @@
             </ImageView>
          <ImageView fitHeight="48.0" fitWidth="231.0" layoutX="550.0" layoutY="260.0" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.valignment="TOP">
             <image>
-               <Image url="@delfos.png" />
+               <Image url="@resources/delfos.png" />
             </image>
             <GridPane.margin>
                <Insets right="5.0" top="10.0" />

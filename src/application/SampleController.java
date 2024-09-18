@@ -228,11 +228,11 @@ public class SampleController {
         		Parent root = FXMLLoader.load(getClass().getResource("preguntas.fxml"));
         		Stage preguntas = new Stage();
         		preguntas.setTitle("Juegos locos franklin");
-                Image icono = new Image(getClass().getResourceAsStream("TECHCOM.png"));
+                Image icono = new Image(getClass().getResourceAsStream("resources/TECHCOM.png"));
                 preguntas.getIcons().add(icono);
         		Scene juegos_locos_franklin = new Scene(root,800,600);
         		preguntas.setScene(juegos_locos_franklin);
-                juegos_locos_franklin.getStylesheets().add(getClass().getResource("styles.css").toExternalForm());
+                juegos_locos_franklin.getStylesheets().add(getClass().getResource("resources/styles.css").toExternalForm());
         		preguntas.show();
         	}catch(Exception e){
         		    Alert errorAlert = new Alert(AlertType.ERROR);
@@ -240,7 +240,7 @@ public class SampleController {
         		    errorAlert.setHeaderText("Error en la ejecución");
         		    errorAlert.setContentText("error: "+e); 
         		    Stage errores = (Stage) errorAlert.getDialogPane().getScene().getWindow();
-        		    errores.getIcons().add(new Image(getClass().getResourceAsStream("error_icon.png")));
+        		    errores.getIcons().add(new Image(getClass().getResourceAsStream("resources/error_icon.png")));
         		    errorAlert.showAndWait(); 
         		}
         }
