@@ -5,9 +5,12 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
+import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.Button;
 import javafx.scene.control.Hyperlink;
 import javafx.scene.image.Image;
+import javafx.scene.web.WebEngine;
 import javafx.scene.web.WebView;
 import javafx.stage.Stage;
 import javax.swing.JOptionPane;
@@ -21,6 +24,9 @@ public class SampleController {
     @FXML
     private WebView webView;
     @FXML
+    private WebEngine webEngine;
+
+    @FXML
     private Button juegoButton,video_dos;
     @FXML 
     private Button video_uno;
@@ -33,18 +39,15 @@ public class SampleController {
     	Desktop.getDesktop().browse(new URI("https://elevenlabs.io/"));
     }
     
-    public static void main(String[] args) {
-    	String url;
-    }
     @FXML
     void set_video1() {
-    	initialize("https://www.youtube.com/embed/kAbrnfx7axc");
+    	cargar_video("https://www.youtube.com/embed/kAbrnfx7axc");
     }
     
     
     @FXML
     void set_video2() {
-    	initialize("https://www.youtube.com/embed/7kcF9v4oo7M");
+    	cargar_video("https://www.youtube.com/embed/7kcF9v4oo7M");
     }
     
     
@@ -52,10 +55,14 @@ public class SampleController {
     void proyecto_web(ActionEvent event) throws URISyntaxException,IOException{
     	Desktop.getDesktop().browse(new URI("https://colab.research.google.com/drive/1dygH6NjFvrz2Slhufk2ilNR_kD5C48as"));
     }
+    
+    public void cargar_video(String url) {
+    	webEngine.load(url);
+    }
+    
     @FXML
-    public void initialize(String url) {
-        String youtubeEmbedUrl = "https://www.youtube.com/embed/kAbrnfx7axc";
-        webView.getEngine().load(url);
+    public void initialize() {
+    	 webEngine = webView.getEngine();
     }
     @FXML
     private void iniciarJuego() {
@@ -225,9 +232,14 @@ public class SampleController {
         		preguntas.setScene(juegos_locos_franklin);
                 juegos_locos_franklin.getStylesheets().add(getClass().getResource("styles.css").toExternalForm());
         		preguntas.show();
-        	}
-        		catch(Exception e){
-        			JOptionPane.showMessageDialog(null,e);
+        	}catch(Exception e){
+        		    Alert errorAlert = new Alert(AlertType.ERROR);
+        		    errorAlert.setTitle("Error en la Aplicación");
+        		    errorAlert.setHeaderText("Error en la ejecución");
+        		    errorAlert.setContentText("error: "+e); 
+        		    Stage errores = (Stage) errorAlert.getDialogPane().getScene().getWindow();
+        		    errores.getIcons().add(new Image(getClass().getResourceAsStream("error_icon.png")));
+        		    errorAlert.showAndWait(); 
         		}
         }
     // Franklin's games/methods for the project
