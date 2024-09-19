@@ -1,5 +1,6 @@
 package application;
 
+import javafx.animation.ScaleTransition;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -13,6 +14,8 @@ import javafx.scene.image.Image;
 import javafx.scene.web.WebEngine;
 import javafx.scene.web.WebView;
 import javafx.stage.Stage;
+import javafx.util.Duration;
+
 import javax.swing.JOptionPane;
 import java.awt.Desktop;
 import java.io.IOException;
@@ -26,6 +29,7 @@ public class SampleController {
     @FXML
     private WebEngine webEngine;
 
+    private ScaleTransition animacion,animacion_dos;
     @FXML
     private Button juegoButton,video_dos;
     @FXML 
@@ -41,12 +45,16 @@ public class SampleController {
     
     @FXML
     void set_video1() {
+    	animacion.stop(); 
+        animacion.playFromStart(); 
     	cargar_video("https://www.youtube.com/embed/kAbrnfx7axc");
     }
     
     
     @FXML
     void set_video2() {
+    	animacion_dos.stop(); 
+        animacion_dos.playFromStart(); 
     	cargar_video("https://www.youtube.com/embed/7kcF9v4oo7M");
     }
     
@@ -63,6 +71,17 @@ public class SampleController {
     
     @FXML
     public void initialize() {
+    	 animacion = new ScaleTransition(Duration.millis(200), video_uno);
+         animacion.setByX(0.2);
+         animacion.setByY(0.2);
+         animacion.setAutoReverse(true);
+         animacion.setCycleCount(2);
+        
+         animacion_dos = new ScaleTransition(Duration.millis(200), video_dos);
+         animacion_dos.setByX(0.2);
+         animacion_dos.setByY(0.2);
+         animacion_dos.setAutoReverse(true);
+         animacion_dos.setCycleCount(2);
     	 webEngine = webView.getEngine();
     	 cargar_video("https://www.youtube.com/embed/kAbrnfx7axc");
     }
