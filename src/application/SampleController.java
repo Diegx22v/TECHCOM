@@ -28,7 +28,8 @@ public class SampleController {
     @FXML
     private WebEngine webEngine;
 
-    private ScaleTransition click_uno,click_dos,cursor_uno,cursor_dos;
+    @SuppressWarnings("unused")
+	private ScaleTransition animacion;
     @FXML
     private Button juegoButton,video_dos;
     @FXML 
@@ -40,33 +41,19 @@ public class SampleController {
     
     @FXML
     public void initialize() {
-    	 click_uno = new ScaleTransition(Duration.millis(200), video_uno);
-    	 click_uno.setByX(0.20);
-    	 click_uno.setByY(0.20);
-    	 click_uno.setAutoReverse(true);
-    	 click_uno.setCycleCount(2);
-    	 
-    	 cursor_uno = new ScaleTransition(Duration.millis(100), video_uno);
-    	 cursor_uno.setByX(0.1);
-    	 cursor_uno.setByY(0.1);
-    	 cursor_uno.setAutoReverse(true);
-    	 cursor_uno.setCycleCount(2);
-    	 
-        
-    	 click_dos = new ScaleTransition(Duration.millis(200), video_dos);
-    	 click_dos.setByX(0.20);
-    	 click_dos.setByY(0.20);
-    	 click_dos.setAutoReverse(true);
-    	 click_dos.setCycleCount(2);
-    	 
-    	 cursor_dos = new ScaleTransition(Duration.millis(100), video_dos);
-    	 cursor_dos.setByX(0.1);
-    	 cursor_dos.setByY(0.1);
-    	 cursor_dos.setAutoReverse(true);
-    	 cursor_dos.setCycleCount(2);
-    	 
     	 webEngine = webView.getEngine();
     	 cargar_video("https://www.youtube.com/embed/kAbrnfx7axc");
+    }
+    
+    void animacion_boton(int duracion,double x,double y,Button button) {
+    	ScaleTransition animacion = new ScaleTransition(Duration.millis(duracion),button);
+    	animacion.setByX(x);
+    	animacion.setByY(y);
+    	animacion.setAutoReverse(true);
+    	animacion.setCycleCount(2);
+    	animacion.play();
+    	animacion.stop(); 
+    	animacion.playFromStart(); 
     }
     
     @FXML
@@ -76,27 +63,24 @@ public class SampleController {
     
     @FXML
     void  softcursor1() {
-    	cursor_uno.stop(); 
-        cursor_uno.playFromStart(); 
+    	animacion_boton(150,0.15,0.10,video_uno);
+
     }
     
     @FXML
     void softcursor2() {
-    	cursor_dos.stop(); 
-        cursor_dos.playFromStart(); 
+    	animacion_boton(150,0.15,0.10,video_dos);
     }
     
     @FXML
     void set_video1() {
-    	click_uno.stop(); 
-        click_uno.playFromStart(); 
+    	animacion_boton(200,0.20,0.20,video_uno);
     	cargar_video("https://www.youtube.com/embed/kAbrnfx7axc");
     }
     
     @FXML
     void set_video2() {
-    	click_dos.stop(); 
-        click_dos.playFromStart(); 
+    	animacion_boton(200,0.20,0.20,video_dos);
     	cargar_video("https://www.youtube.com/embed/7kcF9v4oo7M");
     }
     
