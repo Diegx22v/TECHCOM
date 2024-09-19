@@ -37,6 +37,38 @@ public class SampleController {
     private Hyperlink proyecto,proyectodos;
     private boolean juego_iniciado;
     private boolean inicia_ventana;
+    
+    @FXML
+    public void initialize() {
+    	 click_uno = new ScaleTransition(Duration.millis(200), video_uno);
+    	 click_uno.setByX(0.20);
+    	 click_uno.setByY(0.20);
+    	 click_uno.setAutoReverse(true);
+    	 click_uno.setCycleCount(2);
+    	 
+    	 cursor_uno = new ScaleTransition(Duration.millis(100), video_uno);
+    	 cursor_uno.setByX(0.1);
+    	 cursor_uno.setByY(0.1);
+    	 cursor_uno.setAutoReverse(true);
+    	 cursor_uno.setCycleCount(2);
+    	 
+        
+    	 click_dos = new ScaleTransition(Duration.millis(200), video_dos);
+    	 click_dos.setByX(0.20);
+    	 click_dos.setByY(0.20);
+    	 click_dos.setAutoReverse(true);
+    	 click_dos.setCycleCount(2);
+    	 
+    	 cursor_dos = new ScaleTransition(Duration.millis(100), video_dos);
+    	 cursor_dos.setByX(0.1);
+    	 cursor_dos.setByY(0.1);
+    	 cursor_dos.setAutoReverse(true);
+    	 cursor_dos.setCycleCount(2);
+    	 
+    	 webEngine = webView.getEngine();
+    	 cargar_video("https://www.youtube.com/embed/kAbrnfx7axc");
+    }
+    
     @FXML
     void proyecto_web_2(ActionEvent event)throws URISyntaxException,IOException {
     	Desktop.getDesktop().browse(new URI("https://elevenlabs.io/"));
@@ -77,38 +109,7 @@ public class SampleController {
     	webEngine.load(url);
     	
     }
-    
-    @FXML
-    public void initialize() {
-    	 click_uno = new ScaleTransition(Duration.millis(200), video_uno);
-    	 click_uno.setByX(0.20);
-    	 click_uno.setByY(0.20);
-    	 click_uno.setAutoReverse(true);
-    	 click_uno.setCycleCount(2);
-    	 
-    	 cursor_uno = new ScaleTransition(Duration.millis(200), video_uno);
-    	 cursor_uno.setByX(0.1);
-    	 cursor_uno.setByY(0.1);
-    	 cursor_uno.setAutoReverse(true);
-    	 cursor_uno.setCycleCount(2);
-    	 
         
-    	 click_dos = new ScaleTransition(Duration.millis(200), video_dos);
-    	 click_dos.setByX(0.20);
-    	 click_dos.setByY(0.20);
-    	 click_dos.setAutoReverse(true);
-    	 click_dos.setCycleCount(2);
-    	 
-    	 cursor_dos = new ScaleTransition(Duration.millis(200), video_dos);
-    	 cursor_dos.setByX(0.1);
-    	 cursor_dos.setByY(0.1);
-    	 cursor_dos.setAutoReverse(true);
-    	 cursor_dos.setCycleCount(2);
-    	 
-    	 webEngine = webView.getEngine();
-    	 cargar_video("https://www.youtube.com/embed/kAbrnfx7axc");
-    }
-    
     public boolean getinicia_ventana() {
     	return inicia_ventana;
     }    
