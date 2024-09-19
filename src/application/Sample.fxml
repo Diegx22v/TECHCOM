@@ -324,7 +324,7 @@
                </LinearGradient>
             </textFill>
          </Hyperlink>
-         <Button fx:id="video_dos" alignment="TOP_RIGHT" contentDisplay="CENTER" defaultButton="true" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#set_video2" prefHeight="32.0" prefWidth="158.0" style="-fx-background-color: c6bafe;" text="VIDEO DOS" textOverrun="WORD_ELLIPSIS" underline="true" GridPane.columnSpan="2" GridPane.halignment="RIGHT" GridPane.rowIndex="4" GridPane.valignment="TOP">
+         <Button fx:id="video_dos" alignment="TOP_RIGHT" contentDisplay="CENTER" defaultButton="true" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#set_video2" onMouseEntered="#softcursor2" prefHeight="32.0" prefWidth="158.0" style="-fx-background-color: c6bafe;" text="VIDEO DOS" textOverrun="WORD_ELLIPSIS" underline="true" GridPane.columnSpan="2" GridPane.halignment="RIGHT" GridPane.rowIndex="4" GridPane.valignment="TOP">
             <GridPane.margin>
                <Insets right="100.0" />
             </GridPane.margin>
@@ -354,7 +354,7 @@
                   </color>
                </DropShadow>
             </effect></Button>
-         <Button fx:id="video_uno" alignment="TOP_RIGHT" layoutX="1476.0" layoutY="881.0" mnemonicParsing="false" onAction="#set_video1" style="-fx-background-color: c6bafe;" text="VIDEO UNO" GridPane.halignment="RIGHT" GridPane.rowIndex="4" GridPane.valignment="BASELINE">
+         <Button fx:id="video_uno" alignment="TOP_RIGHT" layoutX="1476.0" layoutY="881.0" mnemonicParsing="false" onAction="#set_video1" onMouseEntered="#softcursor1" style="-fx-background-color: c6bafe;" text="VIDEO UNO" GridPane.halignment="RIGHT" GridPane.rowIndex="4" GridPane.valignment="BASELINE">
             <GridPane.margin>
                <Insets right="200.0" />
             </GridPane.margin>
