@@ -87,9 +87,9 @@
                <Insets bottom="20.0" right="30.0" top="10.0" />
             </GridPane.margin>
             </ImageView>
-         <ImageView fitHeight="48.0" fitWidth="213.0" layoutX="550.0" layoutY="260.0" GridPane.columnIndex="1" GridPane.halignment="RIGHT">
+         <ImageView fitHeight="48.0" fitWidth="213.0" layoutX="550.0" layoutY="260.0" onMouseClicked="#iniciarJuego" GridPane.columnIndex="1" GridPane.halignment="RIGHT">
             <image>
-               <Image url="@delfos.png" />
+               <Image url="@resources/delfos.png" />
             </image>
             <GridPane.margin>
                <Insets bottom="90.0" right="30.0" />
