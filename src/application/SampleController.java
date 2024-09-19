@@ -28,7 +28,7 @@ public class SampleController {
     @FXML
     private WebEngine webEngine;
 
-    private ScaleTransition animacion,animacion_dos;
+    private ScaleTransition click_uno,click_dos,cursor_uno,cursor_dos;
     @FXML
     private Button juegoButton,video_dos;
     @FXML 
@@ -43,17 +43,28 @@ public class SampleController {
     }
     
     @FXML
+    void  softcursor1() {
+    	cursor_uno.stop(); 
+        cursor_uno.playFromStart(); 
+    }
+    @FXML
+    void softcursor2() {
+    	cursor_dos.stop(); 
+        cursor_dos.playFromStart(); 
+    }
+    
+    @FXML
     void set_video1() {
-    	animacion.stop(); 
-        animacion.playFromStart(); 
+    	click_uno.stop(); 
+        click_uno.playFromStart(); 
     	cargar_video("https://www.youtube.com/embed/kAbrnfx7axc");
     }
     
     
     @FXML
     void set_video2() {
-    	animacion_dos.stop(); 
-        animacion_dos.playFromStart(); 
+    	click_dos.stop(); 
+        click_dos.playFromStart(); 
     	cargar_video("https://www.youtube.com/embed/7kcF9v4oo7M");
     }
     
@@ -70,17 +81,31 @@ public class SampleController {
     
     @FXML
     public void initialize() {
-    	 animacion = new ScaleTransition(Duration.millis(200), video_uno);
-         animacion.setByX(0.2);
-         animacion.setByY(0.2);
-         animacion.setAutoReverse(true);
-         animacion.setCycleCount(2);
+    	 click_uno = new ScaleTransition(Duration.millis(200), video_uno);
+    	 click_uno.setByX(0.2);
+    	 click_uno.setByY(0.2);
+    	 click_uno.setAutoReverse(true);
+    	 click_uno.setCycleCount(2);
+    	 
+    	 cursor_uno = new ScaleTransition(Duration.millis(200), video_uno);
+    	 cursor_uno.setByX(0.05);
+    	 cursor_uno.setByY(0.05);
+    	 cursor_uno.setAutoReverse(true);
+    	 cursor_uno.setCycleCount(2);
+    	 
         
-         animacion_dos = new ScaleTransition(Duration.millis(200), video_dos);
-         animacion_dos.setByX(0.2);
-         animacion_dos.setByY(0.2);
-         animacion_dos.setAutoReverse(true);
-         animacion_dos.setCycleCount(2);
+    	 click_dos = new ScaleTransition(Duration.millis(200), video_dos);
+    	 click_dos.setByX(0.2);
+    	 click_dos.setByY(0.2);
+    	 click_dos.setAutoReverse(true);
+    	 click_dos.setCycleCount(2);
+    	 
+    	 cursor_dos = new ScaleTransition(Duration.millis(200), video_dos);
+    	 cursor_dos.setByX(0.05);
+    	 cursor_dos.setByY(0.05);
+    	 cursor_dos.setAutoReverse(true);
+    	 cursor_dos.setCycleCount(2);
+    	 
     	 webEngine = webView.getEngine();
     	 cargar_video("https://www.youtube.com/embed/kAbrnfx7axc");
     }
