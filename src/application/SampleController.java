@@ -15,7 +15,6 @@ import javafx.scene.web.WebEngine;
 import javafx.scene.web.WebView;
 import javafx.stage.Stage;
 import javafx.util.Duration;
-
 import javax.swing.JOptionPane;
 import java.awt.Desktop;
 import java.io.IOException;
