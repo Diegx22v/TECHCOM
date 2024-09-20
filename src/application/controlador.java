@@ -22,7 +22,7 @@ import java.net.URI;
 import java.net.URISyntaxException;
 
 
-public class SampleController {
+public class controlador {
     @FXML
     private WebView webView;
     @FXML
@@ -111,7 +111,7 @@ public class SampleController {
     @FXML    
     private void nueva_ventana() {
         	try {
-        		Parent root = FXMLLoader.load(getClass().getResource("preguntas.fxml"));
+        		Parent root = FXMLLoader.load(getClass().getResource("games/menu_principal.fxml"));
         		Stage preguntas = new Stage();
         		preguntas.setTitle("Juegos locos franklin");
                 Image icono = new Image(getClass().getResourceAsStream("resources/TECHCOM.png"));
