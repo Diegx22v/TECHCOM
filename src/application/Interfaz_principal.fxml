@@ -18,7 +18,7 @@
 <?import javafx.scene.text.Text?>
 <?import javafx.scene.web.WebView?>
 
-<ScrollPane fitToHeight="true" fitToWidth="true" prefHeight="1284.0" prefWidth="1906.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controlador">
+<ScrollPane fitToHeight="true" fitToWidth="true" prefHeight="1284.0" prefWidth="1906.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controlador">
     <content>
         <GridPane hgap="20.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1747.0" prefWidth="1905.0" styleClass="main-container" vgap="20.0">
             <columnConstraints>
