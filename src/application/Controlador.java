@@ -9,6 +9,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.Button;
+import javafx.scene.control.ButtonBar;
 import javafx.scene.control.Hyperlink;
 import javafx.scene.image.Image;
 import javafx.scene.web.WebEngine;
@@ -22,14 +23,23 @@ import java.net.URI;
 import java.net.URISyntaxException;
 
 
-public class controlador {
+public class Controlador {
     @FXML
     private WebView webView;
     @FXML
     private WebEngine webEngine;
+    @FXML
+    private ButtonBar contenedor;
 
     @SuppressWarnings("unused")
 	private ScaleTransition animacion;
+    
+    @FXML 
+    private Button creditos;
+    @FXML 
+    private Button salir;
+    @FXML 
+    private Button jugar;
     @FXML
     private Button juegoButton,video_dos;
     @FXML 
@@ -73,6 +83,27 @@ public class controlador {
     }
     
     @FXML
+    void softcursor3() {
+    	animacion_boton(150,0.15,0.10,jugar);
+    }
+    
+    @FXML
+    void softcursor4() {
+    	animacion_boton(150,0.15,0.10,creditos);
+    }
+    
+    @FXML
+    void softcursor5() {
+    	animacion_boton(150,0.15,0.10,salir);
+    }
+    
+    @FXML
+    public void cerrarVentana() {
+        Stage stage = (Stage) salir.getScene().getWindow();
+        stage.close();
+    }
+    
+    @FXML
     void set_video1() {
     	animacion_boton(200,0.20,0.20,video_uno);
     	cargar_video("https://www.youtube.com/embed/kAbrnfx7axc");
@@ -111,7 +142,7 @@ public class controlador {
     @FXML    
     private void nueva_ventana() {
         	try {
-        		Parent root = FXMLLoader.load(getClass().getResource("games/menu_principal.fxml"));
+        		Parent root = FXMLLoader.load(getClass().getResource("menu_principal.fxml"));
         		Stage preguntas = new Stage();
         		preguntas.setTitle("Juegos locos franklin");
                 Image icono = new Image(getClass().getResourceAsStream("resources/TECHCOM.png"));
