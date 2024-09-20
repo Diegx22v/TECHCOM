@@ -17,7 +17,7 @@
 <?import javafx.scene.text.Text?>
 <?import javafx.scene.web.WebView?>
 
-<ScrollPane fitToHeight="true" fitToWidth="true" prefHeight="1904.0" prefWidth="1846.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+<ScrollPane fitToHeight="true" fitToWidth="true" prefHeight="1904.0" prefWidth="1846.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controlador">
     <content>
         <GridPane hgap="20" prefHeight="1640.0" prefWidth="1683.0" styleClass="main-container" vgap="20">
             <columnConstraints>
@@ -81,7 +81,7 @@
             
             <ImageView fitHeight="198.0" fitWidth="259.0" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1">
                 <image>
-                    <Image url="@TECHCOM.png" />
+                    <Image url="@resources/TECHCOM.png" />
                 </image>
             <GridPane.margin>
                <Insets bottom="20.0" right="30.0" top="10.0" />

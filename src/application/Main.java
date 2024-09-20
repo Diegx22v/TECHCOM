@@ -10,12 +10,12 @@ import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 public class Main extends Application {
-    @Override
+    @Override 
     public void start(@SuppressWarnings("exports") Stage primaryStage) throws Exception {
     	try {
         Image icono = new Image(getClass().getResourceAsStream("resources/TECHCOM.png"));
         primaryStage.getIcons().add(icono);
-        Parent root = FXMLLoader.load(getClass().getResource("Sample.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("Interfaz_principal.fxml"));
         Scene scene = new Scene(root, 800,600);
         scene.getStylesheets().add(getClass().getResource("resources/styles.css").toExternalForm());
         
