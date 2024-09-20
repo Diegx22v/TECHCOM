@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.web.WebView?>
+
+<ScrollPane fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" prefHeight="992.0" prefWidth="1906.0" vbarPolicy="NEVER" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controlador">
+    <content>
+        <GridPane hgap="20.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1008.0" prefWidth="1920.0" styleClass="main-container" vgap="20.0">
+            <columnConstraints>
+                <ColumnConstraints fillWidth="false" percentWidth="82.0" />
+                <ColumnConstraints fillWidth="false" percentWidth="17.0" />
+            </columnConstraints>
+            
+            <Text text="Menú" textAlignment="CENTER" wrappingWidth="707.2000122070312" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="0">
+            <font>
+               <Font name="Goudy Stout" size="60.0" />
+            </font>
+            <fill>
+               <RadialGradient centerX="0.9116022099447514" centerY="0.8056872037914692" cycleMethod="REPEAT" focusAngle="7.59" focusDistance="-0.6436781609195403" radius="0.3563218390804598">
+                  <stops>
+                     <Stop>
+                        <color>
+                           <Color red="0.1723976582288742" green="0.6947368383407593" blue="0.6947368383407593" />
+                        </color>
+                     </Stop>
+                     <Stop offset="1.0">
+                        <color>
+                           <Color red="0.07017543911933899" green="0.5263158082962036" blue="0.13099415600299835" />
+                        </color>
+                     </Stop>
+                  </stops>
+               </RadialGradient>
+            </fill>
+            <effect>
+               <DropShadow height="16.32" radius="7.66" spread="0.24" width="16.32">
+                  <color>
+                     <Color red="0.13177387416362762" green="0.6842105388641357" blue="0.33433398604393005" />
+                  </color>
+               </DropShadow>
+            </effect>
+            <GridPane.margin>
+               <Insets bottom="20.0" />
+            </GridPane.margin></Text>
+            
+            <WebView fx:id="webView" maxHeight="458.0" maxWidth="889.0" minHeight="404.0" minWidth="537.0" onKeyPressed="#set_video1" prefHeight="418.0" prefWidth="851.0" visible="false" GridPane.columnSpan="2" GridPane.halignment="RIGHT" GridPane.rowIndex="2">
+            <GridPane.margin>
+               <Insets right="20.0" />
+            </GridPane.margin></WebView>
+            
+            <ImageView accessibleRole="BUTTON" fitHeight="201.0" fitWidth="231.0" onMouseClicked="#nueva_ventana" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.hgrow="ALWAYS" GridPane.rowSpan="2" GridPane.valignment="CENTER">
+                <image>
+                    <Image url="@resources/TECHCOM.png" />
+                </image>
+            <effect>
+               <DropShadow>
+                  <color>
+                     <Color green="1.0" blue="0.5" />
+                  </color>
+               </DropShadow>
+            </effect>
+            <GridPane.margin>
+               <Insets top="30.0" />
+            </GridPane.margin>
+            </ImageView>
+         <ImageView fitHeight="48.0" fitWidth="231.0" layoutX="550.0" layoutY="260.0" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.valignment="TOP">
+            <image>
+               <Image url="@resources/delfos.png" />
+            </image>
+            <GridPane.margin>
+               <Insets right="5.0" top="10.0" />
+            </GridPane.margin>
+         </ImageView>
+         <Hyperlink fx:id="proyecto" onAction="#proyecto_web" text="LINK AL PROYECTO" visible="false" GridPane.rowIndex="3">
+            <font>
+               <Font name="Goudy Stout" size="24.0" />
+            </font>
+            <textFill>
+               <LinearGradient cycleMethod="REPEAT" endX="0.8503787878787877" endY="0.4147727272727273" startX="0.4621212274739237">
+                  <stops>
+                     <Stop>
+                        <color>
+                           <Color red="0.1723976582288742" green="0.6947368383407593" blue="0.6947368383407593" />
+                        </color>
+                     </Stop>
+                     <Stop offset="1.0">
+                        <color>
+                           <Color red="0.17249999940395355" green="0.3274872899055481" blue="0.6899999976158142" />
+                        </color>
+                     </Stop>
+                  </stops>
+               </LinearGradient>
+            </textFill>
+         </Hyperlink>
+         <Hyperlink fx:id="proyectodos" layoutX="10.0" layoutY="813.0" onAction="#proyecto_web_2" text="LINK AL PROYECTO" visible="false" GridPane.rowIndex="5">
+            <font>
+               <Font name="Goudy Stout" size="24.0" />
+            </font>
+            <textFill>
+               <LinearGradient cycleMethod="REPEAT" endX="0.8503787878787877" endY="0.4147727272727273" startX="0.4621212274739237">
+                  <stops>
+                     <Stop>
+                        <color>
+                           <Color red="0.1723976582288742" green="0.6947368383407593" blue="0.6947368383407593" />
+                        </color>
+                     </Stop>
+                     <Stop offset="1.0">
+                        <color>
+                           <Color red="0.17249999940395355" green="0.3274872899055481" blue="0.6899999976158142" />
+                        </color>
+                     </Stop>
+                  </stops>
+               </LinearGradient>
+            </textFill>
+         </Hyperlink>
+         <Button fx:id="video_dos" alignment="TOP_RIGHT" contentDisplay="CENTER" defaultButton="true" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#set_video2" onMouseEntered="#softcursor2" prefHeight="32.0" prefWidth="158.0" style="-fx-background-color: c6bafe;" text="VIDEO DOS" textOverrun="WORD_ELLIPSIS" underline="true" visible="false" GridPane.columnSpan="2" GridPane.halignment="RIGHT" GridPane.rowIndex="4" GridPane.valignment="TOP">
+            <GridPane.margin>
+               <Insets right="100.0" />
+            </GridPane.margin>
+            <font>
+               <Font name="Goudy Stout" size="14.0" />
+            </font>
+            <textFill>
+               <LinearGradient endX="1.0" endY="1.0" startX="0.4549763033175355">
+                  <stops>
+                     <Stop>
+                        <color>
+                           <Color green="0.8815789222717285" blue="0.26447367668151855" />
+                        </color>
+                     </Stop>
+                     <Stop offset="1.0">
+                        <color>
+                           <Color red="0.08974983543157578" green="0.01656920090317726" blue="0.8947368264198303" />
+                        </color>
+                     </Stop>
+                  </stops>
+               </LinearGradient>
+            </textFill>
+            <effect>
+               <DropShadow blurType="ONE_PASS_BOX" height="38.59" radius="14.3975" spread="0.4">
+                  <color>
+                     <Color red="0.5598683953285217" blue="0.9078947305679321" />
+                  </color>
+               </DropShadow>
+            </effect></Button>
+         <Button fx:id="video_uno" alignment="TOP_RIGHT" layoutX="1476.0" layoutY="881.0" mnemonicParsing="false" onAction="#set_video1" onMouseEntered="#softcursor1" style="-fx-background-color: c6bafe;" text="VIDEO UNO" visible="false" GridPane.halignment="RIGHT" GridPane.rowIndex="4" GridPane.valignment="BASELINE">
+            <GridPane.margin>
+               <Insets right="200.0" />
+            </GridPane.margin>
+            <font>
+               <Font name="Goudy Stout" size="14.0" />
+            </font>
+            <textFill>
+               <LinearGradient endX="1.0" endY="1.0" startX="0.4644549763033175">
+                  <stops>
+                     <Stop>
+                        <color>
+                           <Color green="0.8815789222717285" blue="0.26447367668151855" />
+                        </color>
+                     </Stop>
+                     <Stop offset="1.0">
+                        <color>
+                           <Color red="0.08974983543157578" green="0.01656920090317726" blue="0.8947368264198303" />
+                        </color>
+                     </Stop>
+                  </stops>
+               </LinearGradient>
+            </textFill>
+            <effect>
+               <DropShadow blurType="ONE_PASS_BOX" height="29.79" radius="12.1975" spread="0.4">
+                  <color>
+                     <Color red="0.6000000238418579" blue="1.0" />
+                  </color>
+               </DropShadow>
+            </effect></Button>
+         <Button fx:id="jugar" alignment="TOP_RIGHT" contentDisplay="CENTER" defaultButton="true" layoutX="1638.0" layoutY="881.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#set_video2" onMouseEntered="#softcursor3" prefHeight="84.0" prefWidth="312.0" style="-fx-background-color: c6bafe;" text="Jugar" textOverrun="WORD_ELLIPSIS" underline="true" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP">
+            <font>
+               <Font name="Goudy Stout" size="40.0" />
+            </font>
+            <textFill>
+               <LinearGradient endX="1.0" endY="1.0" startX="0.4549763033175355">
+                  <stops>
+                     <Stop>
+                        <color>
+                           <Color green="0.8815789222717285" blue="0.26447367668151855" />
+                        </color>
+                     </Stop>
+                     <Stop offset="1.0">
+                        <color>
+                           <Color red="0.08974983543157578" green="0.01656920090317726" blue="0.8947368264198303" />
+                        </color>
+                     </Stop>
+                  </stops>
+               </LinearGradient>
+            </textFill>
+            <effect>
+               <DropShadow blurType="ONE_PASS_BOX" height="38.59" radius="14.3975" spread="0.4">
+                  <color>
+                     <Color red="0.5598683953285217" blue="0.9078947305679321" />
+                  </color>
+               </DropShadow>
+            </effect>
+            <GridPane.margin>
+               <Insets />
+            </GridPane.margin>
+         </Button>
+         <Button fx:id="creditos" alignment="TOP_RIGHT" contentDisplay="CENTER" defaultButton="true" layoutX="797.0" layoutY="486.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#set_video2" onMouseEntered="#softcursor4" prefHeight="84.0" prefWidth="424.0" style="-fx-background-color: c6bafe;" text="Creditos" textOverrun="WORD_ELLIPSIS" underline="true" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+            <font>
+               <Font name="Goudy Stout" size="40.0" />
+            </font>
+            <textFill>
+               <LinearGradient endX="1.0" endY="1.0" startX="0.4549763033175355">
+                  <stops>
+                     <Stop>
+                        <color>
+                           <Color green="0.8815789222717285" blue="0.26447367668151855" />
+                        </color>
+                     </Stop>
+                     <Stop offset="1.0">
+                        <color>
+                           <Color red="0.08974983543157578" green="0.01656920090317726" blue="0.8947368264198303" />
+                        </color>
+                     </Stop>
+                  </stops>
+               </LinearGradient>
+            </textFill>
+            <effect>
+               <DropShadow blurType="ONE_PASS_BOX" height="38.59" radius="14.3975" spread="0.4">
+                  <color>
+                     <Color red="0.5598683953285217" blue="0.9078947305679321" />
+                  </color>
+               </DropShadow>
+            </effect>
+         </Button>
+         <Button fx:id="salir" alignment="TOP_RIGHT" contentDisplay="CENTER" defaultButton="true" layoutX="741.0" layoutY="543.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#cerrarVentana" onMouseEntered="#softcursor5" prefHeight="84.0" prefWidth="289.0" style="-fx-background-color: c6bafe;" text="Salir" textOverrun="WORD_ELLIPSIS" underline="true" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
+            <font>
+               <Font name="Goudy Stout" size="40.0" />
+            </font>
+            <textFill>
+               <LinearGradient endX="1.0" endY="1.0" startX="0.4549763033175355">
+                  <stops>
+                     <Stop>
+                        <color>
+                           <Color green="0.8815789222717285" blue="0.26447367668151855" />
+                        </color>
+                     </Stop>
+                     <Stop offset="1.0">
+                        <color>
+                           <Color red="0.08974983543157578" green="0.01656920090317726" blue="0.8947368264198303" />
+                        </color>
+                     </Stop>
+                  </stops>
+               </LinearGradient>
+            </textFill>
+            <effect>
+               <DropShadow blurType="ONE_PASS_BOX" height="38.59" radius="14.3975" spread="0.4">
+                  <color>
+                     <Color red="0.5598683953285217" blue="0.9078947305679321" />
+                  </color>
+               </DropShadow>
+            </effect>
+         </Button>
+             <rowConstraints>
+            <RowConstraints percentHeight="15.0" valignment="CENTER" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="254.13332519531247" minHeight="156.0" percentHeight="20.0" prefHeight="180.0" />
+            <RowConstraints maxHeight="490.39998168945306" minHeight="381.79998779296875" percentHeight="65.0" prefHeight="403.0" />
+            <RowConstraints maxHeight="89.06672363281245" minHeight="0.0" percentHeight="1.0" prefHeight="26.0" />
+             <RowConstraints maxHeight="327.0" minHeight="67.99992675781243" percentHeight="1.0" prefHeight="266.199951171875" />
+            <RowConstraints maxHeight="273.60009765625" minHeight="43.5999755859375" percentHeight="1.0" prefHeight="43.5999755859375" />
+         </rowConstraints>
+        </GridPane>
+    </content>
+</ScrollPane>
