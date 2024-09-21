@@ -86,7 +86,7 @@
                <Insets right="20.0" />
             </GridPane.margin></WebView>
             
-            <ImageView accessibleRole="BUTTON" fitHeight="201.0" fitWidth="231.0" onMouseClicked="#nueva_ventana" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.hgrow="ALWAYS" GridPane.rowSpan="2" GridPane.valignment="CENTER">
+            <ImageView fx:id="Techcom" accessibleRole="BUTTON" fitHeight="201.0" fitWidth="231.0" onMouseClicked="#nueva_ventana" onMouseEntered="#softimage1" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.hgrow="ALWAYS" GridPane.rowSpan="2" GridPane.valignment="CENTER">
                 <image>
                     <Image url="@resources/TECHCOM.png" />
                 </image>

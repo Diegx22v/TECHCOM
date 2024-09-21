@@ -1,9 +1,13 @@
 package application;
 
+import javafx.animation.Animation;
+import javafx.animation.Animation.Status;
+import javafx.animation.FadeTransition;
 import javafx.animation.ScaleTransition;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
@@ -12,6 +16,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.ButtonBar;
 import javafx.scene.control.Hyperlink;
 import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.web.WebEngine;
 import javafx.scene.web.WebView;
 import javafx.stage.Stage;
@@ -31,8 +36,12 @@ public class Controlador {
     @FXML
     private ButtonBar contenedor;
 
+    @FXML
+    private ImageView Techcom;
+    
     @SuppressWarnings("unused")
-	private ScaleTransition animacion;
+    private ScaleTransition animacionTechcom;
+	private ScaleTransition animacion_dos,animacion_uno,animacion_tres,animacion_cuatro,animacion_cinco,animacion_click1,animacion_click2;
     
     @FXML 
     private Button creditos;
@@ -53,18 +62,114 @@ public class Controlador {
     public void initialize() {
     	 webEngine = webView.getEngine();
     	 cargar_video("https://www.youtube.com/embed/kAbrnfx7axc");
+    	    inicializarAnimacion();
+    	    inicializarAnimacion_boton_video1();
+    	    inicializarAnimacion_boton_video2();
+    	    inicializarAnimacion_click_video2();
+    	    inicializarAnimacion_boton_jugar();
+    	    inicializarAnimacion_boton_creditos();
+    	    inicializarAnimacion_boton_salir();
+    	    inicializarAnimacion_click_video1();
     }
     
-    void animacion_boton(int duracion,double x,double y,Button button) {
-    	ScaleTransition animacion = new ScaleTransition(Duration.millis(duracion),button);
-    	animacion.setByX(x);
-    	animacion.setByY(y);
-    	animacion.setAutoReverse(true);
-    	animacion.setCycleCount(2);
-    	animacion.play();
-    	animacion.stop(); 
-    	animacion.playFromStart(); 
+private void inicializarAnimacion_click_video1() {
+        
+	animacion_click1 = new ScaleTransition(Duration.millis(150), video_uno);
+	animacion_click1.setByX(0.15);  
+	animacion_click1.setByY(0.10);  
+	animacion_click1.setAutoReverse(true);
+	animacion_click1.setCycleCount(2);
     }
+    
+    void animacion_click_boton1(ScaleTransition animacion_click1) {
+        if (animacion_click1.getStatus() != Status.RUNNING) {
+        	animacion_click1.playFromStart(); 
+        }}
+    
+    private void inicializarAnimacion_boton_video1() {
+        
+        animacion_uno = new ScaleTransition(Duration.millis(150), video_uno);
+        animacion_uno.setByX(0.15);  
+        animacion_uno.setByY(0.10);  
+        animacion_uno.setAutoReverse(true);
+        animacion_uno.setCycleCount(2);
+    }
+    
+ private void inicializarAnimacion_boton_video2() {
+        
+        animacion_dos = new ScaleTransition(Duration.millis(150), video_dos);
+        animacion_dos.setByX(0.15);  
+        animacion_dos.setByY(0.10);  
+        animacion_dos.setAutoReverse(true);
+        animacion_dos.setCycleCount(2);
+    }
+    
+    void animacion_soft_boton1(ScaleTransition animacion_uno) {
+        if (animacion_uno.getStatus() != Status.RUNNING) {
+            animacion_uno.playFromStart(); 
+        }}
+    
+private void inicializarAnimacion_boton_jugar() {
+        
+	animacion_tres = new ScaleTransition(Duration.millis(150), jugar);
+	animacion_tres.setByX(0.15);  
+	animacion_tres.setByY(0.10);  
+	animacion_tres.setAutoReverse(true);
+	animacion_tres.setCycleCount(2);
+    }
+    
+    void animacion_soft_jugar(ScaleTransition animacion_tres) {
+        if (animacion_tres.getStatus() != Status.RUNNING) {
+            animacion_tres.playFromStart(); 
+        }}
+    
+    private void inicializarAnimacion_boton_creditos() {
+        
+    	animacion_cinco = new ScaleTransition(Duration.millis(150), creditos);
+    	animacion_cinco.setByX(0.15);  
+    	animacion_cinco.setByY(0.10);  
+    	animacion_cinco.setAutoReverse(true);
+    	animacion_cinco.setCycleCount(2);
+        }
+        
+    void animacion_soft_creditos(ScaleTransition animacion_cinco) {
+        if (animacion_cinco.getStatus() != Status.RUNNING) {
+        	animacion_cinco.playFromStart(); 
+        }}
+        
+        private void inicializarAnimacion_boton_salir() {
+            
+        	animacion_cuatro = new ScaleTransition(Duration.millis(150), salir);
+        	animacion_cuatro.setByX(0.15);  
+        	animacion_cuatro.setByY(0.10);  
+        	animacion_cuatro.setAutoReverse(true);
+        	animacion_cuatro.setCycleCount(2);
+            }
+            
+        void animacion_soft_salir(ScaleTransition animacion_cuatro) {
+            if (animacion_cuatro.getStatus() != Status.RUNNING) {
+            	animacion_cuatro.playFromStart(); 
+            }}
+        
+            
+    
+ private void inicializarAnimacion_click_video2() {
+        
+	 animacion_click2 = new ScaleTransition(Duration.millis(200), video_dos);
+	 animacion_click2.setByX(0.20);  
+	 animacion_click2.setByY(0.20);  
+	 animacion_click2.setAutoReverse(true);
+	 animacion_click2.setCycleCount(2);
+    }
+ void animacion_click_boton2(ScaleTransition animacion_click2) {
+     if (animacion_click2.getStatus() != Status.RUNNING) {
+    	 animacion_click2.playFromStart(); 
+     }}
+    
+    void animacion_soft_boton2(ScaleTransition animacion_dos) {
+        if (animacion_dos.getStatus() != Status.RUNNING) {
+        	animacion_dos.playFromStart(); 
+        }}
     
     @FXML
     void proyecto_web_2(ActionEvent event)throws URISyntaxException,IOException {
@@ -73,29 +178,49 @@ public class Controlador {
     
     @FXML
     void  softcursor1() {
-    	animacion_boton(150,0.15,0.10,video_uno);
-
+    	animacion_soft_boton1(animacion_uno);
     }
     
     @FXML
     void softcursor2() {
-    	animacion_boton(150,0.15,0.10,video_dos);
+    	animacion_soft_boton2(animacion_dos);
     }
     
     @FXML
     void softcursor3() {
-    	animacion_boton(150,0.15,0.10,jugar);
+    	animacion_soft_jugar(animacion_tres);
     }
     
     @FXML
     void softcursor4() {
-    	animacion_boton(150,0.15,0.10,creditos);
+    	animacion_soft_creditos(animacion_cinco);
     }
     
     @FXML
     void softcursor5() {
-    	animacion_boton(150,0.15,0.10,salir);
+    	animacion_soft_salir(animacion_cuatro);
     }
+    
+    private void inicializarAnimacion() {
+        
+        animacionTechcom = new ScaleTransition(Duration.millis(150), Techcom);
+        animacionTechcom.setByX(0.15);  
+        animacionTechcom.setByY(0.10);  
+        animacionTechcom.setAutoReverse(true);
+        animacionTechcom.setCycleCount(2);
+    }
+    
+    void animacion_image(ScaleTransition animacion) {
+        if (animacion.getStatus() != Status.RUNNING) {
+            animacion.playFromStart(); 
+        }
+    }
+    
+    @FXML
+    void softimage1() {
+        animacion_image(animacionTechcom);
+    }
+
     
     @FXML
     public void cerrarVentana() {
@@ -105,13 +230,14 @@ public class Controlador {
     
     @FXML
     void set_video1() {
-    	animacion_boton(200,0.20,0.20,video_uno);
+    	animacion_click_boton1(animacion_click1);
+
     	cargar_video("https://www.youtube.com/embed/kAbrnfx7axc");
     }
     
     @FXML
     void set_video2() {
-    	animacion_boton(200,0.20,0.20,video_dos);
+    	animacion_click_boton2(animacion_click2);
     	cargar_video("https://www.youtube.com/embed/7kcF9v4oo7M");
     }
     
@@ -142,15 +268,24 @@ public class Controlador {
     @FXML    
     private void nueva_ventana() {
         	try {
+                animacion_image(animacionTechcom);
+
         		Parent root = FXMLLoader.load(getClass().getResource("menu_principal.fxml"));
         		Stage preguntas = new Stage();
         		preguntas.setTitle("Juegos locos franklin");
                 Image icono = new Image(getClass().getResourceAsStream("resources/TECHCOM.png"));
                 preguntas.getIcons().add(icono);
         		Scene juegos_locos_franklin = new Scene(root,800,600);
+                preguntas.setMaximized(true);
+        		FadeTransition fadeIn = new FadeTransition(Duration.millis(100), root);
+                fadeIn.setFromValue(0.5);
+                fadeIn.setToValue(1.0);
         		preguntas.setScene(juegos_locos_franklin);
                 juegos_locos_franklin.getStylesheets().add(getClass().getResource("resources/styles.css").toExternalForm());
         		preguntas.show();
+                fadeIn.play();
+
+        		 
         	}catch(Exception e){  alerta_de_error(e);  }
         }
     
