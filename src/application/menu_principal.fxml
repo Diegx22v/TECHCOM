@@ -187,7 +187,7 @@
                   </color>
                </DropShadow>
             </effect></Button>
-         <Button fx:id="jugar" alignment="TOP_RIGHT" contentDisplay="CENTER" defaultButton="true" layoutX="1638.0" layoutY="881.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#set_video2" onMouseEntered="#softcursor3" prefHeight="84.0" prefWidth="312.0" style="-fx-background-color: c6bafe;" text="Jugar" textOverrun="WORD_ELLIPSIS" underline="true" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP">
+         <Button fx:id="jugar" alignment="TOP_RIGHT" contentDisplay="CENTER" defaultButton="true" layoutX="1638.0" layoutY="881.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#iniciarJuego" onMouseEntered="#softcursor3" prefHeight="84.0" prefWidth="312.0" style="-fx-background-color: c6bafe;" text="Jugar" textOverrun="WORD_ELLIPSIS" underline="true" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP">
             <font>
                <Font name="Goudy Stout" size="40.0" />
             </font>
