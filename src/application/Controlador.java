@@ -17,6 +17,7 @@ import javafx.scene.control.ButtonBar;
 import javafx.scene.control.Hyperlink;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.text.Text;
 import javafx.scene.web.WebEngine;
 import javafx.scene.web.WebView;
 import javafx.stage.Stage;
@@ -54,6 +55,8 @@ public class Controlador {
     @FXML 
     private Button video_uno;
     @FXML
+    private Text puntos;
+    @FXML
     private Hyperlink proyecto,proyectodos;
     private boolean juego_iniciado;
     private boolean inicia_ventana;
@@ -72,6 +75,8 @@ public class Controlador {
     	    inicializarAnimacion_click_video2();
     	    inicializarAnimacion_click_jugar();
     	    inicializarAnimacion_click_salir();
+    	    int puntosIniciales = 0;
+            puntos.setText(String.valueOf("Puntos: "+puntosIniciales));
     }
     
     
@@ -329,6 +334,12 @@ private void inicializarAnimacion_boton_jugar() {
     public boolean getjuegoiniciado() {
     	return juego_iniciado;
     }
-
+    
+    @FXML
+    private void puntos() {
+    	int Puntos=0;
+    	String Puntos_c = String.valueOf(Puntos);
+    	puntos.setText("Puntos: "+Puntos_c);
+    }
     
 }

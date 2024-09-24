@@ -384,6 +384,34 @@
                   </color>
                </DropShadow>
             </effect></Button>
+         <Text fx:id="puntos" layoutX="599.0" layoutY="70.0" text="." textAlignment="CENTER" visible="false" wrappingWidth="707.2000122070312">
+            <font>
+               <Font name="Goudy Stout" size="36.0" />
+            </font>
+            <fill>
+               <RadialGradient centerX="0.9116022099447514" centerY="0.8056872037914692" cycleMethod="REPEAT" focusAngle="7.59" focusDistance="-0.6436781609195403" radius="0.3563218390804598">
+                  <stops>
+                     <Stop>
+                        <color>
+                           <Color red="0.1723976582288742" green="0.6947368383407593" blue="0.6947368383407593" />
+                        </color>
+                     </Stop>
+                     <Stop offset="1.0">
+                        <color>
+                           <Color red="0.07017543911933899" green="0.5263158082962036" blue="0.13099415600299835" />
+                        </color>
+                     </Stop>
+                  </stops>
+               </RadialGradient>
+            </fill>
+            <effect>
+               <DropShadow height="16.32" radius="7.66" spread="0.24" width="16.32">
+                  <color>
+                     <Color red="0.13177387416362762" green="0.6842105388641357" blue="0.33433398604393005" />
+                  </color>
+               </DropShadow>
+            </effect>
+         </Text>
              <rowConstraints>
             <RowConstraints percentHeight="10.0" valignment="CENTER" vgrow="SOMETIMES" />
             <RowConstraints maxHeight="254.13332519531247" minHeight="175.5999755859375" percentHeight="10.0" prefHeight="191.5999755859375" />
