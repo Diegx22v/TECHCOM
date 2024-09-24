@@ -20,7 +20,7 @@
 
 <ScrollPane fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" prefHeight="992.0" prefWidth="1906.0" vbarPolicy="NEVER" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controlador">
     <content>
-        <GridPane hgap="20.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1008.0" prefWidth="1920.0" styleClass="main-container" vgap="20.0">
+        <GridPane hgap="20.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1008.0" prefWidth="1928.0" styleClass="main-container" vgap="20.0">
             <columnConstraints>
                 <ColumnConstraints fillWidth="false" percentWidth="82.0" />
                 <ColumnConstraints fillWidth="false" percentWidth="17.0" />
@@ -62,7 +62,7 @@
                <Insets right="20.0" />
             </GridPane.margin></WebView>
             
-            <ImageView accessibleRole="BUTTON" fitHeight="201.0" fitWidth="231.0" onMouseClicked="#nueva_ventana" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.hgrow="ALWAYS" GridPane.rowSpan="2" GridPane.valignment="CENTER">
+            <ImageView accessibleRole="BUTTON" fitHeight="201.0" fitWidth="231.0" onMouseClicked="#nueva_ventana" visible="false" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.hgrow="ALWAYS" GridPane.rowSpan="2" GridPane.valignment="CENTER">
                 <image>
                     <Image url="@resources/TECHCOM.png" />
                 </image>
@@ -77,7 +77,7 @@
                <Insets top="30.0" />
             </GridPane.margin>
             </ImageView>
-         <ImageView fitHeight="48.0" fitWidth="231.0" layoutX="550.0" layoutY="260.0" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.valignment="TOP">
+         <ImageView fitHeight="48.0" fitWidth="231.0" layoutX="550.0" layoutY="260.0" visible="false" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.valignment="TOP">
             <image>
                <Image url="@resources/delfos.png" />
             </image>
@@ -274,11 +274,63 @@
                </DropShadow>
             </effect>
          </Button>
+         <Text fx:id="puntos" layoutX="607.0" layoutY="86.0" onKeyPressed="#puntos" text="." wrappingWidth="325.20001220703125" GridPane.columnSpan="2" GridPane.halignment="RIGHT">
+            <font>
+               <Font name="Goudy Stout" size="35.0" />
+            </font>
+            <fill>
+               <RadialGradient centerX="0.9116022099447514" centerY="0.8056872037914692" cycleMethod="REPEAT" focusAngle="7.59" focusDistance="-0.6436781609195403" radius="0.3563218390804598">
+                  <stops>
+                     <Stop>
+                        <color>
+                           <Color red="0.1723976582288742" green="0.6947368383407593" blue="0.6947368383407593" />
+                        </color>
+                     </Stop>
+                     <Stop offset="1.0">
+                        <color>
+                           <Color red="0.07017543911933899" green="0.5263158082962036" blue="0.13099415600299835" />
+                        </color>
+                     </Stop>
+                  </stops>
+               </RadialGradient>
+            </fill>
+            <effect>
+               <DropShadow height="16.32" radius="7.66" spread="0.24" width="16.32">
+                  <color>
+                     <Color red="0.13177387416362762" green="0.6842105388641357" blue="0.33433398604393005" />
+                  </color>
+               </DropShadow>
+            </effect>
+         </Text>
+         <Text layoutX="611.0" layoutY="86.0" text="Versión: 0.0.4" wrappingWidth="212.20001220703125" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.rowSpan="4" GridPane.valignment="BOTTOM">
+            <font>
+               <Font name="Goudy Stout" size="22.0" />
+            </font>
+            <fill>
+               <LinearGradient cycleMethod="REPEAT" endX="1.0" endY="0.5829383886255923" startX="0.17535545023696683">
+                  <stops>
+                     <Stop>
+                        <color>
+                           <Color red="0.5519999861717224" green="0.17249999940395355" blue="0.6899999976158142" />
+                        </color>
+                     </Stop>
+                     <Stop offset="1.0">
+                        <color>
+                           <Color red="0.11208576709032059" green="0.5263158082962036" blue="0.4848927855491638" />
+                        </color>
+                     </Stop>
+                  </stops>
+               </LinearGradient>
+            </fill>
+            <GridPane.margin>
+               <Insets bottom="10.0" left="10.0" />
+            </GridPane.margin>
+         </Text>
              <rowConstraints>
             <RowConstraints percentHeight="15.0" valignment="CENTER" vgrow="SOMETIMES" />
             <RowConstraints maxHeight="254.13332519531247" minHeight="156.0" percentHeight="20.0" prefHeight="180.0" />
-            <RowConstraints maxHeight="490.39998168945306" minHeight="381.79998779296875" percentHeight="65.0" prefHeight="403.0" />
-            <RowConstraints maxHeight="89.06672363281245" minHeight="0.0" percentHeight="1.0" prefHeight="26.0" />
+            <RowConstraints maxHeight="581.0" minHeight="381.79998779296875" percentHeight="65.0" prefHeight="581.0" />
+            <RowConstraints maxHeight="89.06672363281245" minHeight="0.0" percentHeight="1.0" prefHeight="0.0" />
              <RowConstraints maxHeight="327.0" minHeight="67.99992675781243" percentHeight="1.0" prefHeight="266.199951171875" />
             <RowConstraints maxHeight="273.60009765625" minHeight="43.5999755859375" percentHeight="1.0" prefHeight="43.5999755859375" />
          </rowConstraints>
