@@ -75,7 +75,7 @@ public class Controlador {
     	    inicializarAnimacion_click_video2();
     	    inicializarAnimacion_click_jugar();
     	    inicializarAnimacion_click_salir();
-    	    int puntosIniciales = Utils.puntos;
+    	    int puntosIniciales = 0;
             puntos.setText(String.valueOf("Puntos: "+puntosIniciales));
     }
     
@@ -338,9 +338,9 @@ private void inicializarAnimacion_boton_jugar() {
     
     @FXML
     private void puntos() {
-    	int Puntos=0;
-    	String Puntos_c = String.valueOf(Puntos);
-    	puntos.setText("Puntos: "+Puntos_c);
+    	int Puntos_totales = Utils.puntos;
+    	String Texto_P = String.valueOf(Puntos_totales);
+    	puntos.setText("Puntos: "+Texto_P);
     }
     
 }

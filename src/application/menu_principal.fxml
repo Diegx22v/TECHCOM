@@ -274,7 +274,7 @@
                </DropShadow>
             </effect>
          </Button>
-         <Text fx:id="puntos" layoutX="607.0" layoutY="86.0" onKeyPressed="#puntos" text="." wrappingWidth="325.20001220703125" GridPane.columnSpan="2" GridPane.halignment="RIGHT">
+         <Text fx:id="puntos" layoutX="607.0" layoutY="86.0" onKeyPressed="#puntos" onMouseMoved="#puntos" text="." wrappingWidth="325.20001220703125" GridPane.columnSpan="2" GridPane.halignment="RIGHT">
             <font>
                <Font name="Goudy Stout" size="35.0" />
             </font>
