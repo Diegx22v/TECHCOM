@@ -15,6 +15,7 @@ public class Utils {
 	/**
 	 * @param args
 	 */
+	public static int puntos=0;
 	public static void main(String[] args) {
 		// principal
 	}
@@ -32,7 +33,6 @@ public class Utils {
 
             String[] opciones = {"arriba", "abajo", "izquierda", "derecha"};
 
-            while (true) {
 
                 JOptionPane.showMessageDialog(null, "Bienvenido a laberinto", "Juego", JOptionPane.PLAIN_MESSAGE);
                 JOptionPane.showMessageDialog(null, "Comenzamos", "Juego", JOptionPane.PLAIN_MESSAGE);
@@ -132,39 +132,36 @@ public class Utils {
 
                             if (ini == (d - 1)) {
                                 JOptionPane.showMessageDialog(null, "¡Felicidades! Has ganado", "Juego", JOptionPane.PLAIN_MESSAGE);
+                                puntos +=1;
                                 e = JOptionPane.showConfirmDialog(null,"quieres un nivel mas?","juego",JOptionPane.YES_NO_OPTION);
                                 if (e == JOptionPane.YES_OPTION) {
                                     
                                     JOptionPane.showMessageDialog(null, "coming soon", "juego" ,JOptionPane.PLAIN_MESSAGE);
-                                    break;
                                 }
                                 else{
 
                                 JOptionPane.showMessageDialog(null, "adios", "juego" ,JOptionPane.PLAIN_MESSAGE);
 
-                                break;   
                                 }
                                 
                             } else {
                                 JOptionPane.showMessageDialog(null, "Perdiste en la cuarta opción\nLa respuesta correcta era: " + opciones[d - 1], "Juego", JOptionPane.PLAIN_MESSAGE);
-                                break;
                             }
 
                         } else {
                             JOptionPane.showMessageDialog(null, "Perdiste en la tercera opción\nLa respuesta correcta era: " + opciones[c - 1], "Juego", JOptionPane.PLAIN_MESSAGE);
-                            break;
                         }
 
                     } else {
                         JOptionPane.showMessageDialog(null, "Perdiste en la segunda opción\nLa respuesta correcta era: " + opciones[b - 1], "Juego", JOptionPane.PLAIN_MESSAGE);
-                        break;
                     }
                 } else {
                     JOptionPane.showMessageDialog(null, "Perdiste en la primera opción\nLa respuesta correcta era: " + opciones[a - 1], "Juego", JOptionPane.PLAIN_MESSAGE);
-                    break;
                 }
             }
-        }
 	}
 	// crear metodos de java fx para limitar la cantidad de lineas y generar codigo mas legible 
+	public static void restablecer_puntos() {
+		puntos=0;
+	}
 }
