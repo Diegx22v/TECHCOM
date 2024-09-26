@@ -75,7 +75,7 @@ public class Controlador {
     	    inicializarAnimacion_click_video2();
     	    inicializarAnimacion_click_jugar();
     	    inicializarAnimacion_click_salir();
-    	    int puntosIniciales = 0;
+    	    int puntosIniciales = Utils.puntos;
             puntos.setText(String.valueOf("Puntos: "+puntosIniciales));
     }
     
@@ -245,7 +245,7 @@ private void inicializarAnimacion_boton_jugar() {
     @FXML
     private void iniciarJuego() {
     	animacion_click_boton3(animacion_click3);
-    	try { Utils.juego_laberinto(); Stage stage = (Stage) salir.getScene().getWindow();  stage.close(); }
+    	try { Utils.juego_laberinto();/** Stage stage = (Stage) salir.getScene().getWindow();  stage.close()*/ }
     	catch(Exception e) { alerta_de_error(e);  }
     }   
     
@@ -253,6 +253,7 @@ private void inicializarAnimacion_boton_jugar() {
     public void cerrarVentana() {
     	animacion_click_boton4(animacion_click4);
         Stage stage = (Stage) salir.getScene().getWindow();
+        Utils.restablecer_puntos();
         stage.close();
     }
     
