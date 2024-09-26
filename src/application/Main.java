@@ -11,29 +11,38 @@ import javafx.stage.Stage;
 
 public class Main extends Application {
     @Override 
-    public void start(@SuppressWarnings("exports") Stage primaryStage) throws Exception {
-    	try {
-        Image icono = new Image(getClass().getResourceAsStream("resources/TECHCOM.png"));
-        primaryStage.getIcons().add(icono);
-        Parent root = FXMLLoader.load(getClass().getResource("Interfaz_principal.fxml"));
-        Scene scene = new Scene(root, 800,600);
-        scene.getStylesheets().add(getClass().getResource("resources/styles.css").toExternalForm());
-        primaryStage.setMaximized(true);
-        primaryStage.setTitle("TECHCOM");
-        primaryStage.setScene(scene);
-        primaryStage.show();
-    }catch(Exception e){
-	    Alert errorAlert = new Alert(AlertType.ERROR);
-	    errorAlert.setTitle("Error en la Aplicación");
-	    errorAlert.setHeaderText("Error en la ejecución");
-	    errorAlert.setContentText("error: "+e); 
-	    Stage errores = (Stage) errorAlert.getDialogPane().getScene().getWindow();
-	    errores.getIcons().add(new Image(getClass().getResourceAsStream("resources/error_icon.png")));
-	    errorAlert.showAndWait(); 
-	}
+    public void start(Stage primaryStage) throws Exception {
+        try {
+            // Configura el ícono de la aplicación
+            Image icono = new Image(getClass().getResourceAsStream("resources/TECHCOM.png"));
+            primaryStage.getIcons().add(icono);
+
+            // Carga el FXML
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("Interfaz_principal.fxml"));
+            Parent root = loader.load();
+
+
+            // Configura la escena
+            Scene scene = new Scene(root, 800, 600);
+            scene.getStylesheets().add(getClass().getResource("resources/styles.css").toExternalForm());
+            primaryStage.setMaximized(true);
+            primaryStage.setTitle("TECHCOM");
+            primaryStage.setScene(scene);
+            primaryStage.show();
+        } catch (Exception e) {
+            // Manejo de errores
+            Alert errorAlert = new Alert(AlertType.ERROR);
+            errorAlert.setTitle("Error en la Aplicación");
+            errorAlert.setHeaderText("Error en la ejecución");
+            errorAlert.setContentText("error: " + e); 
+            
+            Stage errores = (Stage) errorAlert.getDialogPane().getScene().getWindow();
+            errores.getIcons().add(new Image(getClass().getResourceAsStream("resources/error_icon.png")));
+            errorAlert.showAndWait(); 
+        }
     }
 
     public static void main(String[] args) {
-    	launch(args);
+        launch(args);
     }
 }
