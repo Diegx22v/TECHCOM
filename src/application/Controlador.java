@@ -60,6 +60,7 @@ public class Controlador {
     private Hyperlink proyecto,proyectodos;
     private boolean juego_iniciado;
     private boolean inicia_ventana;
+    private Stage regreso;
     
     @FXML
     public void initialize() {
@@ -245,16 +246,41 @@ private void inicializarAnimacion_boton_jugar() {
     @FXML
     private void iniciarJuego() {
     	animacion_click_boton3(animacion_click3);
-    	try { Utils.juego_laberinto();/** Stage stage = (Stage) salir.getScene().getWindow();  stage.close()*/ }
+    	try { Utils.juego_laberinto(); puntos(); /*Stage stage = (Stage) salir.getScene().getWindow();  stage.show();*/ }
     	catch(Exception e) { alerta_de_error(e);  }
     }   
+
     
     @FXML
     public void cerrarVentana() {
-    	animacion_click_boton4(animacion_click4);
+        animacion_click_boton4(animacion_click4);
+
+        // Cierra la ventana actual
         Stage stage = (Stage) salir.getScene().getWindow();
-        Utils.restablecer_puntos();
+        Utils.restablecer_puntos(); 
         stage.close();
+
+        try {
+    		Parent root = FXMLLoader.load(getClass().getResource("Interfaz_principal.fxml"));
+    		Stage preguntas = new Stage();
+    		preguntas.setTitle("Techcom");
+            Image icono = new Image(getClass().getResourceAsStream("resources/TECHCOM.png"));
+            preguntas.getIcons().add(icono);
+    		Scene juegos_locos_franklin = new Scene(root,800,600);
+            preguntas.setMaximized(true);
+    		preguntas.setScene(juegos_locos_franklin);
+            juegos_locos_franklin.getStylesheets().add(getClass().getResource("resources/styles.css").toExternalForm());
+    		preguntas.show();
+        } catch (Exception e) {
+            Alert errorAlert = new Alert(AlertType.ERROR);
+            errorAlert.setTitle("Error en la Aplicación");
+            errorAlert.setHeaderText("Error en la ejecución");
+            errorAlert.setContentText("error: " + e); 
+
+            Stage errores = (Stage) errorAlert.getDialogPane().getScene().getWindow();
+            errores.getIcons().add(new Image(getClass().getResourceAsStream("resources/error_icon.png")));
+            errorAlert.showAndWait();
+        }
     }
     
     //imagen
@@ -311,7 +337,8 @@ private void inicializarAnimacion_boton_jugar() {
     private void nueva_ventana() {
         	try {
                 animacion_image(animacionTechcom);
-
+                Stage stage = (Stage) Techcom.getScene().getWindow();
+                stage.close();
         		Parent root = FXMLLoader.load(getClass().getResource("menu_principal.fxml"));
         		Stage preguntas = new Stage();
         		preguntas.setTitle("Juegos locos franklin");
@@ -319,15 +346,9 @@ private void inicializarAnimacion_boton_jugar() {
                 preguntas.getIcons().add(icono);
         		Scene juegos_locos_franklin = new Scene(root,800,600);
                 preguntas.setMaximized(true);
-        		FadeTransition fadeIn = new FadeTransition(Duration.millis(100), root);
-                fadeIn.setFromValue(0.5);
-                fadeIn.setToValue(1.0);
         		preguntas.setScene(juegos_locos_franklin);
                 juegos_locos_franklin.getStylesheets().add(getClass().getResource("resources/styles.css").toExternalForm());
         		preguntas.show();
-                fadeIn.play();
-
-        		 
         	}catch(Exception e){  alerta_de_error(e);  }
         }
     
