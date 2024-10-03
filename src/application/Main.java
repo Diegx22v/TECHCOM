@@ -13,16 +13,16 @@ public class Main extends Application {
     @Override 
     public void start(Stage primaryStage) throws Exception {
         try {
-            // Configura el ícono de la aplicación
+            // Configuramos el perro icono :v
             Image icono = new Image(getClass().getResourceAsStream("resources/TECHCOM.png"));
             primaryStage.getIcons().add(icono);
 
-            // Carga el FXML
+            // Cargamos el FXML
             FXMLLoader loader = new FXMLLoader(getClass().getResource("Interfaz_principal.fxml"));
             Parent root = loader.load();
 
 
-            // Configura la escena
+            // Configuramos escena (ventana)
             Scene scene = new Scene(root, 800, 600);
             scene.getStylesheets().add(getClass().getResource("resources/styles.css").toExternalForm());
             primaryStage.setMaximized(true);
@@ -30,7 +30,7 @@ public class Main extends Application {
             primaryStage.setScene(scene);
             primaryStage.show();
         } catch (Exception e) {
-            // Manejo de errores
+            // ALERTA
             Alert errorAlert = new Alert(AlertType.ERROR);
             errorAlert.setTitle("Error en la Aplicación");
             errorAlert.setHeaderText("Error en la ejecución");
