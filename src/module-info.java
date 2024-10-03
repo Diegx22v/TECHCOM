@@ -1,4 +1,4 @@
-module ejem{
+module TECHCOM {
 	requires javafx.controls;
 	requires javafx.fxml;
 	requires javafx.web;
