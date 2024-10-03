@@ -1,13 +1,14 @@
 package application;
 
+/*import javafx.scene.Node;
 import javafx.animation.Animation;
+import javafx.animation.FadeTransition;*/
+
 import javafx.animation.Animation.Status;
-import javafx.animation.FadeTransition;
 import javafx.animation.ScaleTransition;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
@@ -23,7 +24,8 @@ import javafx.scene.web.WebView;
 import javafx.stage.Stage;
 import javafx.util.Duration;
 import utils.Utils;
-import java.awt.Desktop;
+
+import java.awt.*;
 import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
@@ -60,8 +62,6 @@ public class Controlador {
     private Hyperlink proyecto,proyectodos;
     private boolean juego_iniciado;
     private boolean inicia_ventana;
-    private Stage regreso;
-    
     @FXML
     public void initialize() {
     	 webEngine = webView.getEngine();
@@ -77,7 +77,7 @@ public class Controlador {
     	    inicializarAnimacion_click_jugar();
     	    inicializarAnimacion_click_salir();
     	    int puntosIniciales = 0;
-            puntos.setText(String.valueOf("Puntos: "+puntosIniciales));
+            puntos.setText("Puntos: " + puntosIniciales);
     }
     
     
