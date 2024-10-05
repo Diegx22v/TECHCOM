@@ -1,9 +1,5 @@
 package application;
 
-/*import javafx.scene.Node;
-import javafx.animation.Animation;
-import javafx.animation.FadeTransition;*/
-
 import javafx.animation.Animation.Status;
 import javafx.animation.ScaleTransition;
 import javafx.event.ActionEvent;
@@ -92,7 +88,8 @@ public class Controlador {
     void animacion_soft_boton1(ScaleTransition animacion_uno) {
         if (animacion_uno.getStatus() != Status.RUNNING) {
             animacion_uno.playFromStart(); 
-        }}
+        }
+    }
     
  private void inicializarAnimacion_boton_video2() {
         
@@ -102,11 +99,13 @@ public class Controlador {
         animacion_dos.setAutoReverse(true);
         animacion_dos.setCycleCount(2);
     }
+
  void animacion_soft_boton2(ScaleTransition animacion_dos) {
      if (animacion_dos.getStatus() != Status.RUNNING) {
      	animacion_dos.playFromStart(); 
-     }}
-    
+     }
+ }
+
 
     
 private void inicializarAnimacion_boton_jugar() {
