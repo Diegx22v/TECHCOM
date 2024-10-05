@@ -61,7 +61,7 @@ public class Controlador {
     @FXML
     public void initialize() {
     	 webEngine = webView.getEngine();
-    	 cargar_video("https://www.youtube.com/embed/kAbrnfx7axc");
+    	 cargar_video("https://www.youtube.com/embed/MxD7hDUjS_8");
     	    inicializarAnimacion();
     	    inicializarAnimacion_boton_video1();
     	    inicializarAnimacion_boton_video2();
