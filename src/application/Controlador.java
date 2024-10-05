@@ -233,7 +233,7 @@ private void inicializarAnimacion_boton_jugar() {
     void set_video1() {
     	animacion_click_boton1(animacion_click1);
 
-    	cargar_video("https://www.youtube.com/embed/kAbrnfx7axc");
+    	cargar_video("https://www.youtube.com/embed/MxD7hDUjS_8");
     }
     
     @FXML
@@ -268,7 +268,7 @@ private void inicializarAnimacion_boton_jugar() {
     		Scene juegos_locos_franklin = new Scene(root,800,600);
             preguntas.setMaximized(true);
     		preguntas.setScene(juegos_locos_franklin);
-            juegos_locos_franklin.getStylesheets().add(getClass().getResource("resources/styles.css").toExternalForm());
+            juegos_locos_franklin.getStylesheets().add(getClass().getResource("resources/interfaz_principal.css").toExternalForm());
     		preguntas.show();
         } catch (Exception e) {
             Alert errorAlert = new Alert(AlertType.ERROR);
@@ -346,7 +346,7 @@ private void inicializarAnimacion_boton_jugar() {
         		Scene juegos_locos_franklin = new Scene(root,800,600);
                 preguntas.setMaximized(true);
         		preguntas.setScene(juegos_locos_franklin);
-                juegos_locos_franklin.getStylesheets().add(getClass().getResource("resources/styles.css").toExternalForm());
+                juegos_locos_franklin.getStylesheets().add(getClass().getResource("resources/menu_principal.css").toExternalForm());
         		preguntas.show();
         	}catch(Exception e){  alerta_de_error(e);  }
         }
