@@ -18,15 +18,15 @@
 <?import javafx.scene.text.Text?>
 <?import javafx.scene.web.WebView?>
 
-<ScrollPane fitToHeight="true" fitToWidth="true" prefHeight="1284.0" prefWidth="1906.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controlador">
+<ScrollPane fitToHeight="true" fitToWidth="true" prefHeight="1484.0" prefWidth="1906.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controlador">
     <content>
-        <GridPane hgap="20.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1747.0" prefWidth="1905.0" styleClass="main-container" vgap="20.0">
+        <GridPane hgap="20.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1483.0" prefWidth="1905.0" styleClass="main-container" vgap="20.0">
             <columnConstraints>
                 <ColumnConstraints fillWidth="false" percentWidth="82.0" />
                 <ColumnConstraints fillWidth="false" percentWidth="17.0" />
             </columnConstraints>
             
-            <Text text="Bienvenidos a la TECHCOM" textAlignment="CENTER" wrappingWidth="707.2000122070312" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="0">
+            <Text text="Bienvenidos a la TECHCOM" textAlignment="CENTER" wrappingWidth="707.2000122070312" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.halignment="CENTER">
             <font>
                <Font name="Goudy Stout" size="36.0" />
             </font>
@@ -57,7 +57,7 @@
                <Insets bottom="20.0" />
             </GridPane.margin></Text>
             
-            <Text fill="#d9e17f" lineSpacing="5.0" text="* Dayana Torres                           * Mia Nuñez                                * Diego Villota                             * Carlos Velez                             * Franklin Chunga  " wrappingWidth="359.99993896484375" GridPane.columnIndex="0" GridPane.rowIndex="1" GridPane.valignment="TOP">
+            <Text lineSpacing="5.0" text="* Dayana Torres                           * Mia Nuñez                                * Diego Villota                             * Carlos Velez                             * Franklin Chunga  " wrappingWidth="359.99993896484375" GridPane.columnIndex="0" GridPane.rowIndex="1" GridPane.valignment="TOP">
             <font>
                <Font name="Marlett" size="24.0" />
             </font>
@@ -107,58 +107,11 @@
             <GridPane.margin>
                <Insets bottom="30.0" left="2.0" />
             </GridPane.margin>
-            <fill>
-               <LinearGradient endX="0.7014218009478673" endY="0.909952606635071" startX="0.6966824644549763" startY="0.7630331753554503">
-                  <stops>
-                     <Stop>
-                        <color>
-                           <Color red="1.0" green="1.0" blue="1.0" />
-                        </color>
-                     </Stop>
-                     <Stop offset="0.036585365853658534">
-                        <color>
-                           <Color red="0.3100000023841858" green="1.0" blue="0.6434999704360962" />
-                        </color>
-                     </Stop>
-                     <Stop offset="1.0">
-                        <color>
-                           <Color red="0.30092594027519226" green="1.0" blue="0.6388117074966431" />
-                        </color>
-                     </Stop>
-                  </stops>
-               </LinearGradient>
-            </fill>
          </Text>
-         <Text layoutX="30.0" layoutY="390.0" text="Un deepfake es un video, audio o imagen la cualimita el sonido o la apariencia de una persona,este suele ser tan convincente que puedeterminar engañando al espectador. Son ejecutados por medio de la inteligencia artificial." wrappingWidth="316.7999267578125" GridPane.rowIndex="2">
+         <Text fill="#0a0a0a" layoutX="30.0" layoutY="390.0" text="Un deepfake es un video, audio o imagen la cualimita el sonido o la apariencia de una persona,este suele ser tan convincente que puedeterminar engañando al espectador. Son ejecutados por medio de la inteligencia artificial." wrappingWidth="316.7999267578125" GridPane.rowIndex="2">
             <font>
                <Font name="Arial Bold" size="21.0" />
             </font>
-            <fill>
-               <LinearGradient cycleMethod="REFLECT" endX="1.0" startX="0.18483412322274878" startY="0.7867298578199053">
-                  <stops>
-                     <Stop>
-                        <color>
-                           <Color red="0.20483431220054626" green="0.3223833739757538" blue="0.7473683953285217" />
-                        </color>
-                     </Stop>
-                     <Stop offset="0.006729475100942127">
-                        <color>
-                           <Color red="0.20483431220054626" green="0.3223833739757538" blue="0.7473683953285217" />
-                        </color>
-                     </Stop>
-                     <Stop offset="0.9737068259944343">
-                        <color>
-                           <Color red="0.4941357970237732" green="0.31018519401550293" blue="1.0" opacity="0.949999988079071" />
-                        </color>
-                     </Stop>
-                     <Stop offset="1.0">
-                        <color>
-                           <Color red="0.4941357970237732" green="0.31018519401550293" blue="1.0" opacity="0.949999988079071" />
-                        </color>
-                     </Stop>
-                  </stops>
-               </LinearGradient>
-            </fill>
             <GridPane.margin>
                <Insets left="5.0" />
             </GridPane.margin>
@@ -228,7 +181,7 @@
                <Font name="Goudy Stout" size="24.0" />
             </font>
             <textFill>
-               <LinearGradient cycleMethod="REPEAT" endX="0.8503787878787877" endY="0.4147727272727273" startX="0.4621212274739237">
+               <LinearGradient endX="0.6208530805687204" endY="0.4195120637656183" startX="0.5569079573317437">
                   <stops>
                      <Stop>
                         <color>
@@ -237,7 +190,7 @@
                      </Stop>
                      <Stop offset="1.0">
                         <color>
-                           <Color red="0.17249999940395355" green="0.3274872899055481" blue="0.6899999976158142" />
+                           <Color red="0.545098066329956" green="0.22745098173618317" blue="0.843137264251709" />
                         </color>
                      </Stop>
                   </stops>
@@ -267,36 +220,10 @@
          </Text>
          <Text layoutX="10.0" layoutY="1151.0" text="Es una tecnología que usa la Inteligencia Artificial (IA) y de algoritmos de aprendizaje automático para replicar la voz de una persona, es posible generar voces sintéticas que suenen igual que una voz humana." wrappingWidth="290.3999938964844" GridPane.halignment="LEFT" GridPane.rowIndex="4" GridPane.valignment="BOTTOM" GridPane.vgrow="ALWAYS">
             <font>
-               <Font name="Berlin Sans FB" size="19.0" />
+               <Font name="Berlin Sans FB" size="23.0" />
             </font>
-            <fill>
-               <LinearGradient cycleMethod="REFLECT" endX="0.9848484992980957" endY="1.0" startX="0.9147727272727273">
-                  <stops>
-                     <Stop>
-                        <color>
-                           <Color red="0.20483431220054626" green="0.3223833739757538" blue="0.7473683953285217" />
-                        </color>
-                     </Stop>
-                     <Stop offset="0.006729475100942127">
-                        <color>
-                           <Color red="0.20483431220054626" green="0.3223833739757538" blue="0.7473683953285217" />
-                        </color>
-                     </Stop>
-                     <Stop offset="0.49756097560975604">
-                        <color>
-                           <Color green="0.7699999809265137" blue="0.23100000619888306" opacity="0.949999988079071" />
-                        </color>
-                     </Stop>
-                     <Stop offset="1.0">
-                        <color>
-                           <Color red="1.0" green="1.0" blue="1.0" />
-                        </color>
-                     </Stop>
-                  </stops>
-               </LinearGradient>
-            </fill>
             <GridPane.margin>
-               <Insets top="10.0" />
+               <Insets />
             </GridPane.margin>
          </Text>
          <Hyperlink fx:id="proyectodos" layoutX="10.0" layoutY="813.0" onAction="#proyecto_web_2" text="LINK AL PROYECTO" GridPane.rowIndex="5">
@@ -304,7 +231,7 @@
                <Font name="Goudy Stout" size="24.0" />
             </font>
             <textFill>
-               <LinearGradient cycleMethod="REPEAT" endX="0.8503787878787877" endY="0.4147727272727273" startX="0.4621212274739237">
+               <LinearGradient endX="0.8503787878787877" endY="0.4147727272727273" startX="0.4621212274739237">
                   <stops>
                      <Stop>
                         <color>
@@ -313,14 +240,14 @@
                      </Stop>
                      <Stop offset="1.0">
                         <color>
-                           <Color red="0.17249999940395355" green="0.3274872899055481" blue="0.6899999976158142" />
+                           <Color red="0.5528143048286438" green="0.23720760643482208" blue="0.8684210777282715" />
                         </color>
                      </Stop>
                   </stops>
                </LinearGradient>
             </textFill>
          </Hyperlink>
-         <Button fx:id="video_dos" alignment="TOP_RIGHT" contentDisplay="CENTER" defaultButton="true" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#set_video2" onMouseEntered="#softcursor2" prefHeight="32.0" prefWidth="158.0" style="-fx-background-color: d8d2a8;" text="VIDEO DOS" textOverrun="WORD_ELLIPSIS" underline="true" GridPane.columnSpan="2" GridPane.halignment="RIGHT" GridPane.rowIndex="4" GridPane.valignment="TOP">
+         <Button fx:id="video_dos" alignment="TOP_RIGHT" contentDisplay="CENTER" defaultButton="true" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#set_video2" onMouseEntered="#softcursor2" prefHeight="32.0" prefWidth="158.0" style="-fx-background-color: d8d2a8;" text="VIDEO DOS" textOverrun="WORD_ELLIPSIS" underline="true" GridPane.columnSpan="2" GridPane.halignment="RIGHT" GridPane.rowIndex="3" GridPane.valignment="TOP">
             <GridPane.margin>
                <Insets right="100.0" />
             </GridPane.margin>
@@ -350,7 +277,7 @@
                   </stops>
                </LinearGradient>
             </textFill></Button>
-         <Button fx:id="video_uno" alignment="TOP_RIGHT" layoutX="1476.0" layoutY="881.0" mnemonicParsing="false" onAction="#set_video1" onMouseEntered="#softcursor1" style="-fx-background-color: d8d2a8;" text="VIDEO UNO" GridPane.halignment="RIGHT" GridPane.rowIndex="4" GridPane.valignment="BASELINE">
+         <Button fx:id="video_uno" alignment="TOP_RIGHT" layoutX="1476.0" layoutY="881.0" mnemonicParsing="false" onAction="#set_video1" onMouseEntered="#softcursor1" style="-fx-background-color: d8d2a8;" text="VIDEO UNO" GridPane.halignment="RIGHT" GridPane.rowIndex="3" GridPane.valignment="BASELINE">
             <GridPane.margin>
                <Insets right="200.0" />
             </GridPane.margin>
@@ -416,10 +343,10 @@
              <rowConstraints>
             <RowConstraints percentHeight="10.0" valignment="CENTER" vgrow="SOMETIMES" />
             <RowConstraints maxHeight="254.13332519531247" minHeight="175.5999755859375" percentHeight="10.0" prefHeight="191.5999755859375" />
-            <RowConstraints maxHeight="490.39998168945306" minHeight="381.79998779296875" percentHeight="25.0" prefHeight="391.4000244140625" />
-            <RowConstraints maxHeight="89.06672363281245" minHeight="0.0" percentHeight="3.0" prefHeight="30.800048828125" />
-             <RowConstraints maxHeight="327.0" minHeight="67.99992675781243" percentHeight="20.0" prefHeight="266.199951171875" />
-            <RowConstraints maxHeight="273.60009765625" minHeight="43.5999755859375" percentHeight="4.0" prefHeight="43.5999755859375" />
+            <RowConstraints maxHeight="490.39998168945306" minHeight="381.79998779296875" percentHeight="35.0" prefHeight="391.4000244140625" />
+            <RowConstraints maxHeight="89.06672363281245" minHeight="0.0" percentHeight="5.0" prefHeight="30.800048828125" />
+             <RowConstraints maxHeight="327.0" minHeight="67.99992675781243" percentHeight="35.0" prefHeight="266.199951171875" />
+            <RowConstraints maxHeight="273.60009765625" minHeight="43.5999755859375" percentHeight="5.0" prefHeight="43.5999755859375" />
          </rowConstraints>
         </GridPane>
     </content>

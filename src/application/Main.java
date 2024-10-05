@@ -24,7 +24,7 @@ public class Main extends Application {
 
             // Configuramos escena (ventana)
             Scene scene = new Scene(root, 800, 600);
-            scene.getStylesheets().add(getClass().getResource("resources/styles.css").toExternalForm());
+            scene.getStylesheets().add(getClass().getResource("resources/interfaz_principal.css").toExternalForm());
             primaryStage.setMaximized(true);
             primaryStage.setTitle("TECHCOM");
             primaryStage.setScene(scene);
