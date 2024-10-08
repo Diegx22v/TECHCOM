@@ -74,7 +74,7 @@
                </DropShadow>
             </effect></Text>
             
-            <WebView fx:id="webView" maxHeight="458.0" maxWidth="889.0" minHeight="404.0" minWidth="537.0" onKeyPressed="#set_video1" prefHeight="418.0" prefWidth="851.0" GridPane.columnSpan="2" GridPane.halignment="RIGHT" GridPane.rowIndex="2">
+            <WebView fx:id="webView" maxHeight="458.0" maxWidth="889.0" minHeight="404.0" minWidth="537.0" prefHeight="418.0" prefWidth="851.0" GridPane.columnSpan="2" GridPane.halignment="RIGHT" GridPane.rowIndex="2">
             <GridPane.margin>
                <Insets right="20.0" />
             </GridPane.margin></WebView>
