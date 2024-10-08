@@ -38,10 +38,10 @@ public class Controlador {
     private ButtonBar contenedor;
 
     @FXML
-    private VBox contenedor_vertical;
+    private VBox contenedor_vertical,Contenedor_vertical_dos,Contenedor_vertical_tres;
 
     @FXML
-    private HBox contenedor_horizontal;
+    private HBox contenedor_horizontal,Contenedor_horizontal_dos,Contenedor_horizontal_tres;
 
     @FXML
     private ImageView Techcom;

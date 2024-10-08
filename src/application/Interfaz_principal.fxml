@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.Group?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Hyperlink?>
 <?import javafx.scene.control.ScrollPane?>
@@ -56,30 +57,15 @@
                </DropShadow>
             </effect>
             <GridPane.margin>
-               <Insets bottom="20.0" />
+               <Insets />
             </GridPane.margin></Text>
             
-            <Text lineSpacing="5.0" text="* Dayana Torres                           * Mia Nuñez                                * Diego Villota                             * Carlos Velez                             * Franklin Chunga  " wrappingWidth="359.99993896484375" GridPane.columnIndex="0" GridPane.rowIndex="1" GridPane.valignment="TOP">
-            <font>
-               <Font name="Marlett" size="24.0" />
-            </font>
-            <GridPane.margin>
-               <Insets left="5.0" top="15.0" />
-            </GridPane.margin>
-            <effect>
-               <DropShadow height="2.0" radius="1.0" spread="0.16" width="4.0">
-                  <color>
-                     <Color red="0.5701754093170166" blue="0.8552631735801697" />
-                  </color>
-               </DropShadow>
-            </effect></Text>
-            
-            <WebView fx:id="webView" maxHeight="458.0" maxWidth="889.0" minHeight="404.0" minWidth="537.0" prefHeight="418.0" prefWidth="851.0" GridPane.columnSpan="2" GridPane.halignment="RIGHT" GridPane.rowIndex="2">
+            <WebView fx:id="webView" maxHeight="458.0" maxWidth="889.0" minHeight="404.0" minWidth="537.0" prefHeight="418.0" prefWidth="851.0" GridPane.columnSpan="2" GridPane.halignment="RIGHT" GridPane.rowIndex="3">
             <GridPane.margin>
                <Insets right="20.0" />
             </GridPane.margin></WebView>
             
-            <ImageView fx:id="Techcom" accessibleRole="BUTTON" fitHeight="201.0" fitWidth="231.0" onMouseClicked="#nueva_ventana" onMouseEntered="#softimage1" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.hgrow="ALWAYS" GridPane.rowSpan="2" GridPane.valignment="CENTER">
+            <ImageView fx:id="Techcom" accessibleRole="BUTTON" fitHeight="201.0" fitWidth="231.0" onMouseClicked="#nueva_ventana" onMouseEntered="#softimage1" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.rowSpan="2" GridPane.valignment="CENTER">
                 <image>
                     <Image url="@resources/TECHCOM.png" />
                 </image>
@@ -102,104 +88,7 @@
                <Insets right="5.0" top="10.0" />
             </GridPane.margin>
          </ImageView>
-         <Text layoutX="30.0" layoutY="497.0" text="Integrantes" textAlignment="CENTER" wrappingWidth="453.0" GridPane.rowSpan="2" GridPane.valignment="CENTER">
-            <font>
-               <Font name="Goudy Stout" size="33.0" />
-            </font>
-            <GridPane.margin>
-               <Insets bottom="30.0" left="2.0" />
-            </GridPane.margin>
-         </Text>
-         <Text layoutX="30.0" layoutY="1014.0" text="¿Que es la clonación de voces?" wrappingWidth="216.79998779296875" GridPane.halignment="LEFT" GridPane.rowIndex="4" GridPane.valignment="CENTER">
-            <font>
-               <Font name="Berlin Sans FB" size="21.0" />
-            </font>
-            <GridPane.margin>
-               <Insets bottom="50.0" />
-            </GridPane.margin>
-            <fill>
-               <RadialGradient centerX="0.1703539696414914" centerY="0.5" cycleMethod="REFLECT" focusAngle="-3.69" focusDistance="0.5688071819620399" radius="1.0">
-                  <stops>
-                     <Stop>
-                        <color>
-                           <Color red="0.20483431220054626" green="0.3223833739757538" blue="0.7473683953285217" />
-                        </color>
-                     </Stop>
-                     <Stop offset="0.006729475100942127">
-                        <color>
-                           <Color green="0.23333333432674408" blue="1.0" />
-                        </color>
-                     </Stop>
-                     <Stop offset="0.497560975609756">
-                        <color>
-                           <Color red="0.699999988079071" green="1.1102230246251565E-16" blue="1.0" opacity="0.949999988079071" />
-                        </color>
-                     </Stop>
-                     <Stop offset="0.9804878048780488">
-                        <color>
-                           <Color red="1.0" green="1.0" blue="1.0" opacity="0.949999988079071" />
-                        </color>
-                     </Stop>
-                     <Stop offset="1.0">
-                        <color>
-                           <Color red="1.0" />
-                        </color>
-                     </Stop>
-                  </stops>
-               </RadialGradient>
-            </fill>
-         </Text>
-         <Text layoutX="10.0" layoutY="474.0" text="Clonacion de voces" textAlignment="CENTER" wrappingWidth="541.0001220703125" GridPane.halignment="LEFT" GridPane.rowIndex="4" GridPane.valignment="TOP">
-            <font>
-               <Font name="Goudy Stout" size="29.0" />
-            </font>
-            <fill>
-               <RadialGradient centerX="0.6602209944751382" centerY="0.6421800947867299" cycleMethod="REPEAT" focusDistance="-0.5057471264367817" radius="0.4540229885057471">
-                  <stops>
-                     <Stop>
-                        <color>
-                           <Color red="0.1723976582288742" green="0.6947368383407593" blue="0.6947368383407593" />
-                        </color>
-                     </Stop>
-                     <Stop offset="1.0">
-                        <color>
-                           <Color red="0.17249999940395355" green="0.3274872899055481" blue="0.6899999976158142" />
-                        </color>
-                     </Stop>
-                  </stops>
-               </RadialGradient>
-            </fill>
-         </Text>
-         <Text layoutX="10.0" layoutY="1151.0" text="Es una tecnología que usa la Inteligencia Artificial (IA) y de algoritmos de aprendizaje automático para replicar la voz de una persona, es posible generar voces sintéticas que suenen igual que una voz humana." wrappingWidth="290.3999938964844" GridPane.halignment="LEFT" GridPane.rowIndex="4" GridPane.valignment="BOTTOM" GridPane.vgrow="ALWAYS">
-            <font>
-               <Font name="Berlin Sans FB" size="23.0" />
-            </font>
-            <GridPane.margin>
-               <Insets />
-            </GridPane.margin>
-         </Text>
-         <Hyperlink fx:id="proyectodos" layoutX="10.0" layoutY="813.0" onAction="#proyecto_web_2" text="LINK AL PROYECTO" GridPane.rowIndex="5">
-            <font>
-               <Font name="Goudy Stout" size="24.0" />
-            </font>
-            <textFill>
-               <LinearGradient endX="0.8503787878787877" endY="0.4147727272727273" startX="0.4621212274739237">
-                  <stops>
-                     <Stop>
-                        <color>
-                           <Color red="0.1723976582288742" green="0.6947368383407593" blue="0.6947368383407593" />
-                        </color>
-                     </Stop>
-                     <Stop offset="1.0">
-                        <color>
-                           <Color red="0.5528143048286438" green="0.23720760643482208" blue="0.8684210777282715" />
-                        </color>
-                     </Stop>
-                  </stops>
-               </LinearGradient>
-            </textFill>
-         </Hyperlink>
-         <Button fx:id="video_dos" alignment="TOP_RIGHT" contentDisplay="CENTER" defaultButton="true" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#set_video2" onMouseEntered="#softcursor2" prefHeight="32.0" prefWidth="158.0" style="-fx-background-color: d8d2a8;" text="VIDEO DOS" textOverrun="WORD_ELLIPSIS" underline="true" GridPane.columnSpan="2" GridPane.halignment="RIGHT" GridPane.rowIndex="3" GridPane.valignment="TOP">
+         <Button fx:id="video_dos" alignment="TOP_RIGHT" contentDisplay="CENTER" defaultButton="true" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#set_video2" onMouseEntered="#softcursor2" prefHeight="32.0" prefWidth="158.0" style="-fx-background-color: d8d2a8;" text="VIDEO DOS" textOverrun="WORD_ELLIPSIS" underline="true" GridPane.columnSpan="2" GridPane.halignment="RIGHT" GridPane.rowIndex="4" GridPane.valignment="TOP">
             <GridPane.margin>
                <Insets right="100.0" />
             </GridPane.margin>
@@ -229,7 +118,7 @@
                   </stops>
                </LinearGradient>
             </textFill></Button>
-         <Button fx:id="video_uno" alignment="TOP_RIGHT" layoutX="1476.0" layoutY="881.0" mnemonicParsing="false" onAction="#set_video1" onMouseEntered="#softcursor1" style="-fx-background-color: d8d2a8;" text="VIDEO UNO" GridPane.halignment="RIGHT" GridPane.rowIndex="3" GridPane.valignment="BASELINE">
+         <Button fx:id="video_uno" alignment="TOP_RIGHT" layoutX="1476.0" layoutY="881.0" mnemonicParsing="false" onAction="#set_video1" onMouseEntered="#softcursor1" style="-fx-background-color: d8d2a8;" text="VIDEO UNO" GridPane.halignment="RIGHT" GridPane.rowIndex="4" GridPane.valignment="BASELINE">
             <GridPane.margin>
                <Insets right="200.0" />
             </GridPane.margin>
@@ -292,22 +181,116 @@
                </DropShadow>
             </effect>
          </Text>
-         <VBox fx:id="contenedor_vertical" alignment="TOP_CENTER" prefHeight="454.0" prefWidth="501.0" style="-fx-border-style: dashed; -fx-border-width: 2px; -fx-border-color: blue green red  #9923d8;" styleClass="vertical_container_one" GridPane.rowIndex="2">
+         <Group GridPane.rowIndex="3">
             <children>
-               <Text fill="#6e4af7" text="DeepFake" textAlignment="CENTER" wrappingWidth="453.0">
+               <VBox fx:id="contenedor_vertical" alignment="TOP_CENTER" prefHeight="454.0" prefWidth="501.0" style="-fx-border-style: dashed; -fx-border-width: 2px; -fx-border-color: blue green red  #9923d8;" styleClass="vertical_container_one">
+                  <children>
+                     <Text fill="#c25a4a" text="DeepFake" textAlignment="CENTER" wrappingWidth="453.0">
+                        <font>
+                           <Font name="Goudy Stout" size="29.0" />
+                        </font>
+                     </Text>
+                     <ImageView fitHeight="144.0" fitWidth="272.0">
+                        <image>
+                           <Image url="@resources/Deepfake.jpg" />
+                        </image>
+                        <VBox.margin>
+                           <Insets bottom="15.0" top="30.0" />
+                        </VBox.margin>
+                     </ImageView>
+                     <Text fill="#0a0a0a" text="Un deepfake es un video, audio o imagen la cualimita el sonido o la apariencia de una persona,este suele ser tan convincente que puedeterminar engañando al espectador. Son ejecutados por medio de la inteligencia artificial." textOrigin="TOP" wrappingWidth="316.7999267578125">
+                        <font>
+                           <Font name="Arial Bold" size="18.0" />
+                        </font>
+                        <VBox.margin>
+                           <Insets top="30.0" />
+                        </VBox.margin>
+                     </Text>
+                  </children>
+               </VBox>
+               <HBox fx:id="contenedor_horizontal" alignment="TOP_CENTER" layoutY="459.0" prefHeight="46.0" prefWidth="506.0" styleClass="horizontal_container_uno">
+                  <children>
+                     <Hyperlink fx:id="proyecto" alignment="CENTER" onAction="#proyecto_web" prefHeight="46.0" prefWidth="495.0" text="LINK AL PROYECTO" textFill="#4d4d4d">
+                        <font>
+                           <Font name="Goudy Stout" size="24.0" />
+                        </font>
+                        <HBox.margin>
+                           <Insets />
+                        </HBox.margin>
+                     </Hyperlink>
+                  </children>
+               </HBox>
+            </children>
+         </Group>
+         <VBox fx:id="contenedor_vertical1" alignment="TOP_CENTER" layoutX="20.0" layoutY="357.0" prefHeight="255.0" prefWidth="572.0" style="-fx-border-style: dashed; -fx-border-width: 2px; -fx-border-color: blue green red  #9923d8;" styleClass="vertical_container_one" GridPane.rowIndex="1" GridPane.rowSpan="2">
+            <children>
+               <HBox>
+                  <children>
+                     <Text text="Integrantes" textAlignment="CENTER" wrappingWidth="449.0">
+                        <font>
+                           <Font name="Goudy Stout" size="33.0" />
+                        </font>
+                        <fill>
+                           <LinearGradient endX="1.0" endY="1.0" startX="0.4928909952606635" startY="0.07109004739336493">
+                              <stops>
+                                 <Stop>
+                                    <color>
+                                       <Color red="0.18039216101169586" green="0.545098066329956" blue="0.34117648005485535" />
+                                    </color>
+                                 </Stop>
+                                 <Stop offset="1.0">
+                                    <color>
+                                       <Color green="0.12156862765550613" blue="0.24705882370471954" />
+                                    </color>
+                                 </Stop>
+                              </stops>
+                           </LinearGradient>
+                        </fill>
+                     </Text>
+                     <ImageView fitHeight="81.0" fitWidth="87.0">
+                        <image>
+                           <Image url="@resources/integrantes.png" />
+                        </image>
+                        <HBox.margin>
+                           <Insets left="15.0" />
+                        </HBox.margin>
+                     </ImageView>
+                  </children>
+               </HBox>
+                  
+                  <Text lineSpacing="5.0" text="* Dayana Torres                           * Mia Nuñez                                * Diego Villota                             * Carlos Velez                             * Franklin Chunga  " wrappingWidth="359.99993896484375">
+                  <font>
+                     <Font name="Marlett" size="24.0" />
+                  </font>
+                  <effect>
+                     <DropShadow height="2.0" radius="1.0" spread="0.16" width="4.0">
+                        <color>
+                           <Color red="0.5701754093170166" blue="0.8552631735801697" />
+                        </color>
+                     </DropShadow>
+                  </effect>
+               </Text>
+            </children>
+            <GridPane.margin>
+               <Insets bottom="120.0" />
+            </GridPane.margin>
+         </VBox>
+         <VBox fx:id="contenedor_vertical2" alignment="TOP_CENTER" layoutX="20.0" layoutY="470.0" prefHeight="454.0" prefWidth="501.0" style="-fx-border-style: dashed; -fx-border-width: 2px; -fx-border-color: blue green red  #9923d8;" styleClass="vertical_container_one" GridPane.rowIndex="5">
+            <children>
+               <Text fill="#c25a4a" text="Clonacion de voz" textAlignment="CENTER" wrappingWidth="453.0">
                   <font>
                      <Font name="Goudy Stout" size="29.0" />
                   </font>
                </Text>
                <ImageView fitHeight="144.0" fitWidth="272.0">
                   <image>
-                     <Image url="@resources/Deepfake.jpg" />
+                     <Image url="@resources/clonacion.jpg" />
                   </image>
                   <VBox.margin>
                      <Insets bottom="15.0" top="30.0" />
                   </VBox.margin>
                </ImageView>
-               <Text fill="#0a0a0a" text="Un deepfake es un video, audio o imagen la cualimita el sonido o la apariencia de una persona,este suele ser tan convincente que puedeterminar engañando al espectador. Son ejecutados por medio de la inteligencia artificial." textOrigin="TOP" wrappingWidth="316.7999267578125">
+               <Text fill="#0a0a0a" text="La clonación de voz es una tecnología que usa la Inteligencia Artificial (IA) y de algoritmos de aprendizaje automático para replicar la voz de una persona, es posible generar voces sintéticas que suenen igual que una voz humana." textOrigin="TOP" wrappingWidth="316.7999267578125">
                   <font>
                      <Font name="Arial Bold" size="18.0" />
                   </font>
@@ -317,12 +300,12 @@
                </Text>
             </children>
             <GridPane.margin>
-               <Insets left="10.0" top="30.0" />
+               <Insets bottom="160.0" />
             </GridPane.margin>
          </VBox>
-         <HBox fx:id="contenedor_horizontal" alignment="TOP_CENTER" prefHeight="46.0" prefWidth="545.0" styleClass="horizontal_container_uno" GridPane.rowIndex="3">
+         <HBox fx:id="Contenedor_horizontal_tres" alignment="TOP_CENTER" fillHeight="false" layoutX="20.0" layoutY="892.0" prefHeight="462.0" prefWidth="497.0" styleClass="horizontal_container_uno" GridPane.hgrow="SOMETIMES" GridPane.rowIndex="5">
             <children>
-               <Hyperlink fx:id="proyecto" alignment="CENTER" onAction="#proyecto_web" prefHeight="46.0" prefWidth="495.0" text="LINK AL PROYECTO" textFill="#db2e2e">
+               <Hyperlink fx:id="proyectodos" onAction="#proyecto_web_2" prefHeight="17.0" prefWidth="449.0" text="LINK AL PROYECTO" textFill="#4d4d4d">
                   <font>
                      <Font name="Goudy Stout" size="24.0" />
                   </font>
@@ -332,16 +315,16 @@
                </Hyperlink>
             </children>
             <GridPane.margin>
-               <Insets bottom="20.0" left="15.0" top="30.0" />
+               <Insets bottom="30.0" top="420.0" />
             </GridPane.margin>
          </HBox>
              <rowConstraints>
-            <RowConstraints percentHeight="10.0" valignment="CENTER" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="119.0" minHeight="101.0" percentHeight="7.0" prefHeight="101.0" valignment="CENTER" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="254.13332519531247" minHeight="129.0" percentHeight="10.0" prefHeight="147.0" />
             <RowConstraints maxHeight="254.13332519531247" minHeight="175.5999755859375" percentHeight="10.0" prefHeight="191.5999755859375" />
-            <RowConstraints maxHeight="490.39998168945306" minHeight="381.79998779296875" percentHeight="35.0" prefHeight="391.4000244140625" />
+             <RowConstraints maxHeight="490.39998168945306" minHeight="381.79998779296875" percentHeight="35.0" prefHeight="391.4000244140625" />
             <RowConstraints maxHeight="89.06672363281245" minHeight="0.0" percentHeight="5.0" prefHeight="30.800048828125" />
-             <RowConstraints maxHeight="327.0" minHeight="67.99992675781243" percentHeight="35.0" prefHeight="266.199951171875" />
-            <RowConstraints maxHeight="273.60009765625" minHeight="43.5999755859375" percentHeight="5.0" prefHeight="43.5999755859375" />
+            <RowConstraints maxHeight="467.0" minHeight="67.99992675781243" percentHeight="35.0" prefHeight="467.0" />
          </rowConstraints>
         </GridPane>
     </content>
