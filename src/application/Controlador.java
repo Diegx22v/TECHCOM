@@ -14,6 +14,8 @@ import javafx.scene.control.ButtonBar;
 import javafx.scene.control.Hyperlink;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.layout.VBox;
+import javafx.scene.layout.HBox;
 import javafx.scene.text.Text;
 import javafx.scene.web.WebEngine;
 import javafx.scene.web.WebView;
@@ -34,6 +36,12 @@ public class Controlador {
     private WebEngine webEngine;
     @FXML
     private ButtonBar contenedor;
+
+    @FXML
+    private VBox contenedor_vertical;
+
+    @FXML
+    private HBox contenedor_horizontal;
 
     @FXML
     private ImageView Techcom;

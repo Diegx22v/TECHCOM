@@ -4,4 +4,17 @@
     -fx-background-position: center center;
     -fx-background-repeat: no-repeat;
     
-} 
+}
+.vertical_container_one{
+    -fx-padding: 10;
+    -fx-background-color: #d0c8a2;
+    -fx-background-radius: 15;
+    -fx-border-radius: 15;
+}
+.horizontal_container_uno{
+    -fx-padding: 10;
+    -fx-background-color: #b2dba4;
+    -fx-background-radius: 15;
+    -fx-border-radius: 15;
+}
+
