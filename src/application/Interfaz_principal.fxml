@@ -9,7 +9,9 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.paint.Color?>
 <?import javafx.scene.paint.LinearGradient?>
 <?import javafx.scene.paint.RadialGradient?>
@@ -108,14 +110,6 @@
                <Insets bottom="30.0" left="2.0" />
             </GridPane.margin>
          </Text>
-         <Text fill="#0a0a0a" layoutX="30.0" layoutY="390.0" text="Un deepfake es un video, audio o imagen la cualimita el sonido o la apariencia de una persona,este suele ser tan convincente que puedeterminar engañando al espectador. Son ejecutados por medio de la inteligencia artificial." wrappingWidth="316.7999267578125" GridPane.rowIndex="2">
-            <font>
-               <Font name="Arial Bold" size="21.0" />
-            </font>
-            <GridPane.margin>
-               <Insets left="5.0" />
-            </GridPane.margin>
-         </Text>
          <Text layoutX="30.0" layoutY="1014.0" text="¿Que es la clonación de voces?" wrappingWidth="216.79998779296875" GridPane.halignment="LEFT" GridPane.rowIndex="4" GridPane.valignment="CENTER">
             <font>
                <Font name="Berlin Sans FB" size="21.0" />
@@ -155,48 +149,6 @@
                </RadialGradient>
             </fill>
          </Text>
-         <Text layoutX="10.0" layoutY="222.0" text="DeepFake" textAlignment="CENTER" wrappingWidth="453.0" GridPane.rowIndex="2" GridPane.valignment="TOP">
-            <font>
-               <Font name="Goudy Stout" size="29.0" />
-            </font>
-            <fill>
-               <RadialGradient centerX="0.6602209944751382" centerY="0.6421800947867299" cycleMethod="REPEAT" focusDistance="-0.5057471264367817" radius="0.4540229885057471">
-                  <stops>
-                     <Stop>
-                        <color>
-                           <Color red="0.1723976582288742" green="0.6947368383407593" blue="0.6947368383407593" />
-                        </color>
-                     </Stop>
-                     <Stop offset="1.0">
-                        <color>
-                           <Color red="0.17249999940395355" green="0.3274872899055481" blue="0.6899999976158142" />
-                        </color>
-                     </Stop>
-                  </stops>
-               </RadialGradient>
-            </fill>
-         </Text>
-         <Hyperlink fx:id="proyecto" onAction="#proyecto_web" text="LINK AL PROYECTO" GridPane.rowIndex="3">
-            <font>
-               <Font name="Goudy Stout" size="24.0" />
-            </font>
-            <textFill>
-               <LinearGradient endX="0.6208530805687204" endY="0.4195120637656183" startX="0.5569079573317437">
-                  <stops>
-                     <Stop>
-                        <color>
-                           <Color red="0.1723976582288742" green="0.6947368383407593" blue="0.6947368383407593" />
-                        </color>
-                     </Stop>
-                     <Stop offset="1.0">
-                        <color>
-                           <Color red="0.545098066329956" green="0.22745098173618317" blue="0.843137264251709" />
-                        </color>
-                     </Stop>
-                  </stops>
-               </LinearGradient>
-            </textFill>
-         </Hyperlink>
          <Text layoutX="10.0" layoutY="474.0" text="Clonacion de voces" textAlignment="CENTER" wrappingWidth="541.0001220703125" GridPane.halignment="LEFT" GridPane.rowIndex="4" GridPane.valignment="TOP">
             <font>
                <Font name="Goudy Stout" size="29.0" />
@@ -340,6 +292,49 @@
                </DropShadow>
             </effect>
          </Text>
+         <VBox fx:id="contenedor_vertical" alignment="TOP_CENTER" prefHeight="454.0" prefWidth="501.0" style="-fx-border-style: dashed; -fx-border-width: 2px; -fx-border-color: blue green red  #9923d8;" styleClass="vertical_container_one" GridPane.rowIndex="2">
+            <children>
+               <Text fill="#6e4af7" text="DeepFake" textAlignment="CENTER" wrappingWidth="453.0">
+                  <font>
+                     <Font name="Goudy Stout" size="29.0" />
+                  </font>
+               </Text>
+               <ImageView fitHeight="144.0" fitWidth="272.0">
+                  <image>
+                     <Image url="@resources/Deepfake.jpg" />
+                  </image>
+                  <VBox.margin>
+                     <Insets bottom="15.0" top="30.0" />
+                  </VBox.margin>
+               </ImageView>
+               <Text fill="#0a0a0a" text="Un deepfake es un video, audio o imagen la cualimita el sonido o la apariencia de una persona,este suele ser tan convincente que puedeterminar engañando al espectador. Son ejecutados por medio de la inteligencia artificial." textOrigin="TOP" wrappingWidth="316.7999267578125">
+                  <font>
+                     <Font name="Arial Bold" size="18.0" />
+                  </font>
+                  <VBox.margin>
+                     <Insets top="30.0" />
+                  </VBox.margin>
+               </Text>
+            </children>
+            <GridPane.margin>
+               <Insets left="10.0" top="30.0" />
+            </GridPane.margin>
+         </VBox>
+         <HBox fx:id="contenedor_horizontal" alignment="TOP_CENTER" prefHeight="46.0" prefWidth="545.0" styleClass="horizontal_container_uno" GridPane.rowIndex="3">
+            <children>
+               <Hyperlink fx:id="proyecto" alignment="CENTER" onAction="#proyecto_web" prefHeight="46.0" prefWidth="495.0" text="LINK AL PROYECTO" textFill="#db2e2e">
+                  <font>
+                     <Font name="Goudy Stout" size="24.0" />
+                  </font>
+                  <HBox.margin>
+                     <Insets />
+                  </HBox.margin>
+               </Hyperlink>
+            </children>
+            <GridPane.margin>
+               <Insets bottom="20.0" left="15.0" top="30.0" />
+            </GridPane.margin>
+         </HBox>
              <rowConstraints>
             <RowConstraints percentHeight="10.0" valignment="CENTER" vgrow="SOMETIMES" />
             <RowConstraints maxHeight="254.13332519531247" minHeight="175.5999755859375" percentHeight="10.0" prefHeight="191.5999755859375" />

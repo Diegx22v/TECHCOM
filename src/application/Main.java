@@ -13,16 +13,13 @@ public class Main extends Application {
     @Override 
     public void start(Stage primaryStage) throws Exception {
         try {
-            // Configuramos el perro icono :v
+            /*
+            * Configuracion De ventana
+            * */
             Image icono = new Image(getClass().getResourceAsStream("resources/TECHCOM.png"));
             primaryStage.getIcons().add(icono);
-
-            // Cargamos el FXML
             FXMLLoader loader = new FXMLLoader(getClass().getResource("Interfaz_principal.fxml"));
             Parent root = loader.load();
-
-
-            // Configuramos escena (ventana)
             Scene scene = new Scene(root, 800, 600);
             scene.getStylesheets().add(getClass().getResource("resources/interfaz_principal.css").toExternalForm());
             primaryStage.setMaximized(true);
