@@ -27,7 +27,7 @@ public class Main extends Application {
             primaryStage.setScene(scene);
             primaryStage.show();
         } catch (Exception e) {
-            // ALERTA
+            // ALERTA`
             Alert errorAlert = new Alert(AlertType.ERROR);
             errorAlert.setTitle("Error en la Aplicación");
             errorAlert.setHeaderText("Error en la ejecución");
