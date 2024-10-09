@@ -10,6 +10,7 @@
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.paint.Color?>
 <?import javafx.scene.paint.LinearGradient?>
 <?import javafx.scene.paint.RadialGradient?>
@@ -18,7 +19,7 @@
 <?import javafx.scene.text.Text?>
 <?import javafx.scene.web.WebView?>
 
-<ScrollPane fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" prefHeight="992.0" prefWidth="1906.0" vbarPolicy="NEVER" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.menu_principal">
+<ScrollPane fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" prefHeight="992.0" prefWidth="1906.0" vbarPolicy="NEVER" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.menu_principal">
     <content>
         <GridPane hgap="20.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1008.0" prefWidth="1928.0" styleClass="main-container" vgap="20.0">
             <columnConstraints>
@@ -163,7 +164,7 @@
                   </color>
                </DropShadow>
             </effect></Button>
-         <Button fx:id="deepfake" alignment="TOP_CENTER" contentDisplay="CENTER" defaultButton="true" layoutX="1638.0" layoutY="881.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#ventana_deepfake" prefHeight="84.0" prefWidth="461.0" style="-fx-background-color: c6bafe;" text="Deepfake" textOverrun="WORD_ELLIPSIS" GridPane.columnSpan="2" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="TOP">
+         <Button fx:id="deepfake" alignment="TOP_CENTER" contentDisplay="CENTER" defaultButton="true" layoutX="1638.0" layoutY="881.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#ventana_deepfake" prefHeight="84.0" prefWidth="461.0" style="-fx-background-color: c6bafe;" text="Deepfake" textOverrun="WORD_ELLIPSIS" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP">
             <font>
                <Font name="Goudy Stout" size="40.0" />
             </font>
@@ -191,7 +192,7 @@
                </DropShadow>
             </effect>
             <GridPane.margin>
-               <Insets left="50.0" />
+               <Insets right="400.0" />
             </GridPane.margin>
          </Button>
          <Button fx:id="clonacion_de_voz" alignment="TOP_RIGHT" contentDisplay="CENTER" defaultButton="true" layoutX="797.0" layoutY="486.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#ventana_clonacion_de_voz" prefHeight="84.0" prefWidth="769.0" style="-fx-background-color: c6bafe;" text="Clonación de voz" textOverrun="WORD_ELLIPSIS" GridPane.columnSpan="2" GridPane.halignment="RIGHT" GridPane.rowIndex="2" GridPane.valignment="TOP">
@@ -222,10 +223,10 @@
                </DropShadow>
             </effect>
             <GridPane.margin>
-               <Insets right="190.0" />
+               <Insets right="90.0" />
             </GridPane.margin>
          </Button>
-         <Button fx:id="creditos" alignment="TOP_CENTER" contentDisplay="CENTER" defaultButton="true" layoutX="741.0" layoutY="543.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#ventana_creditos" prefHeight="84.0" prefWidth="455.0" style="-fx-background-color: c6bafe;" text="Creditos" textOverrun="WORD_ELLIPSIS" GridPane.columnSpan="2" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+         <Button fx:id="creditos" alignment="TOP_CENTER" contentDisplay="CENTER" defaultButton="true" layoutX="741.0" layoutY="543.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#ventana_creditos" prefHeight="84.0" prefWidth="455.0" style="-fx-background-color: c6bafe;" text="Creditos" textOverrun="WORD_ELLIPSIS" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
             <font>
                <Font name="Goudy Stout" size="40.0" />
             </font>
@@ -253,10 +254,10 @@
                </DropShadow>
             </effect>
             <GridPane.margin>
-               <Insets left="50.0" />
+               <Insets right="400.0" />
             </GridPane.margin>
          </Button>
-         <Text layoutX="611.0" layoutY="86.0" text="Versión: 0.0.4" wrappingWidth="212.20001220703125" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.rowSpan="4" GridPane.valignment="BOTTOM">
+         <Text layoutX="611.0" layoutY="86.0" text="Versión: 0.0.8" wrappingWidth="212.20001220703125" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.rowSpan="4" GridPane.valignment="BOTTOM">
             <font>
                <Font name="Goudy Stout" size="22.0" />
             </font>
@@ -311,12 +312,62 @@
                <Insets right="400.0" />
             </GridPane.margin>
          </Button>
-           <ImageView fx:id="Techcom" fitHeight="194.0" fitWidth="646.0" onMouseClicked="#nueva_ventana" pickOnBounds="true" preserveRatio="true" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+           <ImageView fx:id="Techcom" fitHeight="294.0" fitWidth="267.0" onMouseClicked="#nueva_ventana" pickOnBounds="true" preserveRatio="true" GridPane.halignment="RIGHT" GridPane.rowSpan="2">
               <GridPane.margin>
                  <Insets right="20.0" />
               </GridPane.margin>
               <Image url="@resources/TECHCOM.png" />
            </ImageView>
+         <VBox alignment="TOP_CENTER" prefHeight="573.0" prefWidth="335.0" style="-fx-padding: 10; -fx-background-color: d0c8a2; -fx-background-radius: 15; -fx-border-radius: 15;" GridPane.rowIndex="2">
+            <children>
+               <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Visión">
+                  <font>
+                     <Font name="Goudy Stout" size="32.0" />
+                  </font>
+               </Text>
+               <ImageView fx:id="Techcom11" fitHeight="84.0" fitWidth="120.0" onMouseClicked="#nueva_ventana" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@resources/vision.png" />
+                  </image>
+               </ImageView>
+               <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Esto es un ejemplo de una mision, cabe aclarar que esto esta sujeto a cualquier cambio hasta que definamos una vision fija para este programa  y proyecto a presentarse en enero" wrappingWidth="333.630859375">
+                  <font>
+                     <Font size="18.0" />
+                  </font>
+               </Text>
+            </children>
+            <GridPane.margin>
+               <Insets bottom="250.0" left="15.0" top="500.0" />
+            </GridPane.margin>
+         </VBox>
+         <VBox alignment="TOP_CENTER" style="-fx-padding: 15; -fx-background-color: #d0c8a2; -fx-background-radius: 15; -fx-border-radius: 15;" GridPane.rowIndex="1" GridPane.rowSpan="2" GridPane.valignment="TOP">
+            <children>
+               <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Misión">
+                  <font>
+                     <Font name="Goudy Stout" size="32.0" />
+                  </font>
+               </Text>
+               <ImageView fx:id="Techcom1" fitHeight="84.0" fitWidth="120.0" onMouseClicked="#nueva_ventana" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@resources/mision.png" />
+                  </image>
+                  <VBox.margin>
+                     <Insets bottom="10.0" top="10.0" />
+                  </VBox.margin>
+               </ImageView>
+               <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Esto es un ejemplo de una mision, cabe aclarar que esto esta sujeto a cualquier cambio hasta que definamos una mision fija para este programa  y proyecto a presentarse en enero" wrappingWidth="333.630859375">
+                  <font>
+                     <Font size="18.0" />
+                  </font>
+                  <VBox.margin>
+                     <Insets />
+                  </VBox.margin>
+               </Text>
+            </children>
+            <GridPane.margin>
+               <Insets bottom="500.0" left="15.0" top="100.0" />
+            </GridPane.margin>
+         </VBox>
              <rowConstraints>
             <RowConstraints percentHeight="15.0" valignment="CENTER" vgrow="SOMETIMES" />
             <RowConstraints maxHeight="254.13332519531247" minHeight="156.0" percentHeight="20.0" prefHeight="180.0" />
