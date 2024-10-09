@@ -11,7 +11,7 @@
  </ul>
  <h2><b>Software Librerias o herramientas con las que se trabaja 💻</b>
 </h2>
-> .[!NOTE].
+> [!NOTE]
 > Actualmente usamos Intellij de JetBrains
  <ol> 
            <b>
