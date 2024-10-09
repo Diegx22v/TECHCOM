@@ -18,7 +18,7 @@
 <?import javafx.scene.text.Text?>
 <?import javafx.scene.web.WebView?>
 
-<ScrollPane fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" prefHeight="992.0" prefWidth="1906.0" vbarPolicy="NEVER" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controlador">
+<ScrollPane fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" prefHeight="992.0" prefWidth="1906.0" vbarPolicy="NEVER" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.menu_principal">
     <content>
         <GridPane hgap="20.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1008.0" prefWidth="1928.0" styleClass="main-container" vgap="20.0">
             <columnConstraints>
@@ -61,30 +61,6 @@
             <GridPane.margin>
                <Insets right="20.0" />
             </GridPane.margin></WebView>
-            
-            <ImageView fx:id="Techcom" accessibleRole="BUTTON" fitHeight="201.0" fitWidth="231.0" onMouseClicked="#nueva_ventana" GridPane.halignment="RIGHT" GridPane.hgrow="ALWAYS" GridPane.rowSpan="2" GridPane.valignment="CENTER">
-                <image>
-                    <Image url="@resources/TECHCOM.png" />
-                </image>
-            <effect>
-               <DropShadow>
-                  <color>
-                     <Color green="1.0" blue="0.5" />
-                  </color>
-               </DropShadow>
-            </effect>
-            <GridPane.margin>
-               <Insets top="30.0" />
-            </GridPane.margin>
-            </ImageView>
-         <ImageView fitHeight="48.0" fitWidth="231.0" layoutX="550.0" layoutY="260.0" visible="false" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.valignment="TOP">
-            <image>
-               <Image url="@resources/delfos.png" />
-            </image>
-            <GridPane.margin>
-               <Insets right="5.0" top="10.0" />
-            </GridPane.margin>
-         </ImageView>
          <Hyperlink fx:id="proyecto" onAction="#proyecto_web" text="LINK AL PROYECTO" visible="false" GridPane.rowIndex="3">
             <font>
                <Font name="Goudy Stout" size="24.0" />
@@ -335,6 +311,12 @@
                <Insets right="400.0" />
             </GridPane.margin>
          </Button>
+           <ImageView fx:id="Techcom" fitHeight="194.0" fitWidth="646.0" onMouseClicked="#nueva_ventana" pickOnBounds="true" preserveRatio="true" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+              <GridPane.margin>
+                 <Insets right="20.0" />
+              </GridPane.margin>
+              <Image url="@resources/TECHCOM.png" />
+           </ImageView>
              <rowConstraints>
             <RowConstraints percentHeight="15.0" valignment="CENTER" vgrow="SOMETIMES" />
             <RowConstraints maxHeight="254.13332519531247" minHeight="156.0" percentHeight="20.0" prefHeight="180.0" />
