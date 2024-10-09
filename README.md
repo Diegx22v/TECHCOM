@@ -11,6 +11,8 @@
  </ul>
  <h2><b>Software Librerias o herramientas con las que se trabaja 💻</b>
 </h2>
+> .[!NOTE].
+> Actualmente usamos Intellij de JetBrains
  <ol> 
            <b>
            <li><a href="https://gluonhq.com/products/scene-builder/">Scene Builder</a></li>
