@@ -14,6 +14,7 @@ import javafx.scene.control.ButtonBar;
 import javafx.scene.control.Hyperlink;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.VBox;
 import javafx.scene.layout.HBox;
 import javafx.scene.text.Text;
@@ -29,7 +30,7 @@ import java.net.URI;
 import java.net.URISyntaxException;
 
 
-public class Controlador {
+public class menu_principal {
     @FXML
     private WebView webView;
     @FXML
@@ -261,39 +262,6 @@ private void inicializarAnimacion_boton_jugar() {
     	animacion_click_boton3(animacion_click3);
     	try { Utils.juego_laberinto(); puntos(); /*Stage stage = (Stage) salir.getScene().getWindow();  stage.show();*/ }
     	catch(Exception e) { alerta_de_error(e);  }
-    }   
-
-    
-    @FXML
-    public void cerrarVentana() {
-        animacion_click_boton4(animacion_click4);
-
-        // Cierra la ventana actual
-        Stage stage = (Stage) salir.getScene().getWindow();
-        Utils.restablecer_puntos(); 
-        stage.close();
-
-        try {
-    		Parent root = FXMLLoader.load(getClass().getResource("Interfaz_principal.fxml"));
-    		Stage preguntas = new Stage();
-    		preguntas.setTitle("Techcom");
-            Image icono = new Image(getClass().getResourceAsStream("resources/TECHCOM.png"));
-            preguntas.getIcons().add(icono);
-    		Scene juegos_locos_franklin = new Scene(root,800,600);
-            preguntas.setMaximized(true);
-    		preguntas.setScene(juegos_locos_franklin);
-            juegos_locos_franklin.getStylesheets().add(getClass().getResource("resources/interfaz_principal.css").toExternalForm());
-    		preguntas.show();
-        } catch (Exception e) {
-            Alert errorAlert = new Alert(AlertType.ERROR);
-            errorAlert.setTitle("Error en la Aplicación");
-            errorAlert.setHeaderText("Error en la ejecución");
-            errorAlert.setContentText("error: " + e); 
-
-            Stage errores = (Stage) errorAlert.getDialogPane().getScene().getWindow();
-            errores.getIcons().add(new Image(getClass().getResourceAsStream("resources/error_icon.png")));
-            errorAlert.showAndWait();
-        }
     }
     
     //imagen
@@ -408,25 +376,26 @@ private void inicializarAnimacion_boton_jugar() {
         }catch(Exception e){  alerta_de_error(e);  }
     }
 
-    
-    @FXML    
+    @FXML
     private void nueva_ventana() {
-        	try {
-                animacion_image(animacionTechcom);
-                Stage stage = (Stage) Techcom.getScene().getWindow();
-                stage.close();
-        		Parent root = FXMLLoader.load(getClass().getResource("menu_principal.fxml"));
-        		Stage preguntas = new Stage();
-        		preguntas.setTitle("Juegos locos franklin");
-                Image icono = new Image(getClass().getResourceAsStream("resources/TECHCOM.png"));
-                preguntas.getIcons().add(icono);
-        		Scene juegos_locos_franklin = new Scene(root,800,600);
-                preguntas.setMaximized(true);
-        		preguntas.setScene(juegos_locos_franklin);
-                juegos_locos_franklin.getStylesheets().add(getClass().getResource("resources/menu_principal.css").toExternalForm());
-        		preguntas.show();
-        	}catch(Exception e){  alerta_de_error(e);  }
+        try {
+            //animacion_image(animacionTechcom);
+            Stage stage = (Stage) Techcom.getScene().getWindow();
+            stage.close();
+            Parent root = FXMLLoader.load(getClass().getResource("juegos.fxml"));
+            Stage preguntas = new Stage();
+            preguntas.setTitle("Juegos locos franklin");
+            Image icono = new Image(getClass().getResourceAsStream("resources/TECHCOM.png"));
+            preguntas.getIcons().add(icono);
+            Scene juegos_locos_franklin = new Scene(root, 800, 600);
+            preguntas.setMaximized(true);
+            preguntas.setScene(juegos_locos_franklin);
+            juegos_locos_franklin.getStylesheets().add(getClass().getResource("resources/menu_principal.css").toExternalForm());
+            preguntas.show();
+        } catch (Exception e) {
+            alerta_de_error(e);
         }
+    }
     
     // TODO: Franklin's games/methods for the project
     public boolean getjuegoiniciado() {
