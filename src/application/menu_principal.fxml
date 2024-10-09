@@ -22,11 +22,11 @@
     <content>
         <GridPane hgap="20.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1008.0" prefWidth="1928.0" styleClass="main-container" vgap="20.0">
             <columnConstraints>
-                <ColumnConstraints fillWidth="false" percentWidth="82.0" />
-                <ColumnConstraints fillWidth="false" percentWidth="17.0" />
+                <ColumnConstraints fillWidth="false" percentWidth="99.0" />
+                <ColumnConstraints fillWidth="false" percentWidth="1.0" />
             </columnConstraints>
             
-            <Text text="Menú" textAlignment="CENTER" wrappingWidth="707.2000122070312" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="0">
+            <Text text="Bienvenidos" textAlignment="CENTER" wrappingWidth="766.2000122070312" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="0">
             <font>
                <Font name="Goudy Stout" size="60.0" />
             </font>
@@ -62,7 +62,7 @@
                <Insets right="20.0" />
             </GridPane.margin></WebView>
             
-            <ImageView accessibleRole="BUTTON" fitHeight="201.0" fitWidth="231.0" onMouseClicked="#nueva_ventana" visible="false" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.hgrow="ALWAYS" GridPane.rowSpan="2" GridPane.valignment="CENTER">
+            <ImageView fx:id="Techcom" accessibleRole="BUTTON" fitHeight="201.0" fitWidth="231.0" onMouseClicked="#nueva_ventana" GridPane.halignment="RIGHT" GridPane.hgrow="ALWAYS" GridPane.rowSpan="2" GridPane.valignment="CENTER">
                 <image>
                     <Image url="@resources/TECHCOM.png" />
                 </image>
@@ -187,7 +187,7 @@
                   </color>
                </DropShadow>
             </effect></Button>
-         <Button fx:id="jugar" alignment="TOP_RIGHT" contentDisplay="CENTER" defaultButton="true" layoutX="1638.0" layoutY="881.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#iniciarJuego" onMouseEntered="#softcursor3" prefHeight="84.0" prefWidth="312.0" style="-fx-background-color: c6bafe;" text="Jugar" textOverrun="WORD_ELLIPSIS" underline="true" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP">
+         <Button fx:id="deepfake" alignment="TOP_CENTER" contentDisplay="CENTER" defaultButton="true" layoutX="1638.0" layoutY="881.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#ventana_deepfake" prefHeight="84.0" prefWidth="461.0" style="-fx-background-color: c6bafe;" text="Deepfake" textOverrun="WORD_ELLIPSIS" GridPane.columnSpan="2" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="TOP">
             <font>
                <Font name="Goudy Stout" size="40.0" />
             </font>
@@ -215,10 +215,10 @@
                </DropShadow>
             </effect>
             <GridPane.margin>
-               <Insets />
+               <Insets left="50.0" />
             </GridPane.margin>
          </Button>
-         <Button fx:id="creditos" alignment="TOP_RIGHT" contentDisplay="CENTER" defaultButton="true" layoutX="797.0" layoutY="486.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#set_video2" onMouseEntered="#softcursor4" prefHeight="84.0" prefWidth="424.0" style="-fx-background-color: c6bafe;" text="Creditos" textOverrun="WORD_ELLIPSIS" underline="true" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+         <Button fx:id="clonacion_de_voz" alignment="TOP_RIGHT" contentDisplay="CENTER" defaultButton="true" layoutX="797.0" layoutY="486.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#ventana_clonacion_de_voz" prefHeight="84.0" prefWidth="769.0" style="-fx-background-color: c6bafe;" text="Clonación de voz" textOverrun="WORD_ELLIPSIS" GridPane.columnSpan="2" GridPane.halignment="RIGHT" GridPane.rowIndex="2" GridPane.valignment="TOP">
             <font>
                <Font name="Goudy Stout" size="40.0" />
             </font>
@@ -245,8 +245,11 @@
                   </color>
                </DropShadow>
             </effect>
+            <GridPane.margin>
+               <Insets right="190.0" />
+            </GridPane.margin>
          </Button>
-         <Button fx:id="salir" alignment="TOP_RIGHT" contentDisplay="CENTER" defaultButton="true" layoutX="741.0" layoutY="543.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#cerrarVentana" onMouseEntered="#softcursor5" prefHeight="84.0" prefWidth="289.0" style="-fx-background-color: c6bafe;" text="Salir" textOverrun="WORD_ELLIPSIS" underline="true" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
+         <Button fx:id="creditos" alignment="TOP_CENTER" contentDisplay="CENTER" defaultButton="true" layoutX="741.0" layoutY="543.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#ventana_creditos" prefHeight="84.0" prefWidth="455.0" style="-fx-background-color: c6bafe;" text="Creditos" textOverrun="WORD_ELLIPSIS" GridPane.columnSpan="2" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="CENTER">
             <font>
                <Font name="Goudy Stout" size="40.0" />
             </font>
@@ -273,35 +276,10 @@
                   </color>
                </DropShadow>
             </effect>
+            <GridPane.margin>
+               <Insets left="50.0" />
+            </GridPane.margin>
          </Button>
-         <Text fx:id="puntos" layoutX="607.0" layoutY="86.0" onKeyPressed="#puntos" onMouseMoved="#puntos" text="." wrappingWidth="325.20001220703125" GridPane.columnSpan="2" GridPane.halignment="RIGHT">
-            <font>
-               <Font name="Goudy Stout" size="35.0" />
-            </font>
-            <fill>
-               <RadialGradient centerX="0.9116022099447514" centerY="0.8056872037914692" cycleMethod="REPEAT" focusAngle="7.59" focusDistance="-0.6436781609195403" radius="0.3563218390804598">
-                  <stops>
-                     <Stop>
-                        <color>
-                           <Color red="0.1723976582288742" green="0.6947368383407593" blue="0.6947368383407593" />
-                        </color>
-                     </Stop>
-                     <Stop offset="1.0">
-                        <color>
-                           <Color red="0.07017543911933899" green="0.5263158082962036" blue="0.13099415600299835" />
-                        </color>
-                     </Stop>
-                  </stops>
-               </RadialGradient>
-            </fill>
-            <effect>
-               <DropShadow height="16.32" radius="7.66" spread="0.24" width="16.32">
-                  <color>
-                     <Color red="0.13177387416362762" green="0.6842105388641357" blue="0.33433398604393005" />
-                  </color>
-               </DropShadow>
-            </effect>
-         </Text>
          <Text layoutX="611.0" layoutY="86.0" text="Versión: 0.0.4" wrappingWidth="212.20001220703125" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.rowSpan="4" GridPane.valignment="BOTTOM">
             <font>
                <Font name="Goudy Stout" size="22.0" />
@@ -326,6 +304,37 @@
                <Insets bottom="10.0" left="10.0" />
             </GridPane.margin>
          </Text>
+         <Button fx:id="salir" alignment="TOP_CENTER" contentDisplay="CENTER" defaultButton="true" layoutX="35.0" layoutY="604.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#exit" prefHeight="84.0" prefWidth="313.0" style="-fx-background-color: c6bafe;" text="Salir" textOverrun="WORD_ELLIPSIS" GridPane.halignment="RIGHT" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+            <font>
+               <Font name="Goudy Stout" size="40.0" />
+            </font>
+            <textFill>
+               <LinearGradient endX="1.0" endY="1.0" startX="0.4549763033175355">
+                  <stops>
+                     <Stop>
+                        <color>
+                           <Color green="0.8815789222717285" blue="0.26447367668151855" />
+                        </color>
+                     </Stop>
+                     <Stop offset="1.0">
+                        <color>
+                           <Color red="0.08974983543157578" green="0.01656920090317726" blue="0.8947368264198303" />
+                        </color>
+                     </Stop>
+                  </stops>
+               </LinearGradient>
+            </textFill>
+            <effect>
+               <DropShadow blurType="ONE_PASS_BOX" height="38.59" radius="14.3975" spread="0.4">
+                  <color>
+                     <Color red="0.5598683953285217" blue="0.9078947305679321" />
+                  </color>
+               </DropShadow>
+            </effect>
+            <GridPane.margin>
+               <Insets right="400.0" />
+            </GridPane.margin>
+         </Button>
              <rowConstraints>
             <RowConstraints percentHeight="15.0" valignment="CENTER" vgrow="SOMETIMES" />
             <RowConstraints maxHeight="254.13332519531247" minHeight="156.0" percentHeight="20.0" prefHeight="180.0" />

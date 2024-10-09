@@ -53,9 +53,15 @@ public class Controlador {
     @FXML 
     private Button creditos;
     @FXML 
-    private Button salir;
+    private Button salir,exit;
     @FXML 
     private Button jugar;
+
+    @FXML
+    private Button deepfake;
+
+    @FXML
+    private Button clonacion_de_voz;
     @FXML
     private Button juegoButton,video_dos;
     @FXML 
@@ -73,15 +79,15 @@ public class Controlador {
     	    inicializarAnimacion();
     	    inicializarAnimacion_boton_video1();
     	    inicializarAnimacion_boton_video2();
-    	    inicializarAnimacion_boton_jugar();
-    	    inicializarAnimacion_boton_creditos();
-    	    inicializarAnimacion_boton_salir();
+    	    //inicializarAnimacion_boton_jugar();
+    	    //inicializarAnimacion_boton_creditos();
+    	    //inicializarAnimacion_boton_salir();
     	    inicializarAnimacion_click_video1();
     	    inicializarAnimacion_click_video2();
-    	    inicializarAnimacion_click_jugar();
-    	    inicializarAnimacion_click_salir();
-    	    int puntosIniciales = 0;
-            puntos.setText("Puntos: " + puntosIniciales);
+    	    //inicializarAnimacion_click_jugar();
+    	    //inicializarAnimacion_click_salir();
+    	    //int puntosIniciales = 0;
+            //puntos.setText("Puntos: " + puntosIniciales);
     }
     
     
@@ -339,6 +345,69 @@ private void inicializarAnimacion_boton_jugar() {
 	    errores.getIcons().add(new Image(getClass().getResourceAsStream("resources/error_icon.png")));
 	    errorAlert.showAndWait(); 
     }
+
+    @FXML
+    private void ventana_deepfake() {
+        try {
+            animacion_image(animacionTechcom);
+            Stage stage = (Stage) deepfake.getScene().getWindow();
+            stage.close();
+            Parent root = FXMLLoader.load(getClass().getResource("deepfake.fxml"));
+            Stage preguntas = new Stage();
+            preguntas.setTitle("Deepfake");
+            Image icono = new Image(getClass().getResourceAsStream("resources/TECHCOM.png"));
+            preguntas.getIcons().add(icono);
+            Scene Deepfake = new Scene(root,800,600);
+            preguntas.setMaximized(true);
+            preguntas.setScene(Deepfake);
+            Deepfake.getStylesheets().add(getClass().getResource("resources/menu_principal.css").toExternalForm());
+            preguntas.show();
+        }catch(Exception e){  alerta_de_error(e);  }
+    }
+
+    @FXML
+    private void ventana_clonacion_de_voz() {
+        try {
+            animacion_image(animacionTechcom);
+            Stage stage = (Stage) clonacion_de_voz.getScene().getWindow();
+            stage.close();
+            Parent root = FXMLLoader.load(getClass().getResource("clonacion_de_voz.fxml"));
+            Stage preguntas = new Stage();
+            preguntas.setTitle("Clonacion de voz");
+            Image icono = new Image(getClass().getResourceAsStream("resources/TECHCOM.png"));
+            preguntas.getIcons().add(icono);
+            Scene Deepfake = new Scene(root,800,600);
+            preguntas.setMaximized(true);
+            preguntas.setScene(Deepfake);
+            Deepfake.getStylesheets().add(getClass().getResource("resources/menu_principal.css").toExternalForm());
+            preguntas.show();
+        }catch(Exception e){  alerta_de_error(e);  }
+    }
+
+    @FXML
+    private void exit(){
+        System.exit(0);
+    }
+
+    @FXML
+    private void ventana_creditos() {
+        try {
+            animacion_image(animacionTechcom);
+            Stage stage = (Stage) creditos.getScene().getWindow();
+            stage.close();
+            Parent root = FXMLLoader.load(getClass().getResource("creditos.fxml"));
+            Stage preguntas = new Stage();
+            preguntas.setTitle("Creditos");
+            Image icono = new Image(getClass().getResourceAsStream("resources/TECHCOM.png"));
+            preguntas.getIcons().add(icono);
+            Scene Deepfake = new Scene(root,800,600);
+            preguntas.setMaximized(true);
+            preguntas.setScene(Deepfake);
+            Deepfake.getStylesheets().add(getClass().getResource("resources/menu_principal.css").toExternalForm());
+            preguntas.show();
+        }catch(Exception e){  alerta_de_error(e);  }
+    }
+
     
     @FXML    
     private void nueva_ventana() {

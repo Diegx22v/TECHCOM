@@ -18,7 +18,7 @@ public class Main extends Application {
             * */
             Image icono = new Image(getClass().getResourceAsStream("resources/TECHCOM.png"));
             primaryStage.getIcons().add(icono);
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("Interfaz_principal.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("menu_principal.fxml"));
             Parent root = loader.load();
             Scene scene = new Scene(root, 800, 600);
             scene.getStylesheets().add(getClass().getResource("resources/interfaz_principal.css").toExternalForm());
