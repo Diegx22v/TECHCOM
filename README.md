@@ -1,3 +1,6 @@
+> [!NOTE]
+> Actualmente usamos Intellij de JetBrains
+
 <h1><b>Bienvenidos a la TECHCOM  </b><img src="https://github.com/user-attachments/assets/0f46b5a5-010d-40fb-8b48-7ac536d0850d" alt="TECHCOM" width="50" height="50"></h1>
 <h3><b>Este es el repositorio de nuestro proyecto de la feria de informatica (Techcom) de nuestro curso (2do TEC VESP)</b></h3>
  <h2><b>Integrantes 🧑‍💻:</b></h2>
@@ -11,8 +14,7 @@
  </ul>
  <h2><b>Software Librerias o herramientas con las que se trabaja 💻</b>
 </h2>
-> [!NOTE]
-> Actualmente usamos Intellij de JetBrains
+
  <ol> 
            <b>
            <li><a href="https://gluonhq.com/products/scene-builder/">Scene Builder</a></li>
