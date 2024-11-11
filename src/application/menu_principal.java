@@ -14,7 +14,6 @@ import javafx.scene.control.ButtonBar;
 import javafx.scene.control.Hyperlink;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.VBox;
 import javafx.scene.layout.HBox;
 import javafx.scene.text.Text;
@@ -49,12 +48,14 @@ public class menu_principal {
     
     @SuppressWarnings("unused")
     private ScaleTransition animacionTechcom;
-	private ScaleTransition animacion_dos,animacion_uno,animacion_tres,animacion_cuatro,animacion_cinco;
+	private ScaleTransition animacion_dos,animacion_uno,animacion_tres,animacion_cuatro,animacion_cinco,animacion_seis;
     private ScaleTransition animacion_click1,animacion_click2,animacion_click3,animacion_click4,animacion_click5;
     @FXML 
     private Button creditos;
-    @FXML 
-    private Button salir,exit;
+    /*@FXML
+    private Button salir;*/
+    @FXML
+    private Button exit;
     @FXML 
     private Button jugar;
 
@@ -80,9 +81,9 @@ public class menu_principal {
     	    inicializarAnimacion();
     	    inicializarAnimacion_boton_video1();
     	    inicializarAnimacion_boton_video2();
-    	    //inicializarAnimacion_boton_jugar();
-    	    //inicializarAnimacion_boton_creditos();
-    	    //inicializarAnimacion_boton_salir();
+    	    inicializarAnimacion_boton_deepfake();
+    	    inicializarAnimacion_boton_creditos();
+    	    inicializarAnimacion_boton_clonacion_de_voz();
     	    inicializarAnimacion_click_video1();
     	    inicializarAnimacion_click_video2();
     	    //inicializarAnimacion_click_jugar();
@@ -105,6 +106,11 @@ public class menu_principal {
             animacion_uno.playFromStart(); 
         }
     }
+    void animacion_soft_clonacion_de_voz(ScaleTransition animacion_uno) {
+        if (animacion_seis.getStatus() != Status.RUNNING) {
+            animacion_seis.playFromStart();
+        }
+    }
     
  private void inicializarAnimacion_boton_video2() {
         
@@ -123,13 +129,21 @@ public class menu_principal {
 
 
     
-private void inicializarAnimacion_boton_jugar() {
+private void inicializarAnimacion_boton_deepfake() {
         
-	animacion_tres = new ScaleTransition(Duration.millis(150), jugar);
-	animacion_tres.setByX(0.15);  
-	animacion_tres.setByY(0.10);  
+	animacion_tres = new ScaleTransition(Duration.millis(150), deepfake);
+	animacion_tres.setByX(0.02);
+	animacion_tres.setByY(0.02);
 	animacion_tres.setAutoReverse(true);
 	animacion_tres.setCycleCount(2);
+    }
+    private void inicializarAnimacion_boton_clonacion_de_voz() {
+
+        animacion_seis = new ScaleTransition(Duration.millis(150), clonacion_de_voz);
+        animacion_seis.setByX(0.02);
+        animacion_seis.setByY(0.02);
+        animacion_seis.setAutoReverse(true);
+        animacion_seis.setCycleCount(2);
     }
     
     void animacion_soft_jugar(ScaleTransition animacion_tres) {
@@ -140,8 +154,8 @@ private void inicializarAnimacion_boton_jugar() {
     private void inicializarAnimacion_boton_creditos() {
         
     	animacion_cuatro = new ScaleTransition(Duration.millis(150), creditos);
-    	animacion_cuatro.setByX(0.15);  
-    	animacion_cuatro.setByY(0.10);  
+    	animacion_cuatro.setByX(0.02);
+    	animacion_cuatro.setByY(0.02);
     	animacion_cuatro.setAutoReverse(true);
     	animacion_cuatro.setCycleCount(2);
         }
@@ -151,19 +165,21 @@ private void inicializarAnimacion_boton_jugar() {
         	animacion_cuatro.playFromStart(); 
         }}
         
-        private void inicializarAnimacion_boton_salir() {
-            
+        /*private void inicializarAnimacion_boton_salir() {
+
         	animacion_cinco = new ScaleTransition(Duration.millis(150), salir);
-        	animacion_cinco.setByX(0.15);  
-        	animacion_cinco.setByY(0.10);  
+        	animacion_cinco.setByX(0.15);
+        	animacion_cinco.setByY(0.10);
         	animacion_cinco.setAutoReverse(true);
         	animacion_cinco.setCycleCount(2);
-            }
+            }*/
             
-        void animacion_soft_salir(ScaleTransition animacion_cinco) {
+       /*
+       *void animacion_soft_salir(ScaleTransition animacion_cinco) {
             if (animacion_cinco.getStatus() != Status.RUNNING) {
-            	animacion_cinco.playFromStart(); 
+            	animacion_cinco.playFromStart();
             }}
+            *  */
         
         private void inicializarAnimacion_click_video1() {
             
@@ -206,14 +222,15 @@ private void inicializarAnimacion_boton_jugar() {
      }}
 // falta el click de los creditos y el valor de salir a 5 (4 pertenece a creditos)
  
- private void inicializarAnimacion_click_salir() {
-     
+/*
+*private void inicializarAnimacion_click_salir() {
+
 	 animacion_click4 = new ScaleTransition(Duration.millis(200), salir);
-	 animacion_click4.setByX(0.20);  
-	 animacion_click4.setByY(0.20);  
+	 animacion_click4.setByX(0.20);
+	 animacion_click4.setByY(0.20);
 	 animacion_click4.setAutoReverse(true);
 	 animacion_click4.setCycleCount(2);
-    }
+    } */
  void animacion_click_boton4(ScaleTransition animacion_click4) {
      if (animacion_click4.getStatus() != Status.RUNNING) {
     	 animacion_click4.playFromStart(); 
@@ -238,11 +255,16 @@ private void inicializarAnimacion_boton_jugar() {
     void softcursor4() {
     	animacion_soft_creditos(animacion_cuatro);
     }
-    
+
     @FXML
+    void softcursor6() {
+        animacion_soft_clonacion_de_voz(animacion_seis);
+    }
+    
+    /*     @FXML
     void softcursor5() {
     	animacion_soft_salir(animacion_cinco);
-    }
+    }*/
     
     @FXML
     void set_video1() {
