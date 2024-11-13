@@ -290,8 +290,8 @@ private void inicializarAnimacion_boton_deepfake() {
     private void inicializarAnimacion() {
         
         animacionTechcom = new ScaleTransition(Duration.millis(150), Techcom);
-        animacionTechcom.setByX(0.15);  
-        animacionTechcom.setByY(0.10);  
+        animacionTechcom.setByX(0.03);
+        animacionTechcom.setByY(0.03);
         animacionTechcom.setAutoReverse(true);
         animacionTechcom.setCycleCount(2);
     }
