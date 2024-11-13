@@ -27,7 +27,7 @@
                 <ColumnConstraints fillWidth="false" percentWidth="1.0" />
             </columnConstraints>
             
-            <Text text="Bienvenidos" textAlignment="CENTER" wrappingWidth="766.2000122070312" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="0">
+            <Text text="Bienvenidos a la techcom" textAlignment="CENTER" wrappingWidth="766.2000122070312" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowSpan="2">
             <font>
                <Font name="Goudy Stout" size="60.0" />
             </font>
@@ -55,14 +55,14 @@
                </DropShadow>
             </effect>
             <GridPane.margin>
-               <Insets bottom="20.0" />
+               <Insets />
             </GridPane.margin></Text>
             
-            <WebView fx:id="webView" maxHeight="458.0" maxWidth="889.0" minHeight="404.0" minWidth="537.0" onKeyPressed="#set_video1" prefHeight="418.0" prefWidth="851.0" visible="false" GridPane.columnSpan="2" GridPane.halignment="RIGHT" GridPane.rowIndex="2">
+            <WebView fx:id="webView" maxHeight="458.0" maxWidth="889.0" minHeight="404.0" minWidth="537.0" onKeyPressed="#set_video1" prefHeight="418.0" prefWidth="851.0" visible="false" GridPane.columnSpan="2" GridPane.halignment="RIGHT" GridPane.rowIndex="3">
             <GridPane.margin>
                <Insets right="20.0" />
             </GridPane.margin></WebView>
-         <Hyperlink fx:id="proyecto" onAction="#proyecto_web" text="LINK AL PROYECTO" visible="false" GridPane.rowIndex="3">
+         <Hyperlink fx:id="proyecto" onAction="#proyecto_web" text="LINK AL PROYECTO" visible="false" GridPane.rowIndex="4">
             <font>
                <Font name="Goudy Stout" size="24.0" />
             </font>
@@ -83,7 +83,7 @@
                </LinearGradient>
             </textFill>
          </Hyperlink>
-         <Hyperlink fx:id="proyectodos" layoutX="10.0" layoutY="813.0" onAction="#proyecto_web_2" text="LINK AL PROYECTO" visible="false" GridPane.rowIndex="5">
+         <Hyperlink fx:id="proyectodos" layoutX="10.0" layoutY="813.0" onAction="#proyecto_web_2" text="LINK AL PROYECTO" visible="false" GridPane.rowIndex="6">
             <font>
                <Font name="Goudy Stout" size="24.0" />
             </font>
@@ -104,7 +104,7 @@
                </LinearGradient>
             </textFill>
          </Hyperlink>
-         <Button fx:id="video_dos" alignment="TOP_RIGHT" contentDisplay="CENTER" defaultButton="true" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#set_video2" onMouseEntered="#softcursor2" prefHeight="32.0" prefWidth="158.0" style="-fx-background-color: c6bafe;" text="VIDEO DOS" textOverrun="WORD_ELLIPSIS" underline="true" visible="false" GridPane.columnSpan="2" GridPane.halignment="RIGHT" GridPane.rowIndex="4" GridPane.valignment="TOP">
+         <Button fx:id="video_dos" alignment="TOP_RIGHT" contentDisplay="CENTER" defaultButton="true" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#set_video2" onMouseEntered="#softcursor2" prefHeight="32.0" prefWidth="158.0" style="-fx-background-color: c6bafe;" text="VIDEO DOS" textOverrun="WORD_ELLIPSIS" underline="true" visible="false" GridPane.columnSpan="2" GridPane.halignment="RIGHT" GridPane.rowIndex="5" GridPane.valignment="TOP">
             <GridPane.margin>
                <Insets right="100.0" />
             </GridPane.margin>
@@ -134,7 +134,7 @@
                   </color>
                </DropShadow>
             </effect></Button>
-         <Button fx:id="video_uno" alignment="TOP_RIGHT" layoutX="1476.0" layoutY="881.0" mnemonicParsing="false" onAction="#set_video1" onMouseEntered="#softcursor1" style="-fx-background-color: c6bafe;" text="VIDEO UNO" visible="false" GridPane.halignment="RIGHT" GridPane.rowIndex="4" GridPane.valignment="BASELINE">
+         <Button fx:id="video_uno" alignment="TOP_RIGHT" layoutX="1476.0" layoutY="881.0" mnemonicParsing="false" onAction="#set_video1" onMouseEntered="#softcursor1" style="-fx-background-color: c6bafe;" text="VIDEO UNO" visible="false" GridPane.halignment="RIGHT" GridPane.rowIndex="5" GridPane.valignment="BASELINE">
             <GridPane.margin>
                <Insets right="200.0" />
             </GridPane.margin>
@@ -164,7 +164,7 @@
                   </color>
                </DropShadow>
             </effect></Button>
-         <Text layoutX="611.0" layoutY="86.0" text="Versión: 0.0.9" wrappingWidth="212.20001220703125" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.rowSpan="4" GridPane.valignment="BOTTOM">
+         <Text layoutX="611.0" layoutY="86.0" text="Versión: 0.0.9" wrappingWidth="212.20001220703125" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.rowSpan="4" GridPane.valignment="BOTTOM">
             <font>
                <Font name="Goudy Stout" size="22.0" />
             </font>
@@ -194,7 +194,7 @@
               </GridPane.margin>
               <Image url="@resources/TECHCOM.png" />
            </ImageView>
-         <VBox alignment="TOP_CENTER" prefHeight="573.0" prefWidth="335.0" style="-fx-padding: 10; -fx-background-color: d0c8a2; -fx-background-radius: 15; -fx-border-radius: 15;" GridPane.rowIndex="1">
+         <VBox alignment="TOP_CENTER" prefHeight="314.0" prefWidth="362.0" style="-fx-padding: 10; -fx-background-color: d0c8a2; -fx-background-radius: 15; -fx-border-radius: 15;" GridPane.rowIndex="2">
             <children>
                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Visión">
                   <font>
@@ -216,10 +216,10 @@
                </Text>
             </children>
             <GridPane.margin>
-               <Insets bottom="800.0" left="100.0" top="860.0" />
+               <Insets bottom="600.0" left="450.0" top="860.0" />
             </GridPane.margin>
          </VBox>
-         <VBox alignment="TOP_CENTER" style="-fx-padding: 15; -fx-background-color: #d0c8a2; -fx-background-radius: 15; -fx-border-radius: 15;" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+         <VBox alignment="TOP_CENTER" style="-fx-padding: 15; -fx-background-color: #d0c8a2; -fx-background-radius: 15; -fx-border-radius: 15;" GridPane.rowIndex="3" GridPane.valignment="CENTER">
             <children>
                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Misión">
                   <font>
@@ -244,13 +244,13 @@
                </Text>
             </children>
             <GridPane.margin>
-               <Insets bottom="800.0" left="1100.0" top="100.0" />
+               <Insets bottom="550.0" left="1100.0" top="100.0" />
             </GridPane.margin>
             <VBox.margin>
                <Insets bottom="20.0" />
             </VBox.margin>
          </VBox>
-         <VBox alignment="TOP_CENTER" layoutX="25.0" layoutY="567.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="155.0" prefWidth="771.0" style="-fx-padding: 10; -fx-background-color: d0c8a2; -fx-background-radius: 15; -fx-border-radius: 15;" GridPane.rowIndex="2">
+         <VBox alignment="TOP_CENTER" layoutX="25.0" layoutY="567.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="155.0" prefWidth="771.0" style="-fx-padding: 10; -fx-background-color: d0c8a2; -fx-background-radius: 15; -fx-border-radius: 15;" GridPane.rowIndex="3">
             <children>
                <ImageView fx:id="Techcom111" fitHeight="154.0" fitWidth="346.0" onMouseClicked="#nueva_ventana" pickOnBounds="true" preserveRatio="true">
                   <image>
@@ -290,10 +290,10 @@
                </Button>
             </children>
             <GridPane.margin>
-               <Insets bottom="500.0" left="1070.0" top="790.0" />
+               <Insets bottom="500.0" left="560.0" top="790.0" />
             </GridPane.margin>
          </VBox>
-         <VBox alignment="TOP_CENTER" layoutX="1080.0" layoutY="652.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="278.0" prefWidth="493.0" style="-fx-padding: 10; -fx-background-color: d0c8a2; -fx-background-radius: 15; -fx-border-radius: 15;" GridPane.rowIndex="2">
+         <VBox alignment="TOP_CENTER" layoutX="1080.0" layoutY="652.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="278.0" prefWidth="493.0" style="-fx-padding: 10; -fx-background-color: d0c8a2; -fx-background-radius: 15; -fx-border-radius: 15;" GridPane.rowIndex="3">
             <children>
                <ImageView fx:id="Techcom1111" fitHeight="154.0" fitWidth="346.0" onMouseClicked="#nueva_ventana" pickOnBounds="true" preserveRatio="true">
                   <image>
@@ -333,10 +333,10 @@
                </Button>
             </children>
             <GridPane.margin>
-               <Insets bottom="600.0" left="550.0" top="890.0" />
+               <Insets bottom="600.0" left="1375.0" top="890.0" />
             </GridPane.margin>
          </VBox>
-         <VBox alignment="TOP_CENTER" layoutX="560.0" layoutY="652.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="278.0" prefWidth="493.0" style="-fx-padding: 10; -fx-background-color: d0c8a2; -fx-background-radius: 15; -fx-border-radius: 15;" GridPane.rowIndex="2">
+         <VBox alignment="TOP_CENTER" layoutX="560.0" layoutY="652.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="278.0" prefWidth="493.0" style="-fx-padding: 10; -fx-background-color: d0c8a2; -fx-background-radius: 15; -fx-border-radius: 15;" GridPane.rowIndex="3">
             <children>
                <ImageView fx:id="Techcom11111" fitHeight="154.0" fitWidth="346.0" onMouseClicked="#nueva_ventana" pickOnBounds="true" preserveRatio="true">
                   <image>
@@ -376,15 +376,16 @@
                </Button>
             </children>
             <GridPane.margin>
-               <Insets bottom="600.0" left="10.0" top="890.0" />
+               <Insets bottom="600.0" left="35.0" top="890.0" />
             </GridPane.margin>
          </VBox>
              <rowConstraints>
             <RowConstraints percentHeight="15.0" valignment="CENTER" vgrow="SOMETIMES" />
+            <RowConstraints percentHeight="15.0" valignment="CENTER" vgrow="SOMETIMES" />
             <RowConstraints maxHeight="254.13332519531247" minHeight="156.0" percentHeight="20.0" prefHeight="180.0" />
             <RowConstraints maxHeight="581.0" minHeight="381.79998779296875" percentHeight="65.0" prefHeight="581.0" />
-            <RowConstraints maxHeight="89.06672363281245" minHeight="0.0" percentHeight="1.0" prefHeight="0.0" />
-             <RowConstraints maxHeight="327.0" minHeight="67.99992675781243" percentHeight="1.0" prefHeight="266.199951171875" />
+             <RowConstraints maxHeight="89.06672363281245" minHeight="0.0" percentHeight="1.0" prefHeight="0.0" />
+            <RowConstraints maxHeight="327.0" minHeight="67.99992675781243" percentHeight="1.0" prefHeight="266.199951171875" />
             <RowConstraints maxHeight="273.60009765625" minHeight="43.5999755859375" percentHeight="1.0" prefHeight="43.5999755859375" />
          </rowConstraints>
         </GridPane>

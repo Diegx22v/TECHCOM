@@ -100,6 +100,14 @@
                     <Insets bottom="800.0" />
                 </GridPane.margin>
             </VBox>
+         <ImageView fx:id="Return_credits" fitHeight="73.0" fitWidth="66.0" onMouseClicked="#return_main1" onMouseEntered="#softimage1" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@resources/return-57.png" />
+            </image>
+            <GridPane.margin>
+               <Insets />
+            </GridPane.margin>
+         </ImageView>
             <rowConstraints>
                 <RowConstraints maxHeight="119.0" minHeight="101.0" percentHeight="5.0" prefHeight="101.0" valignment="CENTER" vgrow="SOMETIMES" />
                 <RowConstraints maxHeight="254.13332519531247" minHeight="129.0" percentHeight="10.0" prefHeight="147.0" />
