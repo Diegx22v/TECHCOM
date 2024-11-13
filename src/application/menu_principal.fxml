@@ -27,7 +27,7 @@
                 <ColumnConstraints fillWidth="false" percentWidth="1.0" />
             </columnConstraints>
             
-            <Text text="Bienvenidos a la techcom" textAlignment="CENTER" wrappingWidth="766.2000122070312" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowSpan="2">
+            <Text text="Bienvenidos a la techcon" textAlignment="CENTER" wrappingWidth="766.2000122070312" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowSpan="2">
             <font>
                <Font name="Goudy Stout" size="60.0" />
             </font>
@@ -164,7 +164,7 @@
                   </color>
                </DropShadow>
             </effect></Button>
-         <Text layoutX="611.0" layoutY="86.0" text="Versión: 0.0.9" wrappingWidth="212.20001220703125" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.rowSpan="4" GridPane.valignment="BOTTOM">
+         <Text layoutX="611.0" layoutY="86.0" text="Versión: 0.0.10" wrappingWidth="363.20001220703125" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.rowSpan="4" GridPane.valignment="BOTTOM">
             <font>
                <Font name="Goudy Stout" size="22.0" />
             </font>
@@ -185,12 +185,12 @@
                </LinearGradient>
             </fill>
             <GridPane.margin>
-               <Insets bottom="10.0" left="10.0" />
+               <Insets bottom="9.0" left="10.0" />
             </GridPane.margin>
          </Text>
-           <ImageView fx:id="Techcom" fitHeight="308.0" fitWidth="214.0" onMouseClicked="#nueva_ventana" pickOnBounds="true" preserveRatio="true" GridPane.halignment="RIGHT" GridPane.rowSpan="2">
+           <ImageView fx:id="Techcom" fitHeight="265.0" fitWidth="180.0" onMouseClicked="#nueva_ventana" onMouseEntered="#softimage1" pickOnBounds="true" preserveRatio="true" GridPane.halignment="RIGHT" GridPane.rowSpan="2">
               <GridPane.margin>
-                 <Insets right="35.0" />
+                 <Insets right="35.0" top="75.0" />
               </GridPane.margin>
               <Image url="@resources/TECHCOM.png" />
            </ImageView>
@@ -206,7 +206,7 @@
                      <Image url="@resources/vision.png" />
                   </image>
                </ImageView>
-               <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Esto es un ejemplo de una mision, cabe aclarar que esto esta sujeto a cualquier cambio hasta que definamos una vision fija para este programa  y proyecto a presentarse en enero" wrappingWidth="333.630859375">
+               <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Desarrollar un software innovador que utilice códigos de Java para detectar y prevenir el uso malintencionado de Deep Fake y clonación de voz, protegiendo la integridad de la información y la privacidad de los individuos" wrappingWidth="333.630859375">
                   <font>
                      <Font size="18.0" />
                   </font>
@@ -216,7 +216,7 @@
                </Text>
             </children>
             <GridPane.margin>
-               <Insets bottom="600.0" left="450.0" top="860.0" />
+               <Insets bottom="632.0" left="450.0" top="860.0" />
             </GridPane.margin>
          </VBox>
          <VBox alignment="TOP_CENTER" style="-fx-padding: 15; -fx-background-color: #d0c8a2; -fx-background-radius: 15; -fx-border-radius: 15;" GridPane.rowIndex="3" GridPane.valignment="CENTER">
@@ -234,7 +234,7 @@
                      <Insets bottom="10.0" top="10.0" />
                   </VBox.margin>
                </ImageView>
-               <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Esto es un ejemplo de una mision, cabe aclarar que esto esta sujeto a cualquier cambio hasta que definamos una mision fija para este programa  y proyecto a presentarse en enero" wrappingWidth="333.630859375">
+               <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Mantener un software innovador y confiable que detecte y prevenga ataques cibernéticos, además de fomentar una cultura de seguridad informática y conciencia sobre los riesgos asociados" wrappingWidth="333.630859375">
                   <font>
                      <Font size="18.0" />
                   </font>

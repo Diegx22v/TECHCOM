@@ -69,33 +69,23 @@ public class creditos {
 //MouseEvent mouseEvent
     @FXML
     private void return_main1() {
-        System.out.println("Método return_main1 ejecutado");
         try {
             Return_credits.setDisable(true);
-            // Cierra la ventana actual
-            Stage cerrar = (Stage) Techcom.getScene().getWindow();
+            Stage cerrar = (Stage) Return_credits.getScene().getWindow();
             cerrar.close();
-            cerrar.close();
-
-
-            // Carga la nueva ventana
             Parent root = FXMLLoader.load(getClass().getResource("menu_principal.fxml"));
-            Stage preguntas = new Stage();
-            preguntas.setTitle("TECHCOM");
-
-            // Icono
+            Stage return_main_scene = new Stage();
+            return_main_scene.setTitle("TECHCON");
             Image icono = new Image(getClass().getResourceAsStream("resources/TECHCOM.png"));
-            preguntas.getIcons().add(icono);
-
-            // Escena y estilos
+            return_main_scene.getIcons().add(icono);
             Scene Deepfake = new Scene(root, 800, 600);
-            preguntas.setMaximized(true);
-            preguntas.setScene(Deepfake);
+            return_main_scene.setMaximized(true);
+            return_main_scene.setScene(Deepfake);
             Deepfake.getStylesheets().add(getClass().getResource("resources/menu_principal.css").toExternalForm());
 
             // Mostrar la nueva ventana
             cerrar.close();
-            preguntas.show();
+            return_main_scene.show();
         } catch (Exception e) {
             // ALERTA`
             Alert errorAlert = new Alert(AlertType.ERROR);
