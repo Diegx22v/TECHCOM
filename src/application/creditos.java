@@ -81,7 +81,7 @@ public class creditos {
             Scene Deepfake = new Scene(root, 800, 600);
             return_main_scene.setMaximized(true);
             return_main_scene.setScene(Deepfake);
-            Deepfake.getStylesheets().add(getClass().getResource("resources/menu_principal.css").toExternalForm());
+            Deepfake.getStylesheets().add(getClass().getResource("resources/interfaz_principal.css").toExternalForm());
 
             // Mostrar la nueva ventana
             cerrar.close();

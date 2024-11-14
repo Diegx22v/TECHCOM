@@ -18,7 +18,7 @@
 <?import javafx.scene.text.Text?>
 <?import javafx.scene.web.WebView?>
 
-<ScrollPane fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" prefHeight="992.0" prefWidth="1906.0" vbarPolicy="NEVER" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.menu_principal">
+<ScrollPane fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" prefHeight="992.0" prefWidth="1906.0" stylesheets="@resources/interfaz_principal.css" vbarPolicy="NEVER" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.menu_principal">
     <content>
         <GridPane hgap="20.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1008.0" prefWidth="1928.0" styleClass="main-container" vgap="20.0">
             <columnConstraints>
@@ -26,7 +26,7 @@
                 <ColumnConstraints fillWidth="false" percentWidth="1.0" />
             </columnConstraints>
             
-            <Text fill="WHITE" text="Bienvenidos a la techcon" textAlignment="CENTER" wrappingWidth="766.2000122070312" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowSpan="2">
+            <Text fill="#2b2c34" text="Bienvenidos a la techcon" textAlignment="CENTER" wrappingWidth="766.2000122070312" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowSpan="2">
             <font>
                <Font name="Goudy Stout" size="60.0" />
             </font>
@@ -170,9 +170,9 @@
               </GridPane.margin>
               <Image url="@resources/TECHCOM.png" />
            </ImageView>
-         <VBox alignment="TOP_CENTER" prefHeight="314.0" prefWidth="362.0" style="-fx-padding: 10; -fx-background-color: d0c8a2; -fx-background-radius: 15; -fx-border-radius: 15;" GridPane.rowIndex="2">
+         <VBox alignment="TOP_CENTER" prefHeight="314.0" prefWidth="362.0" style="-fx-padding: 10; -fx-background-color: #d1d1e9; -fx-background-radius: 15; -fx-border-radius: 15;" GridPane.rowIndex="2">
             <children>
-               <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Visión">
+               <Text fill="#2b2c34" strokeType="OUTSIDE" strokeWidth="0.0" text="Visión">
                   <font>
                      <Font name="Goudy Stout" size="32.0" />
                   </font>
@@ -182,7 +182,7 @@
                      <Image url="@resources/vision.png" />
                   </image>
                </ImageView>
-               <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Desarrollar un software innovador que utilice códigos de Java para detectar y prevenir el uso malintencionado de Deep Fake y clonación de voz, protegiendo la integridad de la información y la privacidad de los individuos" wrappingWidth="333.630859375">
+               <Text fill="#2b2c34" strokeType="OUTSIDE" strokeWidth="0.0" text="Desarrollar un software innovador que utilice códigos de Java para detectar y prevenir el uso malintencionado de Deep Fake y clonación de voz, protegiendo la integridad de la información y la privacidad de los individuos" wrappingWidth="333.630859375">
                   <font>
                      <Font size="18.0" />
                   </font>
@@ -195,9 +195,9 @@
                <Insets bottom="632.0" left="450.0" top="860.0" />
             </GridPane.margin>
          </VBox>
-         <VBox alignment="TOP_CENTER" style="-fx-padding: 15; -fx-background-color: #d0c8a2; -fx-background-radius: 15; -fx-border-radius: 15;" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+         <VBox alignment="TOP_CENTER" style="-fx-padding: 15; -fx-background-color: #d1d1e9; -fx-background-radius: 15; -fx-border-radius: 15;" GridPane.rowIndex="3" GridPane.valignment="CENTER">
             <children>
-               <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Misión">
+               <Text fill="#2b2c34" strokeType="OUTSIDE" strokeWidth="0.0" text="Misión">
                   <font>
                      <Font name="Goudy Stout" size="32.0" />
                   </font>
@@ -210,7 +210,7 @@
                      <Insets bottom="10.0" top="10.0" />
                   </VBox.margin>
                </ImageView>
-               <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Mantener un software innovador y confiable que detecte y prevenga ataques cibernéticos, además de fomentar una cultura de seguridad informática y conciencia sobre los riesgos asociados" wrappingWidth="333.630859375">
+               <Text fill="#2b2c34" strokeType="OUTSIDE" strokeWidth="0.0" text="Mantener un software innovador y confiable que detecte y prevenga ataques cibernéticos, además de fomentar una cultura de seguridad informática y conciencia sobre los riesgos asociados" wrappingWidth="333.630859375">
                   <font>
                      <Font size="18.0" />
                   </font>
@@ -226,7 +226,7 @@
                <Insets bottom="20.0" />
             </VBox.margin>
          </VBox>
-         <VBox alignment="TOP_CENTER" layoutX="25.0" layoutY="567.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="155.0" prefWidth="771.0" style="-fx-padding: 10; -fx-background-color: d0c8a2; -fx-background-radius: 15; -fx-border-radius: 15;" GridPane.rowIndex="3">
+         <VBox alignment="TOP_CENTER" layoutX="25.0" layoutY="567.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="155.0" prefWidth="771.0" style="-fx-padding: 10; -fx-background-color: #d1d1e9; -fx-background-radius: 15; -fx-border-radius: 15;" GridPane.rowIndex="3">
             <children>
                <ImageView fx:id="Techcom111" fitHeight="154.0" fitWidth="346.0" onMouseClicked="#nueva_ventana" pickOnBounds="true" preserveRatio="true">
                   <image>
@@ -236,123 +236,54 @@
                      <Insets bottom="20.0" />
                   </VBox.margin>
                </ImageView>
-               <Button fx:id="clonacion_de_voz" alignment="TOP_RIGHT" contentDisplay="CENTER" defaultButton="true" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#ventana_clonacion_de_voz" onMouseEntered="#softcursor6" prefHeight="84.0" prefWidth="769.0" style="-fx-background-color: c6bafe;" text="Clonación de voz" textOverrun="WORD_ELLIPSIS">
+               <Button fx:id="clonacion_de_voz" alignment="TOP_RIGHT" contentDisplay="CENTER" defaultButton="true" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#ventana_clonacion_de_voz" onMouseEntered="#softcursor6" prefHeight="84.0" prefWidth="769.0" style="-fx-background-color: #6246ea;" text="Clonación de voz" textFill="#fffffe" textOverrun="WORD_ELLIPSIS">
                   <font>
                      <Font name="Goudy Stout" size="40.0" />
                   </font>
-                  <textFill>
-                     <LinearGradient endX="1.0" endY="1.0" startX="0.4549763033175355">
-                        <stops>
-                           <Stop>
-                              <color>
-                                 <Color green="0.8815789222717285" blue="0.26447367668151855" />
-                              </color>
-                           </Stop>
-                           <Stop offset="1.0">
-                              <color>
-                                 <Color red="0.08974983543157578" green="0.01656920090317726" blue="0.8947368264198303" />
-                              </color>
-                           </Stop>
-                        </stops>
-                     </LinearGradient>
-                  </textFill>
-                  <effect>
-                     <DropShadow blurType="ONE_PASS_BOX" height="38.59" radius="14.3975" spread="0.4">
-                        <color>
-                           <Color red="0.5598683953285217" blue="0.9078947305679321" />
-                        </color>
-                     </DropShadow>
-                  </effect>
                </Button>
             </children>
             <GridPane.margin>
                <Insets bottom="500.0" left="560.0" top="790.0" />
             </GridPane.margin>
          </VBox>
-         <VBox alignment="TOP_CENTER" layoutX="1080.0" layoutY="652.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="278.0" prefWidth="493.0" style="-fx-padding: 10; -fx-background-color: d0c8a2; -fx-background-radius: 15; -fx-border-radius: 15;" GridPane.rowIndex="3">
+         <VBox alignment="TOP_CENTER" layoutX="1080.0" layoutY="652.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="278.0" prefWidth="493.0" style="-fx-padding: 10; -fx-background-color: #d1d1e9; -fx-background-radius: 15; -fx-border-radius: 15;" GridPane.rowIndex="3">
             <children>
                <ImageView fx:id="Techcom1111" fitHeight="154.0" fitWidth="346.0" onMouseClicked="#nueva_ventana" pickOnBounds="true" preserveRatio="true">
                   <image>
-                     <Image url="@resources/integrantes.png" />
+                     <Image url="@resources/photo-of-the-participants-icon-isolated-contour-symbol-illustration-vector.jpg" />
                   </image>
                   <VBox.margin>
                      <Insets bottom="20.0" />
                   </VBox.margin>
                </ImageView>
-               <Button fx:id="creditos" alignment="TOP_CENTER" contentDisplay="CENTER" defaultButton="true" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#ventana_creditos" onMouseEntered="#softcursor4" prefHeight="84.0" prefWidth="455.0" style="-fx-background-color: c6bafe;" text="Creditos" textOverrun="WORD_ELLIPSIS">
+               <Button fx:id="creditos" alignment="TOP_CENTER" contentDisplay="CENTER" defaultButton="true" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#ventana_creditos" onMouseEntered="#softcursor4" prefHeight="84.0" prefWidth="455.0" style="-fx-background-color: #6246ea;" text="Creditos" textFill="#fffffe" textOverrun="WORD_ELLIPSIS">
                   <font>
                      <Font name="Goudy Stout" size="40.0" />
                   </font>
-                  <textFill>
-                     <LinearGradient endX="1.0" endY="1.0" startX="0.4549763033175355">
-                        <stops>
-                           <Stop>
-                              <color>
-                                 <Color green="0.8815789222717285" blue="0.26447367668151855" />
-                              </color>
-                           </Stop>
-                           <Stop offset="1.0">
-                              <color>
-                                 <Color red="0.08974983543157578" green="0.01656920090317726" blue="0.8947368264198303" />
-                              </color>
-                           </Stop>
-                        </stops>
-                     </LinearGradient>
-                  </textFill>
-                  <effect>
-                     <DropShadow blurType="ONE_PASS_BOX" height="38.59" radius="14.3975" spread="0.4">
-                        <color>
-                           <Color red="0.5598683953285217" blue="0.9078947305679321" />
-                        </color>
-                     </DropShadow>
-                  </effect>
                </Button>
             </children>
             <GridPane.margin>
                <Insets bottom="600.0" left="1375.0" top="890.0" />
             </GridPane.margin>
          </VBox>
-         <VBox alignment="TOP_CENTER" layoutX="560.0" layoutY="652.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="278.0" prefWidth="493.0" style="-fx-padding: 10; -fx-background-color: d0c8a2; -fx-background-radius: 15; -fx-border-radius: 15;" GridPane.rowIndex="3">
+         <VBox alignment="TOP_CENTER" layoutX="560.0" layoutY="652.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="278.0" prefWidth="493.0" style="-fx-padding: 10; -fx-background-color: #d1d1e9; -fx-background-radius: 15; -fx-border-radius: 15;" GridPane.rowIndex="3">
             <children>
-               <ImageView fx:id="Techcom11111" fitHeight="154.0" fitWidth="346.0" onMouseClicked="#nueva_ventana" pickOnBounds="true" preserveRatio="true">
+               <ImageView fx:id="Techcom2" fitHeight="222.0" fitWidth="336.0" onMouseClicked="#nueva_ventana" onMouseEntered="#softimage1" pickOnBounds="true" preserveRatio="true">
                   <image>
                      <Image url="@resources/Deepfake.jpg" />
                   </image>
                   <VBox.margin>
-                     <Insets bottom="20.0" />
+                     <Insets bottom="10.0" />
                   </VBox.margin>
                </ImageView>
-               <Button fx:id="deepfake" alignment="TOP_LEFT" contentDisplay="CENTER" defaultButton="true" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#ventana_deepfake" onMouseEntered="#softcursor3" prefHeight="84.0" prefWidth="461.0" style="-fx-background-color: c6bafe;" text="Deepfake" textOverrun="WORD_ELLIPSIS">
+               <Button fx:id="deepfake" alignment="TOP_LEFT" contentDisplay="CENTER" defaultButton="true" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#ventana_deepfake" onMouseEntered="#softcursor3" prefHeight="84.0" prefWidth="461.0" style="-fx-background-color: #6246ea;" text="Deepfake" textFill="#fffffe" textOverrun="WORD_ELLIPSIS">
                   <font>
                      <Font name="Goudy Stout" size="40.0" />
                   </font>
-                  <textFill>
-                     <LinearGradient endX="1.0" endY="1.0" startX="0.4549763033175355">
-                        <stops>
-                           <Stop>
-                              <color>
-                                 <Color green="0.8815789222717285" blue="0.26447367668151855" />
-                              </color>
-                           </Stop>
-                           <Stop offset="1.0">
-                              <color>
-                                 <Color red="0.08974983543157578" green="0.01656920090317726" blue="0.8947368264198303" />
-                              </color>
-                           </Stop>
-                        </stops>
-                     </LinearGradient>
-                  </textFill>
-                  <effect>
-                     <DropShadow blurType="ONE_PASS_BOX" height="38.59" radius="14.3975" spread="0.4">
-                        <color>
-                           <Color red="0.5598683953285217" blue="0.9078947305679321" />
-                        </color>
-                     </DropShadow>
-                  </effect>
                </Button>
             </children>
             <GridPane.margin>
-               <Insets bottom="600.0" left="35.0" top="890.0" />
+               <Insets bottom="605.0" left="35.0" top="890.0" />
             </GridPane.margin>
          </VBox>
              <rowConstraints>
