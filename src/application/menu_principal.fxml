@@ -13,7 +13,6 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.paint.Color?>
 <?import javafx.scene.paint.LinearGradient?>
-<?import javafx.scene.paint.RadialGradient?>
 <?import javafx.scene.paint.Stop?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
@@ -27,33 +26,10 @@
                 <ColumnConstraints fillWidth="false" percentWidth="1.0" />
             </columnConstraints>
             
-            <Text text="Bienvenidos a la techcon" textAlignment="CENTER" wrappingWidth="766.2000122070312" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowSpan="2">
+            <Text fill="WHITE" text="Bienvenidos a la techcon" textAlignment="CENTER" wrappingWidth="766.2000122070312" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowSpan="2">
             <font>
                <Font name="Goudy Stout" size="60.0" />
             </font>
-            <fill>
-               <RadialGradient centerX="0.9116022099447514" centerY="0.8056872037914692" cycleMethod="REPEAT" focusAngle="7.59" focusDistance="-0.6436781609195403" radius="0.3563218390804598">
-                  <stops>
-                     <Stop>
-                        <color>
-                           <Color red="0.1723976582288742" green="0.6947368383407593" blue="0.6947368383407593" />
-                        </color>
-                     </Stop>
-                     <Stop offset="1.0">
-                        <color>
-                           <Color red="0.07017543911933899" green="0.5263158082962036" blue="0.13099415600299835" />
-                        </color>
-                     </Stop>
-                  </stops>
-               </RadialGradient>
-            </fill>
-            <effect>
-               <DropShadow height="16.32" radius="7.66" spread="0.24" width="16.32">
-                  <color>
-                     <Color red="0.13177387416362762" green="0.6842105388641357" blue="0.33433398604393005" />
-                  </color>
-               </DropShadow>
-            </effect>
             <GridPane.margin>
                <Insets />
             </GridPane.margin></Text>

@@ -1,8 +1,9 @@
 .main-container {
-    -fx-background-image: url("ftv4.jpg");
-    -fx-background-size: cover;
+
+    -fx-background-image: url("6aabc94f-43b1-43b3-8d20-02711194ce47.jpeg");
+    -fx-background-size: 100% 100%;
     -fx-background-position: center center;
-    -fx-background-repeat: no-repeat;
+    -fx-background-repeat: no-repeat ;
     
 }
 .vertical_container_one{
