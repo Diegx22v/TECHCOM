@@ -1,21 +1,32 @@
 .main-container {
 
-    -fx-background-image: url("6aabc94f-43b1-43b3-8d20-02711194ce47.jpeg");
+    -fx-background-color: #d5f1bc;
     -fx-background-size: 100% 100%;
     -fx-background-position: center center;
-    -fx-background-repeat: no-repeat ;
-    
+    -fx-background-repeat: no-repeat;
+
 }
-.vertical_container_one{
+
+.vertical_container_one {
     -fx-padding: 10;
     -fx-background-color: #d0c8a2;
     -fx-background-radius: 15;
     -fx-border-radius: 15;
 }
-.horizontal_container_uno{
+
+.horizontal_container_uno {
     -fx-padding: 10;
     -fx-background-color: #b2dba4;
     -fx-background-radius: 15;
     -fx-border-radius: 15;
 }
 
+.stack {
+    -fx-background-radius: 50%;
+    -fx-border-radius: 50%;
+    -fx-background-image: url("Deepfake.jpg");
+    -fx-background-size: auto auto;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center center;
+    -fx-padding: 0;
+}
