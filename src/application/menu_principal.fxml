@@ -286,6 +286,14 @@
                <Insets bottom="605.0" left="35.0" top="890.0" />
             </GridPane.margin>
          </VBox>
+         <ImageView fx:id="Techcom3" fitHeight="46.0" fitWidth="145.0" layoutX="1684.0" layoutY="44.0" onMouseClicked="#nueva_ventana" onMouseEntered="#softimage1" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@resources/delfos.png" />
+            </image>
+            <GridPane.margin>
+               <Insets bottom="50.0" left="10.0" />
+            </GridPane.margin>
+         </ImageView>
              <rowConstraints>
             <RowConstraints percentHeight="15.0" valignment="CENTER" vgrow="SOMETIMES" />
             <RowConstraints percentHeight="15.0" valignment="CENTER" vgrow="SOMETIMES" />
