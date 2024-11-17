@@ -22,7 +22,9 @@ import javafx.scene.web.WebView;
 import javafx.stage.Stage;
 import javafx.util.Duration;
 import utils.Utils;
-
+import javafx.scene.media.Media;
+import javafx.scene.media.MediaPlayer;
+import java.nio.file.Paths;
 import java.awt.*;
 import java.io.IOException;
 import java.net.URI;
@@ -335,10 +337,18 @@ private void inicializarAnimacion_boton_deepfake() {
 	    errores.getIcons().add(new Image(getClass().getResourceAsStream("resources/error_icon.png")));
 	    errorAlert.showAndWait(); 
     }
+    private MediaPlayer playsound;
 
     @FXML
     private void ventana_deepfake() {
         try {
+            if (playsound == null) {
+                String audio = getClass().getResource("resources/deepfake_prueba.mp3").toExternalForm();
+                Media sound = new Media(audio);
+                playsound = new MediaPlayer(sound);
+            }
+            playsound.stop();
+            playsound.play();
             animacion_image(animacionTechcom);
             Stage stage = (Stage) deepfake.getScene().getWindow();
             stage.close();
