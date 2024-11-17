@@ -2,9 +2,8 @@ module TECHCOM {
 	requires javafx.controls;
 	requires javafx.fxml;
 	requires javafx.web;
-	requires javafx.graphics;
-	requires java.desktop;
-	requires javafx.base;
+    requires java.desktop;
+    requires javafx.media;
     opens application to javafx.fxml;
     exports application;
 }  
