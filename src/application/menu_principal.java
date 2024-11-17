@@ -338,7 +338,9 @@ private void inicializarAnimacion_boton_deepfake() {
 	    errorAlert.showAndWait(); 
     }
     private MediaPlayer playsound;
-
+/*
+* @author Diego V.
+* */
     @FXML
     private void ventana_deepfake() {
         try {
