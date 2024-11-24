@@ -1,6 +1,4 @@
-/**
- * 
- */
+
 package utils;
 
 import java.util.Random;
@@ -8,18 +6,30 @@ import java.util.Random;
 import javax.swing.JOptionPane;
 
 /**
- * 
+ * Clase de juegos o utilidades
+ * @author Diego V.
+ * @version 1.0
  */
 public class Utils {
 
-	/**
-	 * @param args
-	 */
+
+    /**
+     * Creacion de sistema de puntos
+     */
+
 	public static int puntos=0;
+
+    /**
+     * metodo de arranque a eliminar
+     * @param args no necesario
+     */
 	public static void main(String[] args) {
-		// principal
 	}
-	public static void juego_laberinto() {
+
+    /**
+     * Juego de laberinto hecho por Franklin C.
+     */
+    public static void juego_laberinto() {
 		boolean juego_iniciado=true;
         if(juego_iniciado) {
         	int a, b, c, d, e, ini;
@@ -160,7 +170,10 @@ public class Utils {
                 }
             }
 	}
-	// crear metodos de java fx para limitar la cantidad de lineas y generar codigo mas legible 
+
+    /**
+     * Restablece los puntos
+     */
 	public static void restablecer_puntos() {
 		puntos=0;
 	}
