@@ -26,20 +26,46 @@ import java.awt.*;
 import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
+/**
+ * Clase de la ventana de juegos.
+ * Maneja la lógica y juegos de los juegos.
+ * @author Franklin C.
+ * @version 1.0
+ */
 public class juegos {
+    /**
+     * Objeto obsoleto
+     */
     @FXML
     private Button creditos;
+
+    /**
+     * Objeto obsoleto
+     */
     @FXML
     private Button salir,exit;
+
+    /**
+     * Objeto obsoleto
+     */
     @FXML
     private Button jugar;
 
+    /**
+     * Objeto obsoleto
+     */
     @FXML
     private Button deepfake;
 
+    /**
+     * Objeto obsoleto
+     */
     @FXML
     private Button clonacion_de_voz;
 
+    /**
+     * Metodo de cierre
+     */
     @FXML
     void salir(){
         System.exit(0);

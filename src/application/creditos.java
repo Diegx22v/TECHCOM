@@ -28,26 +28,54 @@ import java.awt.*;
 import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
+/**
+ * Clase de creditos del proyecto
+ * Maneja la logica de esta ventana
+ * @author Diego V.
+ * @version 1.1
+ */
 public class creditos {
+    /**
+     *  Objetos obsoletos
+     */
     @FXML
     private VBox contenedor_vertical,Contenedor_vertical_dos,Contenedor_vertical_tres;
 
+    /**
+     *  Objetos obsoletos
+     */
     @FXML
     private HBox contenedor_horizontal,Contenedor_horizontal_dos,Contenedor_horizontal_tres;
 
+    /**
+     *  Imagen de Techcon
+     */
     @FXML
     private ImageView Techcom;
 
+    /**
+     *  Imagen de retorno
+     */
     @FXML
     private ImageView Return_credits;
 
+
+    /**
+     *  Animaciones
+     */
     private ScaleTransition credits_return_animation;
 
+    /**
+     * Inicializa las animaciones y metodos
+     */
     @FXML
     public void initialize(){
         initialize_animation_return_credits();
     }
 
+    /**
+     * Inicia una animacion
+     */
     private void initialize_animation_return_credits() {
 
         credits_return_animation = new ScaleTransition(Duration.millis(150), Return_credits);
@@ -57,16 +85,27 @@ public class creditos {
         credits_return_animation.setCycleCount(2);
     }
 
+    /**
+     * verifica la ejecucion de la animacion
+     * @param animacion recoge la animacion
+     */
     void animacion_image(ScaleTransition animacion) {
         if (animacion.getStatus() != Status.RUNNING) {
             animacion.playFromStart();
         }
     }
+
+    /**
+     * Inicia la animacion
+     */
     @FXML
     void softimage1() {
         animacion_image(credits_return_animation);
     }
-//MouseEvent mouseEvent
+
+    /**
+     * Cierra la ventana actual y regresa a la anterior
+     */
     @FXML
     private void return_main1() {
         try {
@@ -100,6 +139,10 @@ public class creditos {
             Return_credits.setDisable(false);
         }
     }
+
+    /**
+     * Metodo a borrar
+     */
     @FXML
     private void nueva_ventana() {
         try {
@@ -120,6 +163,11 @@ public class creditos {
             alerta_de_error(e);
         }
     }
+
+    /**
+     * Crea una alerta de error
+     * @param e recoge el error
+     */
     public void alerta_de_error(Exception e) {
         Alert errorAlert = new Alert(AlertType.ERROR);
         errorAlert.setTitle("Error en la Aplicación");
