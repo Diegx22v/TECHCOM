@@ -28,7 +28,7 @@ import java.net.URI;
 import java.net.URISyntaxException;
 /**
  * Clase de la ventana de juegos.
- * Maneja la lógica y juegos de los juegos.
+ * Maneja la lógica y  de los juegos.
  * @author Franklin C.
  * @version 1.0
  */
