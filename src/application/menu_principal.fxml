@@ -120,7 +120,7 @@
             <children>
                <ImageView fx:id="Clonacion_de_voz" fitHeight="154.0" fitWidth="346.0" onMouseClicked="#nueva_ventana" pickOnBounds="true" preserveRatio="true">
                   <image>
-                     <Image url="@resources/images.jpeg" />
+                     <Image url="@resources/clonacion.jpg" />
                   </image>
                   <VBox.margin>
                      <Insets bottom="20.0" />
@@ -138,9 +138,9 @@
          </VBox>
          <VBox alignment="TOP_CENTER" layoutX="1080.0" layoutY="652.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="278.0" prefWidth="493.0" style="-fx-padding: 10; -fx-background-color: #d1d1e9; -fx-background-radius: 15; -fx-border-radius: 15;" GridPane.rowIndex="3">
             <children>
-               <ImageView fx:id="Creditos" fitHeight="154.0" fitWidth="346.0" onMouseClicked="#nueva_ventana" pickOnBounds="true" preserveRatio="true">
+               <ImageView fx:id="Creditos" fitHeight="154.0" fitWidth="159.0" onMouseClicked="#nueva_ventana" pickOnBounds="true" preserveRatio="true">
                   <image>
-                     <Image url="@resources/photo-of-the-participants-icon-isolated-contour-symbol-illustration-vector.jpg" />
+                     <Image url="@resources/creditos.jpeg" />
                   </image>
                   <VBox.margin>
                      <Insets bottom="20.0" />
@@ -158,7 +158,7 @@
          </VBox>
          <VBox alignment="TOP_CENTER" layoutX="560.0" layoutY="652.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="278.0" prefWidth="493.0" style="-fx-padding: 10; -fx-background-color: #d1d1e9; -fx-background-radius: 15; -fx-border-radius: 15;" GridPane.rowIndex="3">
             <children>
-               <ImageView fx:id="Deepfake" fitHeight="222.0" fitWidth="336.0" onMouseClicked="#nueva_ventana" onMouseEntered="#soft_techcom" pickOnBounds="true" preserveRatio="true">
+               <ImageView fx:id="Deepfake" fitHeight="157.0" fitWidth="269.0" onMouseClicked="#nueva_ventana" onMouseEntered="#soft_techcom" pickOnBounds="true" preserveRatio="true">
                   <image>
                      <Image url="@resources/Deepfake.jpg" />
                   </image>
