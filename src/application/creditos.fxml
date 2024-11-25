@@ -45,7 +45,7 @@
                     <Insets right="5.0" top="20.0" />
                 </GridPane.margin>
             </ImageView>
-            <VBox fx:id="contenedor_vertical1" alignment="TOP_CENTER" fillWidth="false" layoutX="20.0" layoutY="357.0" prefHeight="307.0" prefWidth="678.0" style="-fx-padding: 10; -fx-background-color: #d1d1e9; -fx-background-radius: 15; -fx-border-radius: 15;" styleClass="vertical_container_one" GridPane.rowIndex="2">
+            <VBox fx:id="contenedor_vertical" alignment="TOP_CENTER" fillWidth="false" layoutX="20.0" layoutY="357.0" prefHeight="307.0" prefWidth="678.0" style="-fx-padding: 10; -fx-background-color: #d1d1e9; -fx-background-radius: 15; -fx-border-radius: 15;" styleClass="vertical_container_one" GridPane.rowIndex="2">
                 <children>
                     <HBox>
                         <children>
@@ -90,7 +90,7 @@
                <Insets left="10.0" top="20.0" />
             </GridPane.margin>
          </ImageView>
-         <VBox fx:id="contenedor_vertical11" alignment="TOP_CENTER" fillWidth="false" layoutX="210.0" layoutY="257.0" prefHeight="410.0" prefWidth="692.0" spacing="15.0" style="-fx-padding: 10; -fx-background-color: #d1d1e9; -fx-background-radius: 15; -fx-border-radius: 15;" styleClass="vertical_container_one" GridPane.rowIndex="2">
+         <VBox fx:id="Contenedor_vertical_dos" alignment="TOP_CENTER" fillWidth="false" layoutX="210.0" layoutY="257.0" prefHeight="410.0" prefWidth="692.0" spacing="15.0" style="-fx-padding: 10; -fx-background-color: #d1d1e9; -fx-background-radius: 15; -fx-border-radius: 15;" styleClass="vertical_container_one" GridPane.rowIndex="2">
             <children>
                <HBox>
                   <children>
@@ -129,7 +129,7 @@
                <Insets bottom="1000.0" left="1100.0" top="850.0" />
             </GridPane.margin>
          </VBox>
-         <VBox fx:id="contenedor_vertical12" alignment="TOP_CENTER" fillWidth="false" layoutX="410.0" layoutY="257.0" prefHeight="307.0" prefWidth="678.0" spacing="10.0" style="-fx-padding: 10; -fx-background-color: #d1d1e9; -fx-background-radius: 15; -fx-border-radius: 15;" styleClass="vertical_container_one" GridPane.rowIndex="2">
+         <VBox fx:id="Contenedor_vertical_tres" alignment="TOP_CENTER" fillWidth="false" layoutX="410.0" layoutY="257.0" prefHeight="307.0" prefWidth="678.0" spacing="10.0" style="-fx-padding: 10; -fx-background-color: #d1d1e9; -fx-background-radius: 15; -fx-border-radius: 15;" styleClass="vertical_container_one" GridPane.rowIndex="2">
             <children>
                <HBox>
                   <children>

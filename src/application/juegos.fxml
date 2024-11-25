@@ -78,7 +78,7 @@
                     <Insets right="5.0" top="10.0" />
                 </GridPane.margin>
             </ImageView>
-            <Button fx:id="deepfake" alignment="TOP_CENTER" contentDisplay="CENTER" defaultButton="true" layoutX="1638.0" layoutY="881.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" prefHeight="84.0" prefWidth="555.0" style="-fx-background-color: c6bafe;" text="&lt;borrador&gt;" textOverrun="WORD_ELLIPSIS" underline="true" GridPane.columnSpan="2" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="TOP">
+            <Button fx:id="juego_uno" alignment="TOP_CENTER" contentDisplay="CENTER" defaultButton="true" layoutX="1638.0" layoutY="881.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" prefHeight="84.0" prefWidth="555.0" style="-fx-background-color: c6bafe;" text="&lt;borrador&gt;" textOverrun="WORD_ELLIPSIS" underline="true" GridPane.columnSpan="2" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="TOP">
                 <font>
                     <Font name="Goudy Stout" size="40.0" />
                 </font>
@@ -109,7 +109,7 @@
                     <Insets left="50.0" />
                 </GridPane.margin>
             </Button>
-            <Button fx:id="clonacion_de_voz" alignment="TOP_RIGHT" contentDisplay="CENTER" defaultButton="true" layoutX="797.0" layoutY="486.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" prefHeight="84.0" prefWidth="536.0" style="-fx-background-color: c6bafe;" text="&lt;Borrador&gt;" textOverrun="WORD_ELLIPSIS" underline="true" GridPane.columnSpan="2" GridPane.halignment="RIGHT" GridPane.rowIndex="2" GridPane.valignment="TOP">
+            <Button fx:id="juego_dos" alignment="TOP_RIGHT" contentDisplay="CENTER" defaultButton="true" layoutX="797.0" layoutY="486.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" prefHeight="84.0" prefWidth="536.0" style="-fx-background-color: c6bafe;" text="&lt;Borrador&gt;" textOverrun="WORD_ELLIPSIS" underline="true" GridPane.columnSpan="2" GridPane.halignment="RIGHT" GridPane.rowIndex="2" GridPane.valignment="TOP">
                 <font>
                     <Font name="Goudy Stout" size="40.0" />
                 </font>
@@ -140,7 +140,7 @@
                     <Insets right="400.0" />
                 </GridPane.margin>
             </Button>
-            <Button fx:id="creditos" alignment="TOP_CENTER" contentDisplay="CENTER" defaultButton="true" layoutX="741.0" layoutY="543.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" prefHeight="84.0" prefWidth="560.0" style="-fx-background-color: c6bafe;" text="&lt;borrador&gt;" textOverrun="WORD_ELLIPSIS" underline="true" GridPane.columnSpan="2" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+            <Button fx:id="juegos_tres" alignment="TOP_CENTER" contentDisplay="CENTER" defaultButton="true" layoutX="741.0" layoutY="543.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" prefHeight="84.0" prefWidth="560.0" style="-fx-background-color: c6bafe;" text="&lt;borrador&gt;" textOverrun="WORD_ELLIPSIS" underline="true" GridPane.columnSpan="2" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="CENTER">
                 <font>
                     <Font name="Goudy Stout" size="40.0" />
                 </font>

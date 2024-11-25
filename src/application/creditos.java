@@ -36,34 +36,40 @@ import java.net.URISyntaxException;
  */
 public class creditos {
     /**
-     *  Objetos obsoletos
+     *  Objeto VBox para contener el primer grupo
      */
     @FXML
-    private VBox contenedor_vertical,Contenedor_vertical_dos,Contenedor_vertical_tres;
+    public VBox contenedor_vertical;
 
     /**
-     *  Objetos obsoletos
+     *  Objeto VBox para contener el segundo grupo
      */
     @FXML
-    private HBox contenedor_horizontal,Contenedor_horizontal_dos,Contenedor_horizontal_tres;
+    public VBox Contenedor_vertical_dos;
+
+    /**
+     *  Objeto VBox para contener a los profesores
+     */
+    @FXML
+    public VBox Contenedor_vertical_tres;
 
     /**
      *  Imagen de Techcon
      */
     @FXML
-    private ImageView Techcom;
+    public ImageView Techcom;
 
     /**
      *  Imagen de retorno
      */
     @FXML
-    private ImageView Return_credits;
+    public ImageView Return_credits;
 
 
     /**
-     *  Animaciones
+     *  Animacion de la imagen de retorno
      */
-    private ScaleTransition credits_return_animation;
+    public ScaleTransition credits_return_animation;
 
     /**
      * Inicializa las animaciones y metodos
@@ -76,7 +82,7 @@ public class creditos {
     /**
      * Inicia una animacion
      */
-    private void initialize_animation_return_credits() {
+    public void initialize_animation_return_credits() {
 
         credits_return_animation = new ScaleTransition(Duration.millis(150), Return_credits);
         credits_return_animation.setByX(0.15);
@@ -89,7 +95,7 @@ public class creditos {
      * verifica la ejecucion de la animacion
      * @param animacion recoge la animacion
      */
-    void animacion_image(ScaleTransition animacion) {
+    public void animacion_image(ScaleTransition animacion) {
         if (animacion.getStatus() != Status.RUNNING) {
             animacion.playFromStart();
         }
@@ -99,7 +105,7 @@ public class creditos {
      * Inicia la animacion
      */
     @FXML
-    void softimage1() {
+   public  void softimage1() {
         animacion_image(credits_return_animation);
     }
 
@@ -107,7 +113,7 @@ public class creditos {
      * Cierra la ventana actual y regresa a la anterior
      */
     @FXML
-    private void return_main1() {
+    public void return_main1() {
         try {
             Return_credits.setDisable(true);
             Stage cerrar = (Stage) Return_credits.getScene().getWindow();
@@ -137,30 +143,6 @@ public class creditos {
             errorAlert.showAndWait();
         }finally{
             Return_credits.setDisable(false);
-        }
-    }
-
-    /**
-     * Metodo a borrar
-     */
-    @FXML
-    private void nueva_ventana() {
-        try {
-            //animacion_image(animacionTechcom);
-            Stage stage = (Stage) Techcom.getScene().getWindow();
-            stage.close();
-            Parent root = FXMLLoader.load(getClass().getResource("menu_principal.fxml"));
-            Stage preguntas = new Stage();
-            preguntas.setTitle("Juegos locos franklin");
-            Image icono = new Image(getClass().getResourceAsStream("resources/TECHCOM.png"));
-            preguntas.getIcons().add(icono);
-            Scene juegos_locos_franklin = new Scene(root, 800, 600);
-            preguntas.setMaximized(true);
-            preguntas.setScene(juegos_locos_franklin);
-            juegos_locos_franklin.getStylesheets().add(getClass().getResource("resources/menu_principal.css").toExternalForm());
-            preguntas.show();
-        } catch (Exception e) {
-            alerta_de_error(e);
         }
     }
 

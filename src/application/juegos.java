@@ -34,40 +34,35 @@ import java.net.URISyntaxException;
  */
 public class juegos {
     /**
-     * Objeto obsoleto
+     * Objeto Button para el primer juego
      */
     @FXML
-    private Button creditos;
+    public Button juego_uno;
 
     /**
-     * Objeto obsoleto
+     * Objeto Button para salir del programa
      */
     @FXML
-    private Button salir,exit;
+    public Button salir;
+
 
     /**
-     * Objeto obsoleto
+     * Objeto Button para el segundo juego
      */
     @FXML
-    private Button jugar;
+    public Button juego_dos;
 
     /**
-     * Objeto obsoleto
+     * Objeto Button para el tercer juego
      */
     @FXML
-    private Button deepfake;
-
-    /**
-     * Objeto obsoleto
-     */
-    @FXML
-    private Button clonacion_de_voz;
+    public  Button juegos_tres;
 
     /**
      * Metodo de cierre
      */
     @FXML
-    void salir(){
+    public void salir(){
         System.exit(0);
     }
 

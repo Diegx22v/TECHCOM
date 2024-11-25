@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"application","l":"clonacion_de_voz"},{"p":"application","l":"creditos"},{"p":"application","l":"deepfake"},{"p":"application","l":"juegos"},{"p":"application","l":"Main"},{"p":"application","l":"menu_principal"},{"p":"utils","l":"Utils"}];updateSearchResults();
