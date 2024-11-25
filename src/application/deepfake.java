@@ -35,40 +35,40 @@ import java.net.URISyntaxException;
 public class deepfake {
 
     /**
-     * Objeto obsoleto
+     * Objeto WebView para visualizar paginas webs
      */
     @FXML
-    private WebView webView;
+    public WebView webView;
 
     /**
-     * Objeto obsoleto
+     * Objeto WebEngine motor de navegador
      */
     @FXML
-    private WebEngine webEngine;
+    public WebEngine webEngine;
 
     /**
-     * Objeto obsoleto
+     * Objeto VBox para tener el contenido de la carta principal
      */
     @FXML
-    private VBox contenedor_vertical,Contenedor_vertical_dos,Contenedor_vertical_tres;
+    public VBox contenedor_vertical;
 
     /**
-     * Objeto obsoleto
+     * Objeto HBox para el boton y su alineacion
      */
     @FXML
-    private HBox contenedor_horizontal,Contenedor_horizontal_dos,Contenedor_horizontal_tres;
+    public HBox contenedor_horizontal;
 
     /**
-     * Objeto obsoleto
+     * Objeto ImageView para el logo del proyecto
      */
     @FXML
-    private ImageView Techcom;
+    public ImageView Techcom;
 
     /**
-     * Objeto obsoleto
+     * Objeto HyperLink para redirigirnos a la pagina del primer proyecto
      */
     @FXML
-    private Hyperlink proyecto;
+    public Hyperlink proyecto;
 
     /**
      * Metodo que inicia lo necesario
@@ -93,7 +93,7 @@ public class deepfake {
      * @throws IOException evita otros errores consecuentes de la red
      */
     @FXML
-    void proyecto_web(ActionEvent event) throws URISyntaxException, IOException {
+    public void proyecto_web(ActionEvent event) throws URISyntaxException, IOException {
         Desktop.getDesktop().browse(new URI("https://colab.research.google.com/drive/1dygH6NjFvrz2Slhufk2ilNR_kD5C48as"));
     }
 

@@ -31,44 +31,44 @@ import java.net.URISyntaxException;
  * Clase de clonacion de voz
  * Maneja la logica de esta ventana
  * @author Diego V.
- * @version 1.1
+ * @version 1.0
  */
 public class clonacion_de_voz {
 
     /**
-     * Objeto obsoleto
+     * Objeto WebView para visualizar paginas webs
      */
     @FXML
-    private WebView webView;
+    public WebView webView;
     /**
-     * Objeto obsoleto
+     * Objeto WebEngine motor de navegador
      */
     @FXML
-    private WebEngine webEngine;
+    public WebEngine webEngine;
 
     /**
-     * Objeto obsoleto
+     * Objeto VBox para visualizar la carta principal
      */
     @FXML
-    private VBox contenedor_vertical,Contenedor_vertical_dos,Contenedor_vertical_tres;
+    public VBox contenedor_vertical;
 
     /**
-     * Objeto obsoleto
+     * Objeto HBox para alinear el boton de hipervinculo
      */
     @FXML
-    private HBox contenedor_horizontal,Contenedor_horizontal_dos,Contenedor_horizontal_tres;
+    public HBox contenedor_horizontal;
 
     /**
-     * Objeto obsoleto
+     * Objeto ImageView pare el logo del proyecto
      */
     @FXML
-    private ImageView Techcom;
+    public ImageView Techcom;
 
     /**
-     * Objeto obsoleto
+     * Objeto HyperLink para redirigirnos a la pagina del segundo proyecto
      */
     @FXML
-    private Hyperlink proyectodos;
+    public Hyperlink proyectodos;
 
     /**
      * Inicializa  lo necesario
@@ -93,7 +93,7 @@ public class clonacion_de_voz {
      * @throws IOException evita errores consecuentes a la red
      */
     @FXML
-    void proyecto_web_2(ActionEvent event)throws URISyntaxException,IOException {
+    public void proyecto_web_2(ActionEvent event)throws URISyntaxException,IOException {
         Desktop.getDesktop().browse(new URI("https://elevenlabs.io/"));
     }
 
