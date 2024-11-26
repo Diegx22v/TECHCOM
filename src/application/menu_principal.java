@@ -13,6 +13,7 @@ import javafx.scene.control.Hyperlink;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.layout.GridPane;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import javafx.util.Duration;
@@ -77,7 +78,7 @@ public class menu_principal {
     public ImageView Creditos;
 
     @FXML
-    public ScrollPane main;
+    public GridPane main;
 
     /**
      * Objeto ScaleTransition para la imagen Techcom
