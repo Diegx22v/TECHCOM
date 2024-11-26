@@ -10,6 +10,7 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.Button;
 import javafx.scene.control.Hyperlink;
+import javafx.scene.control.ScrollPane;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.text.Text;
@@ -75,6 +76,8 @@ public class menu_principal {
     @FXML
     public ImageView Creditos;
 
+    @FXML
+    public ScrollPane main;
 
     /**
      * Objeto ScaleTransition para la imagen Techcom
