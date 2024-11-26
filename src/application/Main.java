@@ -3,6 +3,7 @@ package application;
 import javafx.application.Application;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.geometry.Pos;
 import javafx.geometry.Rectangle2D;
 import javafx.scene.Group;
 import javafx.scene.Node;
@@ -13,6 +14,7 @@ import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.image.Image;
 import javafx.scene.layout.GridPane;
+import javafx.scene.layout.StackPane;
 import javafx.scene.transform.Scale;
 import javafx.stage.Screen;
 import javafx.stage.Stage;
@@ -51,49 +53,38 @@ public class Main extends Application {
             double baseHeight = 1080;
 
             // Detectar resolución de pantalla
-            Rectangle2D Get_pantalla = Screen.getPrimary().getBounds();
-            double screenWidth = Get_pantalla.getWidth();
-            double screenHeight = Get_pantalla.getHeight();
+            Rectangle2D screenBounds = Screen.getPrimary().getBounds();
+            double screenWidth = screenBounds.getWidth();
+            double screenHeight = screenBounds.getHeight();
 
-
-            /*
-             * Configuración de la ventana principal
-             */
+            // Configuración de la ventana principal
             Image icono = new Image(getClass().getResourceAsStream("resources/TECHCOM.png"));
             primaryStage.getIcons().add(icono);
 
             FXMLLoader loader = new FXMLLoader(getClass().getResource("menu_principal.fxml"));
-            ScrollPane main = loader.load(); // Asumiendo que tu raíz es un ScrollPane
+            GridPane main = loader.load(); // Se asegura de que el GridPane es el nodo raíz
 
-            // Obtener el contenido original del ScrollPane
-            Node content = main.getContent();
+            // Crear un grupo para aplicar el escalado al contenido
+            Group scalableGroup = new Group(main);
 
-            // Crear un contenedor intermedio para escalar
-            Group group = new Group(content);
-            main.setContent(group); // Reemplazar el contenido original con el contenedor escalable
-
-            // Crear la escena con la resolución detectada
-            Scene scene = new Scene(main, screenWidth, screenHeight);
+            // Crear una escena con la resolución detectada
+            Scene scene = new Scene(new StackPane(scalableGroup), screenWidth, screenHeight);
             scene.getStylesheets().add(getClass().getResource("resources/interfaz_principal.css").toExternalForm());
 
-            // Calcular escalado proporcional
+            // Calcular el factor de escalado
             double scaleX = screenWidth / baseWidth;
             double scaleY = screenHeight / baseHeight;
             double scale = Math.min(scaleX, scaleY); // Mantener proporciones
-            group.setScaleX(scale);
-            group.setScaleY(scale);
 
-            // Centrar el contenido escalado
-            double translateX = (screenWidth - (baseWidth * scale)) / 2;
-            double translateY = (screenHeight - (baseHeight * scale)) / 2;
-            group.setTranslateX(translateX);
-            group.setTranslateY(translateY);
+            // Aplicar el escalado
+            scalableGroup.setScaleX(scale);
+            scalableGroup.setScaleY(scale);
 
-            // Ajustar el ScrollPane para que sea responsivo
-            main.setFitToWidth(true);
-            main.setFitToHeight(true);
+            // Centrar el contenido escalado en la ventana
+            StackPane stackPane = (StackPane) scene.getRoot();
+            stackPane.setAlignment(Pos.CENTER);
 
-            // Configuración de la ventana principal (Stage)
+            // Configuración del Stage
             primaryStage.setMaximized(true);
             primaryStage.setTitle("TECHCON");
             primaryStage.setScene(scene);
@@ -103,7 +94,7 @@ public class Main extends Application {
             Alert errorAlert = new Alert(AlertType.ERROR);
             errorAlert.setTitle("Error en la Aplicación");
             errorAlert.setHeaderText("Error en la ejecución");
-            errorAlert.setContentText("Error: " + e);
+            errorAlert.setContentText("Error: " + e.getMessage());
             Stage errores = (Stage) errorAlert.getDialogPane().getScene().getWindow();
             errores.getIcons().add(new Image(getClass().getResourceAsStream("resources/error_icon.png")));
             errorAlert.showAndWait();
