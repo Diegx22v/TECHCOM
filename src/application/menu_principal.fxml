@@ -15,7 +15,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<ScrollPane fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" prefHeight="992.0" prefWidth="1906.0" stylesheets="@resources/interfaz_principal.css" vbarPolicy="NEVER" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.menu_principal">
+<ScrollPane fx:id="main" fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" prefHeight="992.0" prefWidth="1906.0" stylesheets="@resources/interfaz_principal.css" vbarPolicy="NEVER" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.menu_principal">
     <content>
         <GridPane hgap="20.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1008.0" prefWidth="1928.0" styleClass="main-container" vgap="20.0">
             <columnConstraints>
