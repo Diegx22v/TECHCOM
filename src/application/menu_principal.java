@@ -239,6 +239,7 @@ public class menu_principal {
     @FXML
     public void soft_creditos() {
         animacion_soft_creditos(animacion_creditos);
+
     }
 
 
@@ -287,6 +288,7 @@ public class menu_principal {
     @FXML
     public void soft_techcom() {
         animacion_image(animacionTechcom);
+
     }
 
 
