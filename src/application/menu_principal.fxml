@@ -19,7 +19,7 @@
       <ColumnConstraints percentWidth="100.0" />
       <ColumnConstraints />
       </columnConstraints>
-   <ScrollPane fitToWidth="true" hbarPolicy="NEVER" prefHeight="1018.0" prefWidth="2040.0">
+   <ScrollPane fitToWidth="true" hbarPolicy="ALWAYS" prefHeight="1018.0" prefWidth="2040.0" vbarPolicy="ALWAYS">
      <content>
        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1029.0" prefWidth="2049.0">
             <children>
@@ -162,6 +162,7 @@
                   </children>
                   <columnConstraints>
                      <ColumnConstraints percentWidth="100.0" />
+                     <ColumnConstraints />
                   </columnConstraints>
                </GridPane>
             </children>
@@ -179,14 +180,37 @@
          <Insets bottom="925.0" left="400.0" right="400.0" top="10.0" />
       </GridPane.margin>
       <children>
+         <VBox blendMode="SRC_ATOP" centerShape="false" pickOnBounds="false" prefHeight="80.0" prefWidth="138.0" scaleShape="false" style="-fx-background-radius: 20; -fx-border-radius: 20;" styleClass="Circulo_uno" stylesheets="@resources/menu_principal.css" />
             
-                                                      <Text fill="#2b2c34" text="Bienvenidos" textAlignment="CENTER" wrappingWidth="807.2000122070312">
+                                                                  <Text fill="#2b2c34" text="Bienvenidos" textAlignment="CENTER" wrappingWidth="807.2000122070312">
             <font>
                <Font name="Playfair Display Italic" size="68.0" />
             </font>
          </Text>
       </children>
    </HBox>
+   <VBox alignment="TOP_CENTER" prefHeight="426.0" prefWidth="288.0" spacing="90.0" style="-fx-background-color: #d1d1e9;" GridPane.hgrow="NEVER" GridPane.vgrow="NEVER">
+      <children>
+         <Button fx:id="deepfake1" alignment="TOP_CENTER" contentDisplay="CENTER" defaultButton="true" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#ventana_deepfake" onMouseEntered="#soft_deepfake" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: #6246ea; -fx-background-radius: 15;" textAlignment="JUSTIFY" textFill="#fffffe" textOverrun="WORD_ELLIPSIS">
+            <font>
+               <Font name="Comic Sans MS" size="40.0" />
+            </font>
+         </Button>
+         <Button fx:id="clonacion_de_voz1" alignment="TOP_CENTER" contentDisplay="CENTER" defaultButton="true" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#ventana_clonacion_de_voz" onMouseEntered="#soft_clonacion" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: #6246ea; -fx-background-radius: 15;" textAlignment="JUSTIFY" textFill="#fffffe" textOverrun="WORD_ELLIPSIS">
+            <font>
+               <Font name="Comic Sans MS" size="40.0" />
+            </font>
+         </Button>
+         <Button fx:id="creditos1" alignment="TOP_CENTER" contentDisplay="CENTER" defaultButton="true" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#ventana_creditos" onMouseEntered="#soft_creditos" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: #6246ea; -fx-background-radius: 15;" textFill="#fffffe" textOverrun="WORD_ELLIPSIS">
+            <font>
+               <Font name="Comic Sans MS" size="40.0" />
+            </font>
+         </Button>
+      </children>
+      <GridPane.margin>
+         <Insets bottom="500.0" left="60.0" right="1890.0" top="100.0" />
+      </GridPane.margin>
+   </VBox>
        <rowConstraints>
       <RowConstraints percentHeight="99.0" />
    </rowConstraints>

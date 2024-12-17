@@ -1,1 +1,0 @@
-packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"m":"TECHCOM","l":"application"},{"m":"TECHCOM","l":"utils"}];updateSearchResults();
