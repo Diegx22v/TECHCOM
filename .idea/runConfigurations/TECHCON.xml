@@ -1,0 +1,10 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="TECHCON" type="Application" factoryName="Application">
+    <option name="MAIN_CLASS_NAME" value="application.Main" />
+    <module name="TECHCOM" />
+    <option name="VM_PARAMETERS" value="--module-path &quot;$USER_HOME$/Downloads/openjfx-22.0.2_windows-x64_bin-sdk/javafx-sdk-22.0.2/lib&quot; --add-modules javafx.controls,javafx.fxml " />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
