@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.web.WebView?>
+
+<ScrollPane fitToHeight="true" fitToWidth="true" prefHeight="1484.0" prefWidth="1906.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.deepfake">
+    <content>
+        <GridPane hgap="20.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1483.0" prefWidth="1905.0" styleClass="main-container" vgap="20.0">
+            <columnConstraints>
+                <ColumnConstraints fillWidth="false" percentWidth="82.0" />
+                <ColumnConstraints fillWidth="false" percentWidth="17.0" />
+            </columnConstraints>
+
+            <Text text="Bienvenidos a la TECHCOM" textAlignment="CENTER" visible="false" wrappingWidth="707.2000122070312" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.halignment="CENTER">
+                <font>
+                    <Font name="Goudy Stout" size="36.0" />
+                </font>
+                <fill>
+                    <RadialGradient centerX="0.9116022099447514" centerY="0.8056872037914692" cycleMethod="REPEAT" focusAngle="7.59" focusDistance="-0.6436781609195403" radius="0.3563218390804598">
+                        <stops>
+                            <Stop>
+                                <color>
+                                    <Color red="0.1723976582288742" green="0.6947368383407593" blue="0.6947368383407593" />
+                                </color>
+                            </Stop>
+                            <Stop offset="1.0">
+                                <color>
+                                    <Color red="0.07017543911933899" green="0.5263158082962036" blue="0.13099415600299835" />
+                                </color>
+                            </Stop>
+                        </stops>
+                    </RadialGradient>
+                </fill>
+                <effect>
+                    <DropShadow height="16.32" radius="7.66" spread="0.24" width="16.32">
+                        <color>
+                            <Color red="0.13177387416362762" green="0.6842105388641357" blue="0.33433398604393005" />
+                        </color>
+                    </DropShadow>
+                </effect>
+                <GridPane.margin>
+                    <Insets />
+                </GridPane.margin></Text>
+
+            <WebView fx:id="webView" maxHeight="458.0" maxWidth="889.0" minHeight="404.0" minWidth="537.0" prefHeight="418.0" prefWidth="851.0" GridPane.columnSpan="2" GridPane.halignment="RIGHT" GridPane.rowIndex="2">
+                <GridPane.margin>
+                    <Insets right="20.0" />
+                </GridPane.margin></WebView>
+
+            <ImageView fx:id="Techcom" accessibleRole="BUTTON" fitHeight="201.0" fitWidth="231.0" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                <image>
+                    <Image url="@resources/TECHCOM.png" />
+                </image>
+                <effect>
+                    <DropShadow>
+                        <color>
+                            <Color green="1.0" blue="0.5" />
+                        </color>
+                    </DropShadow>
+                </effect>
+                <GridPane.margin>
+                    <Insets top="30.0" />
+                </GridPane.margin>
+            </ImageView>
+            <ImageView fitHeight="48.0" fitWidth="231.0" layoutX="550.0" layoutY="260.0" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.valignment="TOP">
+                <image>
+                    <Image url="@resources/delfos.png" />
+                </image>
+                <GridPane.margin>
+                    <Insets right="5.0" top="10.0" />
+                </GridPane.margin>
+            </ImageView>
+            <Group GridPane.rowIndex="2">
+                <children>
+                    <VBox fx:id="contenedor_vertical" alignment="TOP_CENTER" prefHeight="454.0" prefWidth="501.0" style="-fx-border-style: dashed; -fx-border-width: 2px; -fx-border-color: blue green red  #9923d8;" styleClass="vertical_container_one">
+                        <children>
+                            <Text fill="#c25a4a" text="DeepFake" textAlignment="CENTER" wrappingWidth="453.0">
+                                <font>
+                                    <Font name="Goudy Stout" size="29.0" />
+                                </font>
+                            </Text>
+                            <ImageView fitHeight="144.0" fitWidth="272.0">
+                                <image>
+                                    <Image url="@resources/Deepfake.jpg" />
+                                </image>
+                                <VBox.margin>
+                                    <Insets bottom="15.0" top="30.0" />
+                                </VBox.margin>
+                            </ImageView>
+                            <Text fill="#0a0a0a" text="Un deepfake es un video, audio o imagen la cualimita el sonido o la apariencia de una persona,este suele ser tan convincente que puedeterminar engañando al espectador. Son ejecutados por medio de la inteligencia artificial." textOrigin="TOP" wrappingWidth="316.7999267578125">
+                                <font>
+                                    <Font name="Arial Bold" size="18.0" />
+                                </font>
+                                <VBox.margin>
+                                    <Insets top="30.0" />
+                                </VBox.margin>
+                            </Text>
+                        </children>
+                    </VBox>
+                    <HBox fx:id="contenedor_horizontal" alignment="TOP_CENTER" layoutY="459.0" prefHeight="46.0" prefWidth="506.0" styleClass="horizontal_container_uno">
+                        <children>
+                            <Hyperlink fx:id="proyecto" alignment="CENTER" onAction="#proyecto_web" prefHeight="46.0" prefWidth="495.0" text="LINK AL PROYECTO" textFill="#4d4d4d">
+                                <font>
+                                    <Font name="Goudy Stout" size="24.0" />
+                                </font>
+                                <HBox.margin>
+                                    <Insets />
+                                </HBox.margin>
+                            </Hyperlink>
+                        </children>
+                    </HBox>
+                </children>
+            </Group>
+            <rowConstraints>
+                <RowConstraints maxHeight="119.0" minHeight="101.0" percentHeight="5.0" prefHeight="101.0" valignment="CENTER" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="254.13332519531247" minHeight="129.0" percentHeight="10.0" prefHeight="147.0" />
+                <RowConstraints maxHeight="490.39998168945306" minHeight="381.79998779296875" percentHeight="83.0" prefHeight="391.4000244140625" />
+                <RowConstraints maxHeight="89.06672363281245" minHeight="0.0" percentHeight="2.0" prefHeight="30.800048828125" />
+            </rowConstraints>
+        </GridPane>
+    </content>
+</ScrollPane>

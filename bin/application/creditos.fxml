@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<ScrollPane fitToHeight="true" fitToWidth="true" prefHeight="884.0" prefWidth="1906.0" stylesheets="@resources/menu_principal.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.creditos">
+    <content>
+        <GridPane hgap="20.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="999.0" prefWidth="1905.0" styleClass="main-container" vgap="20.0">
+            <columnConstraints>
+                <ColumnConstraints fillWidth="false" percentWidth="82.0" />
+                <ColumnConstraints fillWidth="false" percentWidth="17.0" />
+            </columnConstraints>
+
+            <ImageView fx:id="Techcom" accessibleRole="BUTTON" fitHeight="201.0" fitWidth="231.0" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                <image>
+                    <Image url="@resources/TECHCOM.png" />
+                </image>
+                <effect>
+                    <DropShadow>
+                        <color>
+                            <Color green="1.0" blue="0.5" />
+                        </color>
+                    </DropShadow>
+                </effect>
+                <GridPane.margin>
+                    <Insets top="220.0" />
+                </GridPane.margin>
+            </ImageView>
+            <ImageView fitHeight="48.0" fitWidth="231.0" layoutX="550.0" layoutY="260.0" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.valignment="TOP">
+                <image>
+                    <Image url="@resources/delfos.png" />
+                </image>
+                <GridPane.margin>
+                    <Insets right="5.0" top="20.0" />
+                </GridPane.margin>
+            </ImageView>
+         <ImageView fx:id="Return_credits" fitHeight="73.0" fitWidth="66.0" onMouseClicked="#return_main1" onMouseEntered="#softimage1" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@resources/return-57.png" />
+            </image>
+            <GridPane.margin>
+               <Insets left="10.0" top="20.0" />
+            </GridPane.margin>
+         </ImageView>
+         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Proyecto Realizado  gracias a:" textAlignment="CENTER" wrappingWidth="870.5770874023438" GridPane.rowSpan="2">
+            <font>
+               <Font name="Goudy Stout" size="38.0" />
+            </font>
+            <GridPane.margin>
+               <Insets bottom="45.0" left="425.0" />
+            </GridPane.margin>
+         </Text>
+         <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowSpan="3" GridPane.valignment="CENTER">
+            <children>
+                  <VBox fx:id="contenedor_vertical" alignment="TOP_CENTER" fillWidth="false" prefHeight="307.0" prefWidth="678.0" style="-fx-padding: 10; -fx-background-color: #d1d1e9; -fx-background-radius: 15; -fx-border-radius: 15;" styleClass="vertical_container_one">
+                      <children>
+                          <HBox>
+                              <children>
+                                  <Text fill="#004c99" text="Integrantes del grupo &lt;deepfake&gt; " textAlignment="CENTER" wrappingWidth="553.0">
+                                      <font>
+                                          <Font name="Goudy Stout" size="23.0" />
+                                      </font>
+                                  </Text>
+                                  <ImageView fitHeight="81.0" fitWidth="87.0">
+                                      <image>
+                                          <Image url="@resources/integrantes.png" />
+                                      </image>
+                                      <HBox.margin>
+                                          <Insets left="15.0" />
+                                      </HBox.margin>
+                                  </ImageView>
+                              </children>
+                          </HBox>
+      
+                          <Text lineSpacing="5.0" text="* Dayana Torres                           * Mia Nuñez                                * Diego Villota                             * Carlos Velez                             * Franklin Chunga  " wrappingWidth="359.99993896484375">
+                              <font>
+                                  <Font name="Marlett" size="24.0" />
+                              </font>
+                              <effect>
+                                  <DropShadow height="2.0" radius="1.0" spread="0.16" width="4.0">
+                                      <color>
+                                          <Color red="0.5701754093170166" blue="0.8552631735801697" />
+                                      </color>
+                                  </DropShadow>
+                              </effect>
+                          </Text>
+                     <VBox fx:id="Contenedor_vertical_dos" alignment="TOP_CENTER" fillWidth="false" prefHeight="410.0" prefWidth="692.0" spacing="15.0" style="-fx-padding: 10; -fx-background-color: #d1d1e9; -fx-background-radius: 15; -fx-border-radius: 15;" styleClass="vertical_container_one">
+                        <children>
+                           <HBox>
+                              <children>
+                                 <Text fill="#004d99" text="Integrantes del grupo &lt;Clonacion de voz&gt; " textAlignment="CENTER" wrappingWidth="553.0">
+                                    <font>
+                                       <Font name="Goudy Stout" size="23.0" />
+                                    </font>
+                                 </Text>
+                                 <ImageView fitHeight="81.0" fitWidth="87.0">
+                                    <image>
+                                       <Image url="@resources/integrantes.png" />
+                                    </image>
+                                    <HBox.margin>
+                                       <Insets left="15.0" />
+                                    </HBox.margin>
+                                 </ImageView>
+                              </children>
+                           </HBox>
+                           <Text lineSpacing="5.0" text="* Daniela Marcillo                          * Danna Lopéz                            * Valeria Arias                              * Félix Mendoza             " textOrigin="TOP" wrappingWidth="362.99993896484375">
+                              <font>
+                                 <Font name="Marlett" size="24.0" />
+                              </font>
+                              <effect>
+                                 <DropShadow height="2.0" radius="1.0" spread="0.16" width="4.0">
+                                    <color>
+                                       <Color red="0.5701754093170166" blue="0.8552631735801697" />
+                                    </color>
+                                 </DropShadow>
+                              </effect>
+                              <VBox.margin>
+                                 <Insets bottom="40.0" />
+                              </VBox.margin>
+                           </Text>
+                           <VBox fx:id="Contenedor_vertical_tres" alignment="TOP_CENTER" fillWidth="false" prefHeight="307.0" prefWidth="678.0" spacing="10.0" style="-fx-padding: 10; -fx-background-color: #d1d1e9; -fx-background-radius: 15; -fx-border-radius: 15;" styleClass="vertical_container_one">
+                              <children>
+                                 <HBox>
+                                    <children>
+                                       <Text fill="#004d99" text="Profesores encargados del proyecto" textAlignment="CENTER" wrappingWidth="566.0">
+                                          <font>
+                                             <Font name="Goudy Stout" size="23.0" />
+                                          </font>
+                                          <HBox.margin>
+                                             <Insets left="10.0" />
+                                          </HBox.margin>
+                                       </Text>
+                                       <ImageView fitHeight="81.0" fitWidth="87.0">
+                                          <image>
+                                             <Image url="@resources/integrantes.png" />
+                                          </image>
+                                          <HBox.margin>
+                                             <Insets left="15.0" />
+                                          </HBox.margin>
+                                       </ImageView>
+                                    </children>
+                                 </HBox>
+                                 <Text lineSpacing="5.0" text="* Lcda. María Fernanda Lavaye     * Lcdo. Anthony Sotomayor " wrappingWidth="359.99993896484375">
+                                    <font>
+                                       <Font name="Marlett" size="24.0" />
+                                    </font>
+                                    <effect>
+                                       <DropShadow height="2.0" radius="1.0" spread="0.16" width="4.0">
+                                          <color>
+                                             <Color red="0.5701754093170166" blue="0.8552631735801697" />
+                                          </color>
+                                       </DropShadow>
+                                    </effect>
+                                    <VBox.margin>
+                                       <Insets bottom="20.0" />
+                                    </VBox.margin>
+                                 </Text>
+                              </children>
+                           </VBox>
+                        </children>
+                     </VBox>
+                      </children>
+                  </VBox>
+            </children>
+            <GridPane.margin>
+               <Insets top="150.0" />
+            </GridPane.margin>
+         </VBox>
+            <rowConstraints>
+                <RowConstraints maxHeight="119.0" minHeight="101.0" percentHeight="5.0" prefHeight="101.0" valignment="CENTER" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="254.13332519531247" minHeight="129.0" percentHeight="10.0" prefHeight="147.0" />
+                <RowConstraints maxHeight="254.13332519531247" minHeight="175.5999755859375" percentHeight="85.0" prefHeight="191.5999755859375" />
+            </rowConstraints>
+        </GridPane>
+    </content>
+</ScrollPane>

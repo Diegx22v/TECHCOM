@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="CUSTOM_SCOPE_NAME" value="All Places" />
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ec7ca74e-62e1-46f3-a1c7-5d5b614422dc" name="Changes" comment="New top nodes fixed and structure fixes for the future of the project.&#10;Commit made by: Diego V." />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="package-info" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Diegx22v&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Diegx22v/TECHCOM&quot;,
+    &quot;accountId&quot;: &quot;d152e35a-cf0b-4415-9c33-698efdbc88fa&quot;
+  }
+}</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/application/clonacion_de_voz.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/application/creditos.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/application/deepfake.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/application/juegos.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/application/menu_principal.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/utils/Utils.java" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2ogTjM3UIuuYwoZ6GOfVVDCQM9t" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "Application.TECHCON.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/bydie/Downloads/openjfx-22.0.2_windows-x64_bin-sdk/javafx-sdk-22.0.2/lib/javafx-swt.jar",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "vcs.log"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ec7ca74e-62e1-46f3-a1c7-5d5b614422dc" name="Changes" comment="" />
+      <created>1731290352386</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1731290352386</updated>
+    </task>
+    <task id="LOCAL-00001" summary="new divs and new reference images for the buttons &quot; clonación de voz &quot;, &quot;deepfake&quot; and &quot;creditos&quot;">
+      <option name="closed" value="true" />
+      <created>1731293237816</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1731293237816</updated>
+    </task>
+    <task id="LOCAL-00002" summary="new features changes for creditos scene and return method">
+      <option name="closed" value="true" />
+      <created>1731466910437</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1731466910438</updated>
+    </task>
+    <task id="LOCAL-00003" summary="mission and vision added in the main scene (menu_principal.fxml)">
+      <option name="closed" value="true" />
+      <created>1731512400889</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1731512400889</updated>
+    </task>
+    <task id="LOCAL-00004" summary="new wallpaper and color fonts for the welcome text, ideas by Dayana.">
+      <option name="closed" value="true" />
+      <created>1731554231433</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1731554231433</updated>
+    </task>
+    <task id="LOCAL-00005" summary="new background color, color for fonts, new bk color for cards and more news features for the main scene.">
+      <option name="closed" value="true" />
+      <created>1731599602905</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1731599602905</updated>
+    </task>
+    <task id="LOCAL-00006" summary="new bg color for the creditos.fxml file, members of the groups and teacher added in this commit, Commit made by: Diego V.">
+      <option name="closed" value="true" />
+      <created>1731640357630</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1731640357630</updated>
+    </task>
+    <task id="LOCAL-00007" summary="new audio for scenes creation (only for deepfake statement) future implementation for ElevenLabs &#10;news objects for media play &#10;Commit made by: Diego V.">
+      <option name="closed" value="true" />
+      <created>1731816348567</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1731816348567</updated>
+    </task>
+    <task id="LOCAL-00008" summary="new audio for scenes creation (only for deepfake statement) and  future full  implementation for ElevenLabs &#10;new objects for media play &#10;Commit made by: Diego V.">
+      <option name="closed" value="true" />
+      <created>1731816590807</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1731816590807</updated>
+    </task>
+    <task id="LOCAL-00009" summary="new javadoc file for documentation project.&#10;Commit made by: Diego V.">
+      <option name="closed" value="true" />
+      <created>1732468114107</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1732468114107</updated>
+    </task>
+    <task id="LOCAL-00010" summary="new javadoc file for documentation project.&#10;Commit made by: Diego V.">
+      <option name="closed" value="true" />
+      <created>1732468162427</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1732468162427</updated>
+    </task>
+    <task id="LOCAL-00011" summary="new javadoc folder for documentation project and refactor/clean code in all Java Class.&#10;Commit made by: Diego V.">
+      <option name="closed" value="true" />
+      <created>1732502764536</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1732502764536</updated>
+    </task>
+    <task id="LOCAL-00012" summary="new javadoc folder for documentation project and refactor/clean code in all Java Class.&#10;Commit made by: Diego V.">
+      <option name="closed" value="true" />
+      <created>1732505109390</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1732505109390</updated>
+    </task>
+    <task id="LOCAL-00013" summary="new images for main menu in the project.&#10;Commit made by: Diego V.">
+      <option name="closed" value="true" />
+      <created>1732548919717</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1732548919717</updated>
+    </task>
+    <task id="LOCAL-00014" summary="possible resolution screen adapt for more options &#10;idk if that will work&#10;Commit made by: Diego V.">
+      <option name="closed" value="true" />
+      <created>1732581874684</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1732581874684</updated>
+    </task>
+    <task id="LOCAL-00015" summary="possible resolution screen adapt for more options &#10;idk if that will work&#10;Commit made by: Diego V.">
+      <option name="closed" value="true" />
+      <created>1732582095084</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1732582095084</updated>
+    </task>
+    <task id="LOCAL-00016" summary="new ideas for design &#10;Commit made by: Diego V.">
+      <option name="closed" value="true" />
+      <created>1733496557028</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1733496557028</updated>
+    </task>
+    <task id="LOCAL-00017" summary="New top nodes fixed and structure fixes for the future of the project.&#10;Commit made by: Diego V.">
+      <option name="closed" value="true" />
+      <created>1733846906568</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1733846906568</updated>
+    </task>
+    <task id="LOCAL-00018" summary="New top nodes fixed and structure fixes for the future of the project.&#10;Commit made by: Diego V.">
+      <option name="closed" value="true" />
+      <created>1734412503336</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1734412503336</updated>
+    </task>
+    <task id="LOCAL-00019" summary="New top nodes fixed and structure fixes for the future of the project.&#10;Commit made by: Diego V.">
+      <option name="closed" value="true" />
+      <created>1734993929194</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1734993929194</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="&quot;JRA-123&quot;&#10;&#10;&quot;JRA-123&quot;" />
+    <MESSAGE value="new divs and new reference images for the buttons &quot; clonación de voz &quot;, &quot;deepfake&quot; and &quot;creditos&quot;" />
+    <MESSAGE value="new features changes for creditos scene and return method" />
+    <MESSAGE value="mission and vision added in the main scene (menu_principal.fxml)" />
+    <MESSAGE value="new wallpaper and color fonts for the welcome text, ideas by Dayana." />
+    <MESSAGE value="new background color, color for fonts, new bk color for cards and more news features for the main scene." />
+    <MESSAGE value="new bg color for the creditos.fxml file, members of the groups and teacher added in this commit, Commit made by: Diego V." />
+    <MESSAGE value="new audio for scenes creation (only for deepfake statement) future implementation for ElevenLabs &#10;news objects for media play &#10;Commit made by: Diego V." />
+    <MESSAGE value="new audio for scenes creation (only for deepfake statement) and  future full  implementation for ElevenLabs &#10;new objects for media play &#10;Commit made by: Diego V." />
+    <MESSAGE value="new javadoc file for documentation project.&#10;Commit made by: Diego V." />
+    <MESSAGE value="new javadoc folder for documentation project and refactor/clean code in all Java Class.&#10;Commit made by: Diego V." />
+    <MESSAGE value="new images for main menu in the project.&#10;Commit made by: Diego V." />
+    <MESSAGE value="possible resolution screen adapt for more options &#10;idk if that will work&#10;Commit made by: Diego V." />
+    <MESSAGE value="new ideas for design &#10;Commit made by: Diego V." />
+    <MESSAGE value="New top nodes fixed and structure fixes for the future of the project.&#10;Commit made by: Diego V." />
+    <option name="LAST_COMMIT_MESSAGE" value="New top nodes fixed and structure fixes for the future of the project.&#10;Commit made by: Diego V." />
+  </component>
+</project>
